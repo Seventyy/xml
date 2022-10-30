@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<developers>
+    <developer developer_name="Ninja Kiwi">
+        <origin>New Zeland</origin>
+        <founding_year>2006</founding_year>
+        <self_publishing>true</self_publishing>
+    </developer>
+    <developer developer_name="CD Project">
+        <origin>Poland</origin>
+        <founding_year>1994</founding_year>
+        <self_publishing>true</self_publishing>
+    </developer>
+    <developer developer_id="D3">
+        <name>Dennaton Games</name>
+        <origin>Sweden</origin>
+        <founding_year>2012</founding_year>
+        <self_publishing>false</self_publishing>
+    </developer>
+</developers>
+<games>
+    <game title="Bloons TD 6" developer_name="Ninja Kiwi">
+        <relese_year>2018</relese_year>
+        <steam_reviews>Overwhelmingly Positive</steam_reviews>
+    </game>
+    <game title="The Witcher" developer_name="CD Project">
+        <relese_year>2015</relese_year>
+        <steam_reviews>Overwhelmingly Positive</steam_reviews>
+    </game>
+    <game title="Cyberpunk 2077" developer_name="CD Project">
+        <relese_year>2020</relese_year>
+        <steam_reviews>Mostly Positive</steam_reviews>
+    </game>
+    <game title="Hotline Miami 2: Wrong Number" developer_id="D3">
+        <relese_year>2015</relese_year>
+        <steam_reviews>Very Positive</steam_reviews>
+    </game>
+</games>
