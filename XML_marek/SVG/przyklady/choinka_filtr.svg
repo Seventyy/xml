@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg" >
+<title>Świąteczna choinka</title>
+
+<!-- definiujemy gradienty -->
+
+<defs>
+	<radialGradient id="gwiazdka" gradientUnits="userSpaceOnUse" cx="350" cy="200" r="200" fx="350" fy="200">
+		<stop offset="0%" stop-color="yellow" />
+		<stop offset="100%" stop-color="red" />
+	</radialGradient>
+</defs>
+
+<defs>
+	<radialGradient id="czerwona" gradientUnits="userSpaceOnUse" cx="450" cy="150" r="20" fx="450" fy="150" >
+		<stop offset="10%" stop-color="orange" />
+		<stop offset="100%" stop-color="red" />
+	</radialGradient>
+</defs>
+
+<!--definiuje filtry-->
+
+<defs>
+<filter id="myFilter">
+	<feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+	<feSpecularLighting in="blur" surfaceScale="5" specularConstant="1" specularExponent="40" style="lighting-color:white" 
+	result="specOut">
+  		<fePointLight x="-10000" y="-10000" z="20000"/>
+  </feSpecularLighting>
+  <fefeComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+  <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+          k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
+</filter>
+</defs>
+
+<!--rysujemy tło-->
+
+<rect x="1" y="1" width="800" height="500" fill="blue" stroke="none" />
+
+<g filter="url(#myFilter)">
+<!--rysujemy pieniek-->
+
+<rect x="375" y="400" width="50" height="20" fill="brown" stroke="black" stroke-width="3"  />
+
+<!--rysujemy zieloną choinkę-->
+
+<polyline fill="rgb(00,77,00)" stroke="rgb(00,66,00)" stroke-width="4" 
+points="405,95 300,200 350,200 250,300 300,300 200,400 600,400 500,300 550,300 450,200 500,200 400,95" ></polyline>
+
+<!--rysujemy gwiazdke-->
+
+<polygon transform="translate(275 -70) scale(0.5) rotate(20)" fill="url(#gwiazdka)"  stroke="orange" stroke-width="2" points="350,75 379,161 469,161 397,215 423,301 350,250 277,301 303,215 231,161 321,161" />
+
+<!--rysujemy bombki-->
+<g stroke="red" fill="red">
+<circle cx="450" cy="150" r="20" /> 
+<circle cx="370" cy="300" r="18" /> 
+
+</g>
+
+
+<g stroke="yellow" fill="yellow">
+<circle cx="490" cy="250" r="19" /> 
+<circle cx="300" cy="270" r="15" />
+<circle cx="340" cy="370" r="15" /> 
+</g>
+
+<g stroke="blue" fill="blue">
+<circle cx="400" cy="220" r="22" /> 
+<circle cx="500" cy="350" r="20" /> 
+
+</g>
+
+<g stroke="pink" fill="pink">
+
+<circle cx="350" cy="180" r="17" />
+<circle cx="440" cy="320" r="17" /> 
+<circle cx="250" cy="350" r="20" /> 
+</g>
+
+</g>
+
+</svg>

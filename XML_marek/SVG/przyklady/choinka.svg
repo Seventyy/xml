@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="600" onmousemove="drag(evt)" onmouseup="release(evt)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<image x="0" y="0" width="800" height="600" xlink:href="winter.jpg"/>
+	<script type="text/ecmascript"><![CDATA[
+		var selCircle;
+		var snapX = 0, snapY = 0;
+		var bombsLeft = 6;
+
+		function release(evt) {
+				var x = evt.clientX;
+				var y = evt.clientY;
+	
+				if (x <= snapX + 30 && x >= snapX - 30 && y <= snapY + 30 && y >= snapY - 30) {
+					x = snapX;
+					y = snapY;
+					
+					bombsLeft--;
+
+					if (bombsLeft == 0) {
+						var message = svgDocument.getElementById("greetings");
+						message.setAttribute("style", "fill:rgb(255,0,0);font-size:36;font-family:Arial;filter:url(#Drop_Shadow_2);stroke:rgb(0,0,0);stroke-width:1;visibility:visible");
+
+						message = svgDocument.getElementById("mikolaj");
+						message.setAttribute("style", "visibility:visible");
+
+						message = svgDocument.getElementById("czapa");
+						message.setAttribute("style", "visibility:visible");
+					}
+				}
+				
+				selCircle = null;
+		}
+
+		function drag(evt) {
+			if (selCircle) {
+			
+				var x = evt.clientX;
+				var y = evt.clientY;
+		
+		if (selCircle.getAttribute("id") != "c1" && selCircle.getAttribute("id") != "c2" && selCircle.getAttribute("id") != "c3") {
+
+					if (x <= snapX + 30 && x >= snapX - 30 && y <= snapY + 30 && y >= snapY - 30) {
+						x = snapX;
+						y = snapY;
+					}
+
+					selCircle.setAttribute("transform", "translate(" + (x - selCircle.getAttribute("rx"))
+					+ " " + (y - selCircle.getAttribute("ry")) + ")");
+				} else {
+					var czapka;
+					czapka = svgDocument.getElementById("czapa");
+					czapka.setAttribute("transform", "translate(" + (x - 100) + " " + (y - 50) +")");
+				}
+			}
+		}
+		
+		function grab(evt) {
+			selCircle = evt.target;
+			if (selCircle.getAttribute("id") == "bomba1") {
+				snapX = 175;
+				snapY = 345;
+			}
+			
+			if (selCircle.getAttribute("id") == "bomba2") {
+				snapX = 150;
+				snapY = 465;
+			}
+
+			if (selCircle.getAttribute("id") == "bomba3") {
+				snapX = 420;
+				snapY = 470;
+			}
+
+			if (selCircle.getAttribute("id") == "bomba4") {
+				snapX = 255;
+				snapY = 265;
+			}
+
+			if (selCircle.getAttribute("id") == "bomba5") {
+				snapX = 300;
+				snapY = 415;
+			}
+
+			if (selCircle.getAttribute("id") == "bomba6") {
+				snapX = 400;
+				snapY = 320;
+			}
+		}
+		
+		]]></script>
+	<defs>
+		<filter id="Drop_Shadow_2" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blurredAlpha"/>
+			<feOffset in="blurredAlpha" dx="3" dy="3" result="offsetBlurredAlpha"/>
+			<feFlood result="flooded" style="flood-color:rgb(0,0,0);flood-opacity:0.65"/>
+			<feComposite in="flooded" operator="in" in2="offsetBlurredAlpha"
+				result="coloredShadow"/>
+			<feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+		</filter>
+		<linearGradient id="red-yellow-red" x1="0%" y1="0%" x2="100%" y2="0%"
+			spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop offset="10%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+			<stop offset="50%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+			<stop offset="90%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+		</linearGradient>
+		<filter id="Drop_Shadow_1" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blurredAlpha"/>
+			<feOffset in="blurredAlpha" dx="3" dy="3" result="offsetBlurredAlpha"/>
+			<feFlood result="flooded" style="flood-color:rgb(0,0,0);flood-opacity:0.65"/>
+			<feComposite in="flooded" operator="in" in2="offsetBlurredAlpha"
+				result="coloredShadow"/>
+			<feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+		</filter>
+		<filter id="Drop_Shadow" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blurredAlpha"/>
+			<feOffset in="blurredAlpha" dx="3" dy="3" result="offsetBlurredAlpha"/>
+			<feFlood result="flooded" style="flood-color:rgb(0,0,0);flood-opacity:0.65"/>
+			<feComposite in="flooded" operator="in" in2="offsetBlurredAlpha"
+				result="coloredShadow"/>
+			<feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+		</filter>
+		<linearGradient id="green-neon" x1="0%" y1="0%" x2="100%" y2="0%"
+			spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop offset="0%" style="stop-color:rgb(0,128,0);stop-opacity:1"/>
+			<stop offset="10%" style="stop-color:rgb(0,255,0);stop-opacity:1"/>
+			<stop offset="50%" style="stop-color:rgb(0,100,0);stop-opacity:1"/>
+			<stop offset="90%" style="stop-color:rgb(0,255,0);stop-opacity:0.75"/>
+			<stop offset="100%" style="stop-color:rgb(0,192,0);stop-opacity:1"/>
+		</linearGradient>
+	</defs>
+	<rect x="252" y="494" width="67" height="59"
+		transform="translate(319 523.5) scale(0.924428 1) translate(-319 -523.5) translate(319 523.5) scale(1.04087 1) translate(-319 -523.5) translate(285.5 553) scale(1 1.02145) translate(-285.5 -553) translate(6.57769 -2.47848) translate(322.307 -116.489) translate(-330.2 109.053)"
+		
+		 style="filter:url(#Drop_Shadow_1);fill:rgb(99,78,59);stroke-width:1"/>
+	<path
+		d="M332.278 412.658 C286.19 421.17 211.266 433.823 138.608 377.215 C245.072 329.484
+			276.236 336.381 323.418 281.013 C247.654 293.582 227.667 296.438 167.722 256.962
+			C206.43 237.587 316.456 220.57 328.481 158.228 C313.924 157.595 259.494 174.051
+			225.949 153.165 C339.241 103.481 345.57 82.5949 370.253 58.2278 C394.304
+			82.5949 424.684 112.342 523.418 148.101 C471.519 172.152 432.278 169.62 391.772
+			164.557 C457.911 240.823 511.954 224.592 560.127 239.241 C539.95 290.067
+			484.177 294.937 400.633 279.747 C445.255 363.532 569.347 360.367 608.228 381.013
+			C552.329 430.671 450.95 422.784 398.101 410.126 C375.132 409.97 364.123
+			406.777 332.278 412.658 z"
+		 style="filter:url(#Drop_Shadow);fill:url(#green-neon);stroke:rgb(1,81,1);stroke-width:3;
+		"
+		transform="translate(-103.03 115.152) translate(3.0303 -37.8788) translate(24.2424 15.1515) translate(0 -10.6061)"
+		/>
+	<polygon
+		points="385.5,31 396.71,53.7134 421.775,57.3557 403.638,75.0356 407.919,100 385.5,88.2134
+			363.081,100 367.362,75.0356 349.225,57.3557 374.29,53.7134"
+		 style="filter:url(#Drop_Shadow);fill:rgb(255,255,0);stroke:rgb(255,165,9);stroke-width:3;
+		"
+		transform="translate(-15 -6) translate(421.775 100) scale(1.27567 1.2029) translate(-421.775 -100) translate(6.2712 6.6506) translate(-74.8269 46.6046) translate(-3.56318 7.5575) translate(2.37546 7.5575) translate(19.0037 -5.03834) translate(-7.12637 1.25958) translate(4.75091 2.51917) translate(-1.18773 0) translate(2.97684 -31.5693) translate(0.992281 17.8893)"/>
+	<defs>
+		<filter id="Clouds" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3"
+				result="I1a0"/>
+			<feDisplacementMap in="I1a0" in2="I1a0" scale="50" xChannelSelector="R"
+				yChannelSelector="G" result="I1a"/>
+			<feColorMatrix in="I1a" type="matrix"
+				values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1" result="I2"/>
+			<feComposite operator="in" in="I2" in2="SourceAlpha" result="I3"/>
+			<feComposite operator="arithmetic" in="I3" in2="SourceGraphic" k2="1" k3="1"
+				result="I5"/>
+			<feComposite operator="in" in="I5" in2="SourceAlpha" result="I6"/>
+		</filter>
+	</defs>
+	<path
+		d="M227.848 272.152 C201.944 278.247 187.805 287.916 167.089 300 C153.59 307.874 134.913
+			305.938 120.253 310.127 C98.1283 316.448 67.4341 367.273 100 360.759 C120.992
+			356.561 106.627 348.277 117.722 337.975 C136.803 320.256 151.715 336.908
+			155.696 336.709 L181.013 312.658 C200.95 298.702 238.523 314.135 227.848 272.152
+			z"
+		 style="fill:rgb(255,255,255);stroke:rgb(200,200,200);stroke-width:1"/>
+	<path
+		d="M234.177 362.025 C194.932 370.945 198.004 391.857 167.089 408.861 C145.312 420.838
+			122.821 414.661 101.266 421.519 C85.7199 426.465 77.3612 444.582 64.557 451.899
+			C59.867 454.579 36.0006 449.866 51.8987 467.089 C71.1102 487.901 101.406
+			458.327 115.19 449.367 L127.848 444.304 C140.153 441.843 153.468 446.744 165.823
+			443.038 C182.598 438.005 190.36 423.549 202.532 412.658 C207.95 407.81 223.974
+			404.555 249.367 363.291 C249.367 363.291 251.899 359.177 248.101 359.494
+			C244.304 359.81 234.177 362.025 234.177 362.025 z"
+		 style="fill:rgb(255,255,255);stroke:rgb(156,156,156);stroke-width:1"/>
+	<path
+		d="M341.772 175.949 C357.592 183.515 377.591 193.53 394.937 198.734 C421.422 206.68
+			445.231 196.835 451.899 234.177 C452.937 239.992 454.768 246.735 451.899 251.899
+			C442.107 269.524 421.168 228.938 411.392 224.051 C383.321 210.015 341.791
+			225.411 334.177 187.342 C326.563 149.272 341.772 175.949 341.772 175.949 z"
+		transform="translate(6.32911 1.26582)"
+		 style="fill:rgb(255,255,255);stroke:rgb(176,176,176);stroke-width:1"/>
+	<path
+		d="M335.443 258.228 C356.275 269.686 375.643 286.743 398.734 293.671 C415.335 298.651
+			434.817 300.452 451.899 301.266 C469.231 302.091 524.807 322.929 474.684 331.646
+			C456.488 334.81 440.988 313.37 422.785 315.19 C395.957 317.873 425.949
+			325.448 392.405 324.051 C374.596 323.309 367.803 291.799 346.835 284.81 C328.018
+			278.538 311.856 280.086 324.051 255.696 C336.245 231.307 335.443 258.228
+			335.443 258.228 z"
+		 style="fill:rgb(255,255,255);stroke:rgb(165,163,163);stroke-width:1"/>
+	<path
+		d="M346.835 383.544 C357.806 391.983 367.792 401.887 379.747 408.861 C402.681 422.239
+			539.241 446.431 539.241 472.152 C539.241 477.555 531.959 481.741 526.582 482.278
+			C513.973 483.539 485.523 455.035 470.886 451.899 C452.142 447.882 430.65
+			450.687 411.392 446.835 C385.566 441.67 387.681 427.781 367.089 416.456 C354.302
+			409.423 340.937 417.725 329.114 412.658 C303.208 401.556 300.404 377.519
+			329.114 373.418 C357.824 369.316 346.835 383.544 346.835 383.544 z"
+		 style="fill:rgb(255,255,255);stroke:rgb(183,183,183);stroke-width:1"/>
+	<path
+		d="M216.456 186.076 C203.589 196.369 204.955 197.349 191.139 206.329 C170.733 219.593
+			153.038 210.936 141.772 237.975 C140.141 241.889 144.573 249.547 148.101 251.899
+			C154.792 256.359 166.328 235.9 167.089 235.443 C175.843 230.191 221.639
+			201.495 229.114 200 C234.877 198.847 246.136 195.667 251.899 191.139 C272.356
+			175.066 249.244 178.481 240.506 178.481 C231.768 178.481 216.456 186.076 216.456
+			186.076 z"
+		 style="fill:rgb(255,255,255);stroke:rgb(180,180,180);stroke-width:1"/>
+	
+	<ellipse id="bomba1" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(600 500)"/>
+	<ellipse id="bomba2" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(650 500)"/>
+	<ellipse id="bomba3" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(700 500)"/>
+	<ellipse id="bomba4" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(575 530)"/>
+	<ellipse id="bomba5" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(625 530)"/>
+	<ellipse id="bomba6" onmousedown="grab(evt)" cx="25" cy="25" rx="25" ry="25"
+		 style="filter:url(#Clouds);fill:rgb(255,213,19);stroke-width:1"
+		transform="translate(675 530)"/>
+	
+	
+	<g transform="matrix(1 0 0 1 350 245) translate(-226.582 8.86076)">
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba1.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+	<g transform="matrix(1 0 0 1 350 245) translate(-248.101 130.38)">
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba2.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+	<g transform="matrix(1 0 0 1 350 245) translate(17.7215 135.443)">
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba3.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+	<g transform="matrix(1 0 0 1 350 245) translate(-143.038 -75.9494)">
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba4.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+	<g transform="matrix(1 0 0 1 350 245) translate(-98.7342 77.2152)">
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba5.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+	<g
+		transform="matrix(1 0 0 1 350 245) translate(-1.26582 -25.3165) translate(0 8.86076)"
+		>
+		<ellipse cx="505.5" cy="116" rx="4.5" ry="13"
+			transform="matrix(0.753084 0 0 1.25641 -330.941 -123.38)"
+			 style="fill:rgb(255,255,0);stroke:rgb(192,192,192);stroke-width:1">
+			<animateColor attributeName="fill" dur="1s" fill="freeze"
+			begin="bomba6.click" repeatCount="indefinite" from="rgb(255,255,0)" to="rgb(255,155,0)"/>
+		</ellipse>
+		<rect x="496" y="108" width="15" height="40"
+			transform="matrix(0.940741 0 0 1 -423.746 -74.1849)"
+			 style="fill:rgb(245,245,245);stroke:rgb(128,128,128);stroke-width:1"/>
+		<path
+			d="M486.295 211.983 L495.184 192.428 C496.163 190.274 501.706 190.199 499.185 187.316
+				C495.82 183.472 480.045 193.288 472.073 185.316 C466.223 179.466 471.73 165.71
+				477.851 162.65 C492.103 155.524 496.171 170.874 509.184 175.539 C516.472
+				178.151 531.681 156.219 539.629 158.205 C549.765 160.739 550.784 176.625 543.629
+				182.65 C533.298 191.349 521.489 181.774 514.518 184.872 L514.295 187.983
+				C513.538 198.564 524.751 190.963 529.851 196.428 C534.819 201.751 525.925
+				207.39 522.295 205.316 L514.74 197.316 C478.207 170.314 561.352 192.586 538.74
+				166.205 C531.583 157.856 516.706 183.535 507.851 182.65 C498.297 181.694
+				496.186 160.593 484.962 166.205 C459.313 179.03 503.64 179.503 504.406 181.205
+				C508.422 190.129 497.358 197.067 495.629 203.983 C493.184 213.761 499.973
+				214.205 491.184 217.316 C482.396 220.428 486.295 211.983 486.295 211.983 z"
+			transform="matrix(1 0 0 1 -458.202 -106.303) translate(16.6667 30.3333) translate(-17.3333 -34.6667) translate(1.66667 3) translate(-1 -5.33333)"
+			
+			 style="fill:url(#red-yellow-red);stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+
+	<g id="mikolaj" style="visibility:hidden" transform="translate(500 100)">
+		<path
+			d="M54.4304 96.2025 C50.5326 116.695 46.951 152.191 63.2911 169.62 C83.8445 191.544
+				129.021 176.214 137.975 150.633 C160.736 85.6003 90.558 33.9545 54.4304 96.2025
+				z"
+			 style="fill:rgb(255,255,241);stroke:rgb(0,0,0);stroke-width:2"/>
+		<ellipse cx="94.5" cy="149" rx="13.5" ry="5"
+			transform="matrix(1 0 0 1 -5.06329 0)"
+			 style="fill:rgb(255,0,0);stroke:rgb(192,192,192);stroke-width:1"/>
+		<path
+			d="M64.557 159.494 C113.638 128.26 89.6144 167.612 116.456 165.823 C135.048 164.583
+				109.643 116.288 56.962 153.165"
+			 style="fill:rgb(255,255,255);stroke:rgb(217,217,217);stroke-width:2"/>
+		<path
+			d="M49.3671 107.595 C48.4475 117.711 41.739 142.305 44.3038 165.823 C47.976 199.495
+				43.0707 157.126 50.6329 194.937 C51.4768 199.156 38.0041 214.866 39.2405 218.987
+				C49.0818 251.792 44.1359 214.515 59.4937 222.785 C85.1547 236.602 43.0004
+				240.944 82.2785 246.835 C116.034 251.899 85.654 240.928 107.595 234.177 C118.242
+				230.901 121.858 233.027 132.911 231.646 C145.332 230.093 124.862 210.443
+				125.316 200 C125.514 195.46 130.971 180.444 131.646 175.949 C133.841 161.31
+				152.75 138.412 144.304 121.519 C141.887 116.686 149.707 106.329 144.304
+				106.329 C138.9 106.329 136.184 113.97 134.177 118.987 C129.722 130.125 132.849
+				147.142 121.519 156.962 C107.86 168.8 65.5029 162.113 58.2278 146.835 C52.8726
+				135.589 60.6988 109.975 51.8987 107.595"
+			 style="fill:rgb(255,255,255);stroke:rgb(236,236,236);stroke-width:2"/>
+		<ellipse cx="78.5" cy="110.5" rx="5.5" ry="4.5"
+			 style="fill:rgb(64,64,0);stroke:rgb(192,192,192);stroke-width:1"/>
+		<ellipse cx="105.5" cy="112.5" rx="4.5" ry="3.5"
+			transform="matrix(1.14065 0 0 1.18083 -7.87651 -20.9763)"
+			 style="fill:rgb(64,64,0);stroke:rgb(192,192,192);stroke-width:1"/>
+		<ellipse cx="74.5" cy="86" rx="16.5" ry="4"
+			transform="matrix(1 0 0 1 0 17.7215)"
+			 style="fill:rgb(255,255,255);stroke:rgb(192,192,192);stroke-width:1"/>
+		<ellipse cx="74.5" cy="86" rx="16.5" ry="4"
+			transform="matrix(1 0 0 1 37.392 18.518)"
+			 style="fill:rgb(255,255,255);stroke:rgb(192,192,192);stroke-width:1"/>
+		<path d="M91.1392 115.19 C73.8789 136.765 90.9931 138.418 105.063 122.785"
+			 style="fill:none;stroke:rgb(0,0,0);stroke-width:1"/>
+	</g>
+
+	<g id="czapa" transform="translate(500 100)" style="visibility:hidden" onmousedown="grab(evt)">
+		<path id="c1"
+			d="M59.4937 81.0127 C65.5709 23.2786 96.012 9.2192 148.101 26.5823 C162.066 31.2374
+				162.412 25.0901 173.418 39.2405 C184.737 53.7937 181.657 73.6307 187.342 89.8734
+				C188.883 94.2757 198.145 109.676 189.873 115.19 C168.579 129.386 169.877
+				50.1273 126.582 40.5063 C121.977 39.483 115.158 33.9743 112.658 37.9747 C110.05
+				42.1474 117.722 46.4135 120.253 50.6329 C130.019 66.9093 127.848 58.3705
+				127.848 75.9494"
+			 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:2"/>
+		<path id="c2"
+			d="M54.4304 73.4177 C54.4303 81.4346 60.6926 83.6459 65.8228 86.0759 L141.772 86.0759
+				C172.837 65.3663 113.764 69.0586 102.532 69.6203 C80.9394 70.6999 55.0827
+				55.3126 54.4304 73.4177 z" transform="matrix(1 0 0 1 -7.59494 5.06329)"
+			 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+		<ellipse id="c3" cx="187" cy="126" rx="17" ry="16"
+			transform="matrix(1 0 0 1 0 -6.32911)"
+			 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2"/>
+	</g>
+
+	<text id="greetings" x="462px" y="55px"
+		transform="translate(-101.515 103.03) translate(65.1515 -19.697) translate(-12.1212 -21.2121) translate(6.06061 -15.1515)"
+		
+		 style="fill:rgb(255,0,0);font-size:36;font-family:Arial;filter:url(#Drop_Shadow_2);stroke:rgb(0,0,0);
+		stroke-width:1;visibility:hidden">WESOLYCH SWIAT!</text>
+
+
+</svg>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./płytoteka.css" type="text/css"?>
+<!DOCTYPE dokument SYSTEM "płytoteka.dtd">
+<dokument>
+    <nagłówek>
+        <uczelnia>Politechnika Łódzka</uczelnia>
+        <wydział>FTIMS</wydział>
+        <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
+        <rok_akademicki>2018/2019</rok_akademicki>
+        
+        <zadanie>
+            <numer_zadania>Zadanie 1</numer_zadania>
+            <temat_zadania>Użycie CSS do formatowania XML plus definicja DTD</temat_zadania>
+            <termin_oddania>29.03.2019</termin_oddania>
+        </zadanie>
+        
+        <autorzy>
+            <autor id_autora="A01" specjalność="SIBD">
+                <imię>Dariusz</imię>
+                <imię>Zbigniew</imię>
+                <nazwisko>Małagowski</nazwisko>
+                <indeks>203935</indeks>
+            </autor>
+            <autor id_autora="A02" specjalność="SIBD">
+                <imię>Michał</imię>
+                <nazwisko>Lisowski</nazwisko>
+                <indeks>210255</indeks>
+            </autor>
+        </autorzy>
+    </nagłówek>
+
+    <płyty_muzyczne>
+        <płyta id_płyty="P01" id_wykonawcy="W01">
+            <tytuł>Led Zeppelin I</tytuł>
+            <rok_wydania>1969</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P02" id_wykonawcy="W01">
+            <tytuł>Presence</tytuł>
+            <rok_wydania>1976</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P03" id_wykonawcy="W01">
+            <tytuł>Celebration Day</tytuł>
+            <rok_wydania>2012</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P04" id_wykonawcy="W02">
+            <tytuł>Sabbath Bloody Sabbath</tytuł>
+            <rok_wydania>1973</rok_wydania>
+            <gatunek>Heavy metal</gatunek>
+        </płyta>
+        <płyta id_płyty="P05" id_wykonawcy="W02">
+            <tytuł>Born Again</tytuł>
+            <rok_wydania>1983</rok_wydania>
+            <gatunek>Heavy metal</gatunek>
+        </płyta>
+        <płyta id_płyty="P06" id_wykonawcy="W02">
+            <tytuł>Sabotage</tytuł>
+            <rok_wydania>1975</rok_wydania>
+            <gatunek>Heavy metal</gatunek>
+        </płyta>
+        <płyta id_płyty="P07" id_wykonawcy="W03">
+            <tytuł>Agharta</tytuł>
+            <rok_wydania>1975</rok_wydania>
+            <gatunek>Jazz, Psychedelic</gatunek>
+        </płyta>
+        <płyta id_płyty="P08" id_wykonawcy="W03">
+            <tytuł>In a Silent Way</tytuł>
+            <rok_wydania>1969</rok_wydania>
+            <gatunek>Jazz</gatunek>
+        </płyta>
+        <płyta id_płyty="P09" id_wykonawcy="W03">
+            <tytuł>Miles Smiles</tytuł>
+            <rok_wydania>1966</rok_wydania>
+            <gatunek>Jazz</gatunek>
+        </płyta>
+        <płyta id_płyty="P10" id_wykonawcy="W04">
+            <tytuł>Django's Guitar</tytuł>
+            <rok_wydania>1955</rok_wydania>
+            <gatunek>Gypsy jazz</gatunek>
+        </płyta>
+        <płyta id_płyty="P11" id_wykonawcy="W04">
+            <tytuł>Django Reinhardt and His Rhythm</tytuł>
+            <rok_wydania>1959</rok_wydania>
+            <gatunek>Gypsy jazz</gatunek>
+        </płyta>
+        <płyta id_płyty="P12" id_wykonawcy="W05">
+            <tytuł>Krzysztof Klenczon i Trzy Korony</tytuł>
+            <rok_wydania>1972</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P13" id_wykonawcy="W06">
+            <tytuł>Kick Out the Jams</tytuł>
+            <rok_wydania>1969</rok_wydania>
+            <gatunek>Proto punk, Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P14" id_wykonawcy="W06">
+            <tytuł>Back in the USA</tytuł>
+            <rok_wydania>1970</rok_wydania>
+            <gatunek>Proto punk, Rock&amp;Roll</gatunek>
+        </płyta>
+        <płyta id_płyty="P15" id_wykonawcy="W06">
+            <tytuł>High Time</tytuł>
+            <rok_wydania>1971</rok_wydania>
+            <gatunek>Proto punk, Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P16" id_wykonawcy="W07">
+            <tytuł>Live at Radio Żak</tytuł>
+            <rok_wydania>2017</rok_wydania>
+            <gatunek>Stoner rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P17" id_wykonawcy="W07">
+            <tytuł>π</tytuł>
+            <rok_wydania>2016</rok_wydania>
+            <gatunek>Stoner rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P18" id_wykonawcy="W08">
+            <tytuł>Dziękuję 1</tytuł>
+            <rok_wydania>2014</rok_wydania>
+            <gatunek>Improvised psychedelic</gatunek>
+        </płyta>
+        <płyta id_płyty="P19" id_wykonawcy="W01">
+            <tytuł>Led Zeppelin II</tytuł>
+            <rok_wydania>1969</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P20" id_wykonawcy="W01">
+            <tytuł>Led Zeppelin IV</tytuł>
+            <rok_wydania>1971</rok_wydania>
+            <gatunek>Hard rock</gatunek>
+        </płyta>
+        <płyta id_płyty="P21" id_wykonawcy="W02">
+            <tytuł>Black Sabbath</tytuł>
+            <rok_wydania>1970</rok_wydania>
+            <gatunek>Heavy metal</gatunek>
+        </płyta>
+        <płyta id_płyty="P22" id_wykonawcy="W02">
+            <tytuł>Master of Reality</tytuł>
+            <rok_wydania>1971</rok_wydania>
+            <gatunek>Heavy metal</gatunek>
+        </płyta>
+        <płyta id_płyty="P23" id_wykonawcy="W03">
+            <tytuł>Big Fun</tytuł>
+            <rok_wydania>1974</rok_wydania>
+            <gatunek>Jazz</gatunek>
+        </płyta>
+    </płyty_muzyczne>
+    
+    <wykonawcy>
+        <wykonawca id_wykonawcy="W01">Led Zeppelin</wykonawca>
+        <wykonawca id_wykonawcy="W02">Black Sabbath</wykonawca>
+        <wykonawca id_wykonawcy="W03">Miles Davis</wykonawca>
+        <wykonawca id_wykonawcy="W04">Django Reinhardt</wykonawca>
+        <wykonawca id_wykonawcy="W05">Trzy Korony</wykonawca>
+        <wykonawca id_wykonawcy="W06">MC5</wykonawca>
+        <wykonawca id_wykonawcy="W07">Pi</wykonawca>
+        <wykonawca id_wykonawcy="W08">Fatlak</wykonawca>
+    </wykonawcy>
+</dokument>

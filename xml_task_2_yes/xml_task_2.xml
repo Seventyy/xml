@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<steam>
+	<developers>
+		<developer developer_id="D1">
+			<name>Ninja Kiwi</name>            
+			<origin>New Zealand</origin>        
+			<founding_year>2006</founding_year>
+			<employee_count>70</employee_count>
+			<independent>false</independent>  
+			<phone>+72 123 456 789</phone>           
+		</developer>
+		<developer developer_id="D2">
+			<name>CD Project</name>            
+			<origin>Poland</origin>        
+			<founding_year>1994</founding_year>
+			<employee_count>1111</employee_count>
+			<independent>false</independent>  
+			<phone>+48 273 829 178</phone>           
+		</developer>
+		<developer developer_id="D3">
+			<name>Supergiant Games</name>            
+			<origin>USA</origin>        
+			<founding_year>2009</founding_year>
+			<employee_count>20</employee_count>
+			<independent>false</independent>  
+			<phone>+12 235 627 128</phone>           
+		</developer>
+		<developer developer_id="D4">
+			<name>Valve</name>            
+			<origin>USA</origin>        
+			<founding_year>1996</founding_year>
+			<employee_count>360</employee_count>
+			<independent>false</independent>  
+			<phone>+12 321 454 645</phone>           
+		</developer>
+	</developers>
+	<games>
+		<game game_id="G1" developer_id="D1">
+			<title>Bloons TD 6</title>                                 
+			<release_date>18.12.2018</release_date>                      
+			<size unit="GB">2.6</size>
+			<price currency="PLN">34.99</price>                        
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>     
+			<review_count>9347</review_count>                          
+			<genre>Tower Defence</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+		<game game_id="G2" developer_id="D1">
+			<title>Bloons TD Battles 2</title>                                 
+			<release_date>09.11.2020</release_date>                      
+			<size unit="GB">5.2</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Mostly Positive</steam_reviews>     
+			<review_count>12213</review_count>                          
+			<genre>Tower Defence</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+		<game game_id="G3" developer_id="D1">
+			<title>Bloons Monkey City</title>                                 
+			<release_date>04.12.2014</release_date>                      
+			<size unit="GB">1.3</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>1623</review_count>                          
+			<genre>Tower Defence</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+		<game game_id="G4" developer_id="D1">
+			<title>SAS: Zombie Assault 4</title>                                 
+			<release_date>16.08.2017</release_date>                      
+			<size unit="GB">2.8</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>3623</review_count>                          
+			<genre>Twin-Stick Shooter</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+		<game game_id="G5" developer_id="D1">
+			<title>Bloons Adventure Time TD</title>                                 
+			<release_date>16.07.2019</release_date>                      
+			<size unit="GB">3.9</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>1665</review_count>                          
+			<genre>Tower Defence</genre>                               
+			<licence type="proprietary"/>                              
+		</game>		
+        <game game_id="G6" developer_id="D2">
+			<title>The Witcher 3: Wild Hunt</title>                                 
+			<release_date>18.05.2015</release_date>                      
+			<size unit="GB">58.9</size>                                 
+			<price currency="PLN">99.99</price>                        
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>     
+			<review_count>181234</review_count>                          
+			<genre>RPG</genre>                               
+			<licence type="proprietary"/>                              
+		</game>	
+        <game game_id="G7" developer_id="D2">
+			<title>Cyberpunk 2077</title>                                 
+			<release_date>10.12.2020</release_date>                      
+			<size unit="GB">78.6</size>                                 
+			<price currency="PLN">199.99</price>                        
+			<steam_reviews>Mostly Positive</steam_reviews>     
+			<review_count>230421</review_count>                          
+			<genre>RPG</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+        <game game_id="G8" developer_id="D2">
+			<title>Thronebreaker: The Witcher Tales</title>                                 
+			<release_date>09.11.2018</release_date>                      
+			<size unit="GB">12.3</size>                                 
+			<price currency="PLN">79.99</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>3235</review_count>                          
+			<genre>RPG</genre>                               
+			<licence type="proprietary"/>                              
+		</game>
+        <game game_id="G9" developer_id="D2">
+			<title>GWENT: The Witcher Card Game</title>                                 
+			<release_date>19.05.2020</release_date>                      
+			<size unit="GB">9.8</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>13235</review_count>                          
+			<genre>Card Game</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G10" developer_id="D2">
+			<title>The Witcher 2: Assassins of Kings</title>                                 
+			<release_date>17.05.2011</release_date>                      
+			<size unit="GB">9.6</size>                                 
+			<price currency="PLN">39.99</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>23432</review_count>                          
+			<genre>RPG</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G11" developer_id="D2">
+			<title>The Witcher</title>                                 
+			<release_date>16.09.2008</release_date>                      
+			<size unit="GB">4.2</size>                                 
+			<price currency="PLN">29.99</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>19203</review_count>                          
+			<genre>RPG</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G12" developer_id="D3">
+			<title>Bastion</title>                                 
+			<release_date>16.08.2011</release_date>                      
+			<size unit="GB">6.3</size>                                 
+			<price currency="PLN">53.99</price>                        
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>     
+			<review_count>22803</review_count>                          
+			<genre>Action</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G13" developer_id="D3">
+			<title>Transistor</title>                                 
+			<release_date>20.05.2014</release_date>                      
+			<size unit="GB">7.4</size>                                 
+			<price currency="PLN">71.99</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>16802</review_count>                          
+			<genre>Action</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G14" developer_id="D3">
+			<title>Pyre</title>                                 
+			<release_date>25.06.2017</release_date>                      
+			<size unit="GB">12.3</size>                                 
+			<price currency="PLN">71.99</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>5199</review_count>                          
+			<genre>Action</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G15" developer_id="D3">
+			<title>Hades</title>                                 
+			<release_date>17.09.2020</release_date>                      
+			<size unit="GB">15.7</size>                                 
+			<price currency="PLN">89.99</price>                        
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>     
+			<review_count>7893</review_count>                          
+			<genre>Roguelike</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G16" developer_id="D4">
+			<title>Portal 2</title>                                 
+			<release_date>19.04.2011</release_date>                      
+			<size unit="GB">7.2</size>                                 
+			<price currency="PLN">45.99</price>                        
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>     
+			<review_count>145955</review_count>                          
+			<genre>Puzzle</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G17" developer_id="D4">
+			<title>Counter-Strike: Global Offensive</title>                                 
+			<release_date>21.08.2012</release_date>                      
+			<size unit="GB">8.3</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>1887856</review_count>                          
+			<genre>Shooter</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G18" developer_id="D4">
+			<title>Artifact</title>                                 
+			<release_date>28.11.2018</release_date>                      
+			<size unit="GB">12.6</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Mixed</steam_reviews>     
+			<review_count>24890</review_count>                          
+			<genre>Card Game</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G19" developer_id="D4">
+			<title>Dota 2</title>                                 
+			<release_date>09.07.2013</release_date>                      
+			<size unit="GB">9.8</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Mostly Positive</steam_reviews>     
+			<review_count>1850575</review_count>                          
+			<genre>Strategy</genre>                               
+			<licence type="proprietary"/>
+		</game>
+        <game game_id="G20" developer_id="D4">
+			<title>Team Fortress 2</title>                                 
+			<release_date>10.10.2007</release_date>                      
+			<size unit="GB">11.4</size>                                 
+			<price currency="PLN">0.0</price>                        
+			<steam_reviews>Very Positive</steam_reviews>     
+			<review_count>903310</review_count>                          
+			<genre>Shooter</genre>                               
+			<licence type="proprietary"/>
+		</game>
+	</games>
+</steam>
+

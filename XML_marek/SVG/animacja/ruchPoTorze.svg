@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="710" height="210" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="0" font-family="Verdana" font-size="45" > 
+	Ruchomy tekst
+	<animateMotion path="M 40 10 L 40 100 L 40 10" dur="5s" repeatCount="indefinite"/>
+  </text>
+</svg>
+

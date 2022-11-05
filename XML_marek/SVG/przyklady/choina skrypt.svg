@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="750" height="750" x="0" y="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<script type="text/javascript"><![CDATA[
+
+      var obj,x,y,attr1,attr2,wert1,wert2,aktiv=false;
+
+      function MoveObj(evt)
+      {
+        if(aktiv)
+        {
+          x=evt.clientX()
+          y=evt.clientY()
+
+          if(obj.tagName=="circle")
+          {
+            attr1="cx";
+            attr2="cy";
+            wert1=x;
+            wert2=y;
+          }
+          obj.setAttribute(attr1,wert1);
+          obj.setAttribute(attr2,wert2);
+        }
+      }
+		
+      function ClickObj(evt)
+      {
+        obj=evt.target;
+        aktiv=true;
+      }
+	
+      function OutOfObj(evt)
+      {
+        aktiv=false;		
+      }
+
+      ]]></script>
+	</defs>
+	<rect id="pink" x="280" y="430" width="50" height="50" fill="rgb(170,0,0)" fill-opacity="0">
+		<animate id="fadein" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="indefinite" dur="4s" fill="freeze"/>
+	</rect>
+	
+	<rect x="301" y="430" width="7" height="50"  fill="rgb(255,255,0)" fill-opacity="0">
+	 	<animate id="fadein2" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="fadein.begin" dur="4s" fill="freeze"/>
+	</rect>
+	
+	<rect x="280" y="453" width="50" height="7"  fill="rgb(255,255,0)" fill-opacity="0">
+	 	<animate id="fadein3" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="fadein.begin" dur="4s" fill="freeze"/>
+	</rect>
+	
+	<rect id="blue" x="160" y="420" width="50" height="50" fill="rgb(0,0,170)" fill-opacity="0">
+		<animate id="fadein4" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="fadein.begin" dur="4s" fill="freeze"/>
+	</rect>
+	
+	<rect x="183" y="420" width="7" height="50"  fill="rgb(255,255,0)" fill-opacity="0">
+	 	<animate id="fadein5" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="fadein.begin" dur="4s" fill="freeze"/>
+	</rect>
+	
+	<rect x="160" y="442" width="50" height="7"  fill="rgb(255,255,0)" fill-opacity="0">
+	 	<animate id="fadein6" attributeName="fill-opacity" attributeType="auto" from="0" to="1" begin="fadein.begin" dur="4s" fill="freeze"/>
+	</rect>
+
+	<a xlink:href="#fadein">
+		<polyline id="b1" points="240,370 230,470 270,470 260,370" style="fill:rgb(165,42,42);stroke:rgb(0,0,0);stroke-width:2"/> <!-- pinek-->
+	</a>
+	
+	<path d="M302.273 395.545 C299.242 454.636 531.061 297.061 440.152 347.061 C349.242 397.061
+			221.061 232.879 263.424 276.394 C305.788 319.909 482.576 174.333 391.667 237.97
+			C300.758 301.606 235.606 131.909 262.879 180.394 C290.152 228.879 361.364
+			80.3939 325 130.394 C288.636 180.394 214.394 62.2121 214.394 62.2121 C214.394
+			62.2121 196.212 151.606 137.121 144.03 C78.0303 136.455 184.091 192.515 206.818
+			172.818 C229.545 153.121 152.273 265.242 102.273 231.909 C52.2727 198.576
+			181.061 325.848 229.545 272.818 C278.03 219.788 126.515 412.212 76.5152 348.576
+			C26.5152 284.939 112.879 463.727 209.848 401.606 C306.818 339.485 288.636
+			403.121 300.758 395.545" style="fill:rgb(0,128,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<polygon points="220,54 240.785,90 199.215,90" transform="matrix(1.25093 0 0 -1 -55.2036 144)" style="fill:rgb(255,255,0);stroke:none;stroke-width:1" />
+
+	<polygon points="219,38 241.517,77 196.483,77" transform="matrix(-1.11029 0 0 1 462.153 0)" style="fill:rgb(255,255,0);stroke:none;stroke-width:1" />
+	
+	<circle style="fill:pink;stroke:none;stroke-width:1" r="14" cx="145" cy="245" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle style="fill:rgb(0,0,139);stroke:none;stroke-width:1" r="14" cx="145" cy="365" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="340" cy="270" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(0,0,139);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="250" cy="300" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(170,0,0);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="230" cy="190" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(170,0,0);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="150" cy="160" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(0,0,139);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="365" cy="360" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(255,165,0);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<circle cx="300" cy="155" r="14" onmousedown="ClickObj(evt)" onclick="ClickObj(evt)" onmousemove="MoveObj(evt)" onmouseup="OutOfObj(evt)" onmouseout="OutOfObj(evt)" style="fill:rgb(255,165,0);stroke:none;stroke-width:1">
+		<set attributeName="a1" begin="mousedown"/>
+		<set attributeName="a2" begin="mouseup"/>
+		<set attributeName="a3" begin="mouseout"/>
+	</circle>
+	<path id="uuu" d="M9.09091 951.212 L681.818 948.182"
+		 style="fill:rgb(83,3,3);stroke-width:25"/>
+	
+	<!--mikolaj tu jest -->
+	<g id="object" transform="translate(-6.38298 0) translate(-304 266) scale(0.876611 0.768037) translate(304 -266) translate(109.221 -357.363)">
+	<rect x="570" y="360" width="90" height="46" rx="4.5" ry="2.3"
+		transform="translate(-0.4 -3.6) translate(540.481 430.274) scale(1.83531 1.61793) translate(-540.481 -430.274) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke:rgb(0,0,0);stroke-width:1"/>
+	
+	<line x1="587" y1="294" x2="587" y2="299"
+		 style="fill:rgb(255,255,255);stroke-width:5"/>
+	<ellipse cx="597" cy="309" rx="10" ry="11"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(251,249,249);stroke:rgb(0,0,0);stroke-width:1"/>
+	<polygon points="595.281,273.495 588.081,302.695 605.281,302.695"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<ellipse cx="592" cy="307" rx="1" ry="1"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(0,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<ellipse cx="600" cy="307" rx="1" ry="1"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(0,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M590.881 312.695"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(0,0,0);stroke-width:1"/>
+	
+	<path d="M592.281 313.295 C593.881 315.295 598.281 315.295 600.281 313.295"
+		transform="translate(-0.4 1.2) translate(540.481 425.474) scale(1.83531 1.61793) translate(-540.481 -425.474) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke-width:1"/>
+	<path d="M540.081 323.095 C540.081 323.095 549.381 332.695 552.481 335.895"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke-width:1"/>
+	<path d="M481.681 317.895 C506.671 334.556 522.752 342.582 551.281 348.695"
+		 style="fill:rgb(255,255,255);stroke-width:1"/>
+	
+	<path d="M591.681 313.095 C593.681 315.095 596.481 316.295 599.681 314.295"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke-width:1"/>
+	<path d="M591.081 312.895 C593.481 314.495 598.681 315.695 601.481 313.695"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke-width:1;stroke:rgb(0,0,0)"/>
+	<ellipse cx="595.5" cy="271" rx="3.5" ry="4"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+	<ellipse cx="599.5" cy="346.5" rx="17.5" ry="24.5"
+		transform="translate(-2.8 -2.4) translate(542.881 429.074) scale(1.83531 1.61793) translate(-542.881 -429.074) translate(-0.181622 0) translate(599.5 322) scale(1 1.30694) translate(-599.5 -322) translate(-444.61 -84.1797) translate(8.25554 -126.112)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M583.899 327.294" style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M583.417 328.118 C583.417 340.179 585.186 353.111 589.703 364.404"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(0.363244 1.03013) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M586.274 323.832 C588.085 338.319 588.225 352.139 593.703 365.832"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(0.363244 1.44218) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M604.274 322.404 C604.274 334.429 607.714 352.667 602.274 363.546"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M608.846 327.546 C608.846 339.124 613.594 355.287 605.131 364.689"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(0 2.06025) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,0,0);stroke:rgb(0,0,0);stroke-width:1"/>
+	<line x1="543" y1="424" x2="667" y2="424"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke-width:5;stroke:rgb(83,3,3)"/>
+		 
+		 <line x1="555" y1="412" x2="679" y2="412"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+				 style="fill:rgb(255,255,255);stroke-width:5;stroke:rgb(83,3,3)"/>
+
+	<path d="M665.481 424.007 C672.148 420.896 677.481 416.007 673.037 409.341"
+		transform="translate(-2.66667 2.22222) translate(0.444444 0.444444) translate(542.303 424.007) scale(1.83531 1.61793) translate(-542.303 -424.007) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke-width:5"/>
+	<line x1="580" y1="410" x2="580" y2="422"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(83,3,3);stroke-width:5"/>
+	<line x1="631" y1="409" x2="631" y2="424"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(83,3,3);stroke-width:5"/>
+	<polyline
+		points="657.925,355.118 646.37,366.229 647.259,408.896 659.703,401.341"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke:rgb(0,0,0);stroke-width:1"/>
+	<polyline points="569.703,356.229 558.148,366.007 569.259,365.563"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(558.148 356.229) scale(0.968565 0.978929) translate(-558.148 -356.229) translate(558.148 356.229) scale(1.12982 0.978476) translate(-558.148 -356.229) translate(569.703 356.229) scale(0.956912 1.044) translate(-569.703 -356.229) translate(-424.59 -110.017) translate(7.88381 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M665.481 424.007 C672.148 420.896 677.481 416.007 673.037 409.341"
+		transform="matrix(1 0 0 1 -154.222 -44.3333) translate(164.889 35.5556) translate(529.414 435.452) scale(1.83531 1.61793) translate(-529.414 -435.452) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke-width:5"/>
+	<polyline points="630.833,247.778" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+	<polyline
+		points="631.167,248.111 631.833,251.444 641.833,280.778 655.833,248.111"
+		transform="translate(631.167 280.778) scale(1.13514 1.06122) translate(-631.167 -280.778) translate(655.833 280.778) scale(1.11905 1.07692) translate(-655.833 -280.778) translate(0.524823 2.04167) translate(0 1.16667) translate(0.262411 0) translate(655.833 280.778) scale(0.968085 1.00893) translate(-655.833 -280.778) translate(-663.56 -154.372) translate(12.321 -231.268)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+	<line x1="642" y1="236" x2="642" y2="239"
+		transform="translate(-816 -178) translate(15.1515 -266.667)"
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+	<path d="M17 607 C23 607 505 611 505 611"
+		 style="fill:rgb(83,3,3);stroke-width:5"/>
+	<rect x="558" y="369" width="90" height="46" rx="4.5" ry="2.3"
+		transform="translate(-0.4 -3.6) translate(540.481 430.274) scale(1.83531 1.61793) translate(-540.481 -430.274) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(83,3,3);stroke:rgb(0,0,0);stroke-width:1"/>
+	<ellipse cx="604.5" cy="367.5" rx="4.5" ry="3.5"
+		transform="translate(-1.14286 -1.42857) translate(541.224 428.102) scale(1.83531 1.61793) translate(-541.224 -428.102) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+	<ellipse cx="592" cy="367.5" rx="5" ry="3.5"
+		transform="translate(540.081 426.674) scale(1.83531 1.61793) translate(-540.081 -426.674) translate(-444.61 -110.017) translate(8.25554 -164.82)"
+		
+		 style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>		
+	<!-- koniec mikolaja -->
+		<!-- animacja-->
+		<animateMotion dur="4s" fill="freeze" rotate="auto"   begin="b1.click">
+			<mpath xlink:href="#uuu"/>
+		</animateMotion>
+	</g>
+</svg>

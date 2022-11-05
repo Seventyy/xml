@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <steam>
-    <developers>
-        <developer developer_id="D1">
-            <name>Ninja Kiwi</name>                                     <!--non 0 length string-->
-            <origin>New Zeland</origin>                                 <!--non 0 length string-->
-            <founding_year>2006</founding_year>                         <!--iniger in range <1900, 2100>-->
-            <employee_count>70</employee_count>                         <!--8bit intiger -->
-            <self_publishing>true</self_publishing>                     <!--bool-->
-            <phone>123456789</phone>                                    <!--'+', then 2 digits, 3 digits, 3 digits, 3 digits-->
-        </developer>
-    </developers>
-    <games>
-        <game game_id="G1" developer_id="D1">
-            <title>Bloons TD 6</title>                                  <!--non 0 length string-->
-            <relese_date>18.12.2018</relese_date>                       <!--date-->
-            <size unit="GB">2.6</size>                                  <!--float-->
-            <price currency="PLN">34.99</price>                         <!--flaot-->
-            <steam_reviews>Overwhelmingly Positive</steam_reviews>      <!--enum-->
-            <review_count>1234</review_count>                           <!--int-->
-            <genre>Tower Defence</genre>                                <!--srting-->
-            <licence type="proprietaty"/>                               <!--enum-->
-        </game>
-    </games>
+	<developers>
+		<developer developer_id="D1">
+			<name>Ninja Kiwi</name>                                     <!--non 0 length string-->
+			<origin>New Zeland</origin>                                 <!--non 0 length string-->
+			<founding_year>2006</founding_year>                         <!--iniger in range <1900, 2100>-->
+			<employee_count>70</employee_count>                         <!--8bit intiger -->
+			<publisher_id>true</publisher_id>                           <!--bool-->
+			<phone>123456789</phone>                                    <!--'+', then 2 digits, 3 digits, 3 digits, 3 digits-->
+		</developer>
+	</developers>
+	<games>
+		<game game_id="G1" developer_id="D1">
+			<title>Bloons TD 6</title>                                  <!--non 0 length string-->
+			<relese_date>18.12.2018</relese_date>                       <!--date-->
+			<size unit="GB">2.6</size>                                  <!--float-->
+			<price currency="PLN">34.99</price>                         <!--flaot-->
+			<steam_reviews>Overwhelmingly Positive</steam_reviews>      <!--enum-->
+			<review_count>1234</review_count>                           <!--int-->
+			<genre>Tower Defence</genre>                                <!--srting-->
+			<licence type="proprietaty"/>                               <!--enum-->
+		</game>
+	</games>
 </steam>

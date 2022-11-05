@@ -1,0 +1,6 @@
+waluty
+idref (usuń bo są key)
+imię i nazwisko
+gatunki muzyczne
+
+usunięcie typów ID, weryfikacja kluczy, dodanie waluty do ceny, wzorce na imię i nazwisko

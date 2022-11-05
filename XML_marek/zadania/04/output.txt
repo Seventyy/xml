@@ -1,0 +1,296 @@
+
+	
+Dokument TXT
+
+Politechnika Łódzka
+Wydział FTIMS
+Przedmiot: Programowanie komunikacji człowiek-komputer
+Rok akademicki: 2018/2019
+Zadanie:
+  Numer: 4
+  Temat: Transformacje z użyciem XSLT, cz.2 (TXT, PDF, SVG)
+  Termin oddania: 2019-05-31
+Autorzy:
+
+  Dariusz Zbigniew Małagowski
+  Indeks: 203935
+  Specjalność: SIBD
+
+  Michał Lisowski
+  Indeks: 210255
+  Specjalność: SIBD
+
+
+	
+Płytoteka:
+
+  Tytuł: Live at Radio Żak
+  Wykonawca: Pi
+  Rok wydania: 2017
+  Gatunek:
+    Stoner rock
+    Noise
+  Cena: 9.90 PLN
+  Cena w PLN: 9.90
+  Ocena: 10
+
+  Tytuł: π
+  Wykonawca: Pi
+  Rok wydania: 2016
+  Gatunek:
+    Stoner rock
+    Psychedelic
+  Cena: 14.90 PLN
+  Cena w PLN: 14.90
+  Ocena: 10
+
+  Tytuł: Dziękuję 1
+  Wykonawca: Fatlak
+  Rok wydania: 2014
+  Gatunek:
+    Improvised
+    Psychedelic
+    Noise
+    Space rock
+    Acid rock
+  Cena: 0.50 PLN
+  Cena w PLN: 0.50
+  Ocena: 10
+
+  Tytuł: Celebration Day
+  Wykonawca: Led Zeppelin
+  Rok wydania: 2012
+  Gatunek:
+    Hard rock
+  Cena: 69.99 PLN
+  Cena w PLN: 69.99
+  Ocena: 9
+
+  Tytuł: Born Again
+  Wykonawca: Black Sabbath
+  Rok wydania: 1983
+  Gatunek:
+    Heavy metal
+  Cena: 25.60 USD
+  Cena w PLN: 98.56
+  Ocena: 9
+
+  Tytuł: Presence
+  Wykonawca: Led Zeppelin
+  Rok wydania: 1976
+  Gatunek:
+    Hard rock
+  Cena: 39.90 PLN
+  Cena w PLN: 39.90
+  Ocena: 8
+
+  Tytuł: Sabotage
+  Wykonawca: Black Sabbath
+  Rok wydania: 1975
+  Gatunek:
+    Heavy metal
+  Cena: 20.01 USD
+  Cena w PLN: 77.04
+  Ocena: 7
+
+  Tytuł: Agharta
+  Wykonawca: Miles Davis
+  Rok wydania: 1975
+  Gatunek:
+    Jazz
+    Psychedelic
+  Cena: 60.20 PLN
+  Cena w PLN: 60.20
+  Ocena: 10
+
+  Tytuł: Big Fun
+  Wykonawca: Miles Davis
+  Rok wydania: 1974
+  Gatunek:
+    Jazz
+  Cena: 40.80 PLN
+  Cena w PLN: 40.80
+  Ocena: 8
+
+  Tytuł: Sabbath Bloody Sabbath
+  Wykonawca: Black Sabbath
+  Rok wydania: 1973
+  Gatunek:
+    Heavy metal
+  Cena: 45.00 GBP
+  Cena w PLN: 223.65
+  Ocena: 8
+
+  Tytuł: Krzysztof Klenczon i Trzy Korony
+  Wykonawca: Trzy Korony
+  Rok wydania: 1972
+  Gatunek:
+    Hard rock
+    Bigbeat
+  Cena: 20.50 PLN
+  Cena w PLN: 20.50
+  Ocena: 8
+
+  Tytuł: High Time
+  Wykonawca: MC5
+  Rok wydania: 1971
+  Gatunek:
+    Proto punk
+    Hard rock
+  Cena: 14.80 JPY
+  Cena w PLN: 50.91
+  Ocena: 6
+
+  Tytuł: Led Zeppelin IV
+  Wykonawca: Led Zeppelin
+  Rok wydania: 1971
+  Gatunek:
+    Hard rock
+  Cena: 49.90 GBP
+  Cena w PLN: 248.00
+  Ocena: 9
+
+  Tytuł: Master of Reality
+  Wykonawca: Black Sabbath
+  Rok wydania: 1971
+  Gatunek:
+    Heavy metal
+  Cena: 12.20 CHF
+  Cena w PLN: 45.99
+  Ocena: 7
+
+  Tytuł: Back in the USA
+  Wykonawca: MC5
+  Rok wydania: 1970
+  Gatunek:
+    Proto punk
+    Rock&Roll
+  Cena: 28.90 USD
+  Cena w PLN: 111.26
+  Ocena: 7
+
+  Tytuł: Black Sabbath
+  Wykonawca: Black Sabbath
+  Rok wydania: 1970
+  Gatunek:
+    Heavy metal
+  Cena: 14.80 EUR
+  Cena w PLN: 63.49
+  Ocena: 9
+
+  Tytuł: Led Zeppelin I
+  Wykonawca: Led Zeppelin
+  Rok wydania: 1969
+  Gatunek:
+    Hard rock
+  Cena: 29.90 GBP
+  Cena w PLN: 148.60
+  Ocena: 6
+
+  Tytuł: In a Silent Way
+  Wykonawca: Miles Davis
+  Rok wydania: 1969
+  Gatunek:
+    Jazz
+  Cena: 15.90 EUR
+  Cena w PLN: 68.21
+  Ocena: 8
+
+  Tytuł: Kick Out the Jams
+  Wykonawca: MC5
+  Rok wydania: 1969
+  Gatunek:
+    Proto punk
+    Hard rock
+  Cena: 28.90 AUD
+  Cena w PLN: 78.03
+  Ocena: 10
+
+  Tytuł: Led Zeppelin II
+  Wykonawca: Led Zeppelin
+  Rok wydania: 1969
+  Gatunek:
+    Hard rock
+  Cena: 20.00 GBP
+  Cena w PLN: 99.40
+  Ocena: 8
+
+  Tytuł: Miles Smiles
+  Wykonawca: Miles Davis
+  Rok wydania: 1966
+  Gatunek:
+    Jazz
+  Cena: 16.00 EUR
+  Cena w PLN: 68.64
+  Ocena: 7
+
+  Tytuł: Django Reinhardt and His Rhythm
+  Wykonawca: Trzy Korony
+  Rok wydania: 1959
+  Gatunek:
+    Gypsy jazz
+    Jazz
+  Cena: 24.90 AUD
+  Cena w PLN: 67.23
+  Ocena: 9
+
+  Tytuł: Django's Guitar
+  Wykonawca: Django Reinhardt
+  Rok wydania: 1955
+  Gatunek:
+    Gypsy jazz
+    Jazz
+  Cena: 20.00 GBP
+  Cena w PLN: 99.40
+  Ocena: 10
+
+
+	
+Wykonawcy:
+
+  Nazwa: Black Sabbath
+  Rok powstania: 1968
+  Lider/-rzy:
+    Tony Iommi
+
+  Nazwa: Django Reinhardt
+  Rok urodzenia: 1910
+
+  Nazwa: Fatlak
+  Rok powstania: 2014
+  Lider/-rzy:
+    Martyn Gill
+    Dariusz Małagowski
+
+  Nazwa: Led Zeppelin
+  Rok powstania: 1968
+  Lider/-rzy:
+    Jimmy Page
+
+  Nazwa: MC5
+  Rok powstania: 1964
+  Lider/-rzy:
+    Wayne Kramer
+
+  Nazwa: Miles Davis
+  Rok urodzenia: 1926
+
+  Nazwa: Pi
+  Rok powstania: 2013
+  Lider/-rzy:
+    Szymon Włodkowski
+
+  Nazwa: Trzy Korony
+  Rok powstania: 1970
+  Lider/-rzy:
+    Krzysztof Klenczon
+
+
+	
+Podsumowanie:
+  Data raportu: 02-05-2019
+  Liczba płyt: 23
+  Wartość płyt w PLN: 1805.10
+  Średnia ocen: 8.39
+  Liczba wykonawców: 8
+

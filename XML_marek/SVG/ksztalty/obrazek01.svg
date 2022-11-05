@@ -1,0 +1,7 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+    
+<svg>
+  <line stroke="blue" y1="26px" x1="30px" x2="188px" y2="157px"/>
+  <circle stroke="black" fill="red" cy="46px" cx="101px" r="26px"/>
+</svg>

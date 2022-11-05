@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pm="http://płyta.example.com" targetNamespace="http://płyta.example.com">
+	<xs:element name="płyty_muzyczne">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="pm:płyta" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="typPłyta">
+		<xs:sequence>
+			<xs:element ref="pm:tytuł"/>
+			<xs:element ref="pm:rok_wydania"/>
+			<xs:element ref="pm:gatunek" maxOccurs="unbounded"/>
+			<xs:element ref="pm:cena"/>
+			<xs:element ref="pm:okładka"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="pm:atrybutyPłyty"/>
+	</xs:complexType>
+	<xs:simpleType name="typGatunek">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Hard rock"/>
+			<xs:enumeration value="Heavy metal"/>
+			<xs:enumeration value="Jazz"/>
+			<xs:enumeration value="Psychedelic"/>
+			<xs:enumeration value="Gypsy jazz"/>
+			<xs:enumeration value="Bigbeat"/>
+			<xs:enumeration value="Proto punk"/>
+			<xs:enumeration value="Rock&amp;Roll"/>
+			<xs:enumeration value="Stoner rock"/>
+			<xs:enumeration value="Noise"/>
+			<xs:enumeration value="Improvised"/>
+			<xs:enumeration value="Space rock"/>
+			<xs:enumeration value="Acid rock"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	<xs:simpleType name="typCenaWartość">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="typCena">
+		<xs:simpleContent>
+			<xs:extension base="pm:typCenaWartość">
+				<xs:attribute name="waluta">
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="PLN"/>
+							<xs:enumeration value="EUR"/>
+							<xs:enumeration value="USD"/>
+							<xs:enumeration value="GBP"/>
+							<xs:enumeration value="JPY"/>
+							<xs:enumeration value="CHF"/>
+							<xs:enumeration value="AUD"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="typOcena">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="typIdPłyty">
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[P]([0-9])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typIdRefWyk">
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[W]([0-9])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="płyta" type="pm:typPłyta"/>
+	<xs:element name="tytuł" type="xs:normalizedString"/>
+	<xs:element name="rok_wydania" type="xs:gYear"/>
+	<xs:element name="gatunek" type="pm:typGatunek"/>
+	<xs:element name="cena" type="pm:typCena"/>
+	<xs:element name="okładka" type="xs:anyURI"/>
+	<xs:attributeGroup name="atrybutyPłyty">
+		<xs:attribute name="id_płyty" type="pm:typIdPłyty" use="required"/>
+		<xs:attribute name="id_wykonawcy" type="pm:typIdRefWyk" use="required"/>
+		<xs:attribute name="ocena" type="pm:typOcena"/>
+	</xs:attributeGroup>
+</xs:schema>

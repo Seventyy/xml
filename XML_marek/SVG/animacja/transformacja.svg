@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="500" height="500" viewBox="-250 -200 500 500" xmlns="http://www.w3.org/2000/svg">
+
+  <text style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size:12pt; font-style:normal" x="0" y="0"> 
+	Tekst obracający się ...
+	<animateTransform attributeName="transform" attributeType="XML" dur="5s" repeatCount="indefinite" type="rotate" from="0" to="360" fill="freeze" />
+  </text>
+</svg>
+

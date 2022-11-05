@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                targetNamespace="http://zadanie.example.com"
+                xmlns:zd="http://zadanie.example.com">
+      
+    <xs:complexType name="typZadanie">
+        <xs:sequence>
+            <xs:element ref="zd:temat"/>
+            <xs:element ref="zd:termin_oddania"/>
+        </xs:sequence>
+        <xs:attribute name="numer" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:pattern value="[1-5]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+  
+    <xs:element name="zadanie" type="zd:typZadanie"/>
+    <xs:element name="temat" type="xs:string"/>
+    <xs:element name="termin_oddania" type="xs:date"/>
+  
+</xs:schema>

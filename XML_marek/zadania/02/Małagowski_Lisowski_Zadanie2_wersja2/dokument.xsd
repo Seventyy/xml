@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:au="http://autor.example.com" xmlns:zd="http://zadanie.example.com" xmlns:pm="http://płyta.example.com" xmlns:wk="http://wykonawca.example.com">
+	<xs:import namespace="http://autor.example.com" schemaLocation="autor.xsd"/>
+	<xs:import namespace="http://zadanie.example.com" schemaLocation="zadanie.xsd"/>
+	<xs:import namespace="http://płyta.example.com" schemaLocation="płyta.xsd"/>
+	<xs:import namespace="http://wykonawca.example.com" schemaLocation="wykonawca.xsd"/>
+	<xs:annotation>
+		<xs:documentation xml:lang="pl">
+            Programowanie komunikacji człowiek-komputer - Laboratoria
+        </xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="dokument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="nagłówek"/>
+					<xs:element ref="pm:płyty_muzyczne"/>
+					<xs:element ref="wk:wykonawcy"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="kluczPłyta">
+			<xs:selector xpath="./pm:płyty_muzyczne/pm:płyta"/>
+			<xs:field xpath="@id_płyty"/>
+		</xs:key>
+		<xs:key name="kluczWykonawca">
+			<xs:selector xpath="./wk:wykonawcy/wk:wykonawca"/>
+			<xs:field xpath="@id_wykonawcy"/>
+		</xs:key>
+		<xs:keyref name="refWykonawca" refer="kluczWykonawca">
+			<xs:selector xpath="./pm:płyty_muzyczne/pm:płyta"/>
+			<xs:field xpath="@id_wykonawcy"/>
+		</xs:keyref>
+	</xs:element>
+	<xs:element name="nagłówek">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="daneNagłówka"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:group name="daneNagłówka">
+		<xs:sequence>
+			<xs:element ref="uczelnia"/>
+			<xs:element ref="wydział"/>
+			<xs:element ref="przedmiot"/>
+			<xs:element ref="rok_akademicki"/>
+			<xs:element ref="zd:zadanie"/>
+			<xs:element ref="au:autorzy"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:element name="uczelnia" type="xs:string"/>
+	<xs:element name="wydział" type="xs:token"/>
+	<xs:element name="przedmiot" type="xs:string"/>
+	<xs:element name="rok_akademicki">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="[0-9]{4}[/][0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+
+<svg width="710" height="210" 
+     xmlns="http://www.w3.org/2000/svg">
+
+  <text style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; font-style:normal;" x="40" y="1cm">
+	Tekst w kolorze czerwonym ... 
+	<set attributeName="fill" attributeType="CSS" to="#ff0000" />
+  </text>
+
+</svg>
+

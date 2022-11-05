@@ -1,0 +1,138 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Bałwan</title>
+
+<!-- definiujemy gradienty -->
+
+<defs>
+	<linearGradient id="nos">
+		<stop offset="20%" stop-color="orange" />
+		<stop offset="50%" stop-color="red" />
+	</linearGradient>
+</defs>
+
+<defs>
+	<linearGradient id="guzik">
+		<stop offset="5%" stop-color="red" />
+		<stop offset="50%" stop-color="black" />
+		<stop offset="95%" stop-color="red" />
+	</linearGradient>
+</defs>
+
+<!--zdarzenia-->
+  <script type="text/ecmascript"> <![CDATA[
+    function zmien_kolor(evt) {
+      var circle = evt.target;
+      var currentFill = circle.getAttribute("fill");
+      if (currentFill=="#F0F0F0")
+        circle.setAttribute("fill", "#ddddff");
+      else
+        circle.setAttribute("fill", "#F0F0F0");
+   }
+  ]]> </script>
+
+  <script type="text/ecmascript"> <![CDATA[
+    function mouse_over(evt) {
+      var circle = evt.target;
+      var currentFill = circle.getAttribute("fill");
+        circle.setAttribute("fill", "green");
+   }
+  ]]> </script>
+  
+    <script type="text/ecmascript"> <![CDATA[
+    function mouse_out(evt) {
+      var circle = evt.target;
+      var currentFill = circle.getAttribute("fill");
+        circle.setAttribute("fill", "#303030");
+   }
+  ]]> </script>
+  
+  <script type="text/ecmascript"> <![CDATA[
+    function rozmiar1(evt) {
+      var circle = evt.target;
+        circle.setAttribute("r", 20);
+   }
+  ]]> </script>
+  
+  <script type="text/ecmascript"> <![CDATA[
+    function rozmiar2(evt) {
+      var circle = evt.target;
+        circle.setAttribute("r", 10);
+   }
+  ]]> </script>
+
+  <script type="text/ecmascript"> <![CDATA[
+    function miotla(evt) {
+      var miotla1 = evt.target;
+	miotla1.setAttribute("transform", "rotate(5)");
+   }
+  ]]> </script>
+  
+
+<!--rysujemy tło-->
+<rect x="1" y="1" width="600" height="500" fill="navy" stroke="none" />
+
+<!-- rysujemy zaspy -->
+<a xlink:href="http://www.w3.org" target="_blank">
+<ellipse fill="#ddddff" stroke="nil" cx="110" cy="500" rx="200" ry="150"/>
+</a>
+<ellipse fill="#ddddff" stroke="nil" cx="450" cy="500" rx="200" ry="100"/>
+
+<!--rysujemy gwiazdki na niebie-->
+<g stroke="yellow" fill="yellow">
+<polygon transform="translate(20 20)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(100 60) rotate(-10)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(400 300) rotate(50)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(540 330)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(40 230)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(490 190) rotate(-80)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(200 60) rotate(-10)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(100 200) rotate(-40)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(140 30)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(490 60)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(400 10) rotate(60)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(140 320) rotate(-90)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+<polygon transform="translate(30 170) rotate(-120)" points="10,10,13,16,21,16,14,21,17,28,10,23,3,28,6,21,-1,16,7,16" /> 
+</g>
+
+<!--rysujemy balwana-->
+<circle onclick="zmien_kolor(evt)" fill="#F0F0F0" stroke="nil" cx="300" cy="360" r="80"/>
+<circle onclick="zmien_kolor(evt)" fill="#F0F0F0" stroke="nil" cx="300" cy="240" r="65"/>
+<circle onclick="zmien_kolor(evt)" fill="#F0F0F0" stroke="nil" cx="300" cy="140" r="50"/>
+
+<!--rysujemy oczy balwana-->
+<circle onmouseover="mouse_over(evt)" onmouseout="mouse_out(evt)" fill="#303030" stroke="nil" cx="280" cy="130" r="6"/>
+<circle onmouseover="mouse_over(evt)" onmouseout="mouse_out(evt)" fill="#303030" stroke="nil" cx="320" cy="130" r="6"/>
+
+<!--rysujemy nos balwana-->
+<polygon transform="translate(0 10)" fill="url(#nos)" stroke="nil" 
+points="305,140,340,180,336,180,294,143" /> 
+
+<!--rysujemy guziki balwana-->
+<g id="guziki" fill="url(#guzik)">
+<circle onmouseover="rozmiar1(evt)" onmouseout="rozmiar2(evt)" cx="300" cy="220" r="10"/>
+<circle onmouseover="rozmiar1(evt)" onmouseout="rozmiar2(evt)" cx="300" cy="280" r="10"/>
+<circle onmouseover="rozmiar1(evt)" onmouseout="rozmiar2(evt)" cx="300" cy="340" r="10"/>
+<circle onmouseover="rozmiar1(evt)" onmouseout="rozmiar2(evt)" cx="300" cy="400" r="10"/>
+</g>
+
+<!--rysujemy kapelusz-->
+<polygon transform="translate(-15 60) rotate(-10)" fill="#606060" stroke="nil" 
+points="250,100,350,100,345,80,340,80,340,50,260,50,260,80,255,80" /> 
+
+<!--rysujemy miotle-->
+<g  id="miotla" stroke="black" stroke-width="10">
+<line transform="rotate(0)" x1="330" y1="300" x2="430" y2="190"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="400" y2="130"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="435" y2="110"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="470" y2="105"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="480" y2="140"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="490" y2="180"/>
+<line onclick="miotla(evt)"  transform="rotate(0)" x1="430" y1="190" x2="490" y2="210"/>
+</g>
+
+<polyline points="330,300,430,190,400,130,430,190" />
+
+</svg>

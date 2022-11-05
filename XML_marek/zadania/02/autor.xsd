@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:au="http://autor.example.com" targetNamespace="http://autor.example.com">
+	<xs:element name="autorzy">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="au:autor" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="kluczAutor">
+			<xs:selector xpath="./au:autor"/>
+			<xs:field xpath="au:indeks"/>
+		</xs:key>
+	</xs:element>
+	<xs:complexType name="typAutor">
+		<xs:sequence>
+			<xs:element ref="au:imię" minOccurs="1" maxOccurs="3"/>
+			<xs:element ref="au:nazwisko"/>
+			<xs:element ref="au:indeks"/>
+		</xs:sequence>
+		<xs:attribute name="specjalność" use="optional" default="brak">
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="SIBD"/>
+					<xs:enumeration value="IOAD"/>
+					<xs:enumeration value="GKIM"/>
+					<xs:enumeration value="SKSM"/>
+					<xs:enumeration value="TGSK"/>
+					<xs:enumeration value="brak"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="autor" type="au:typAutor"/>
+	<xs:element name="imię">
+		<xs:simpleType>
+			<xs:restriction base="xs:NMTOKEN">
+				<xs:pattern value="[\p{Lu}](\p{Ll})*"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nazwisko">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[\p{Lu}](\p{Ll})*([\s-][\p{Lu}](\p{Ll})*)?"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="indeks">
+		<xs:simpleType>
+			<xs:restriction base="xs:unsignedInt">
+				<xs:minInclusive value="100000"/>
+				<xs:maxExclusive value="999999"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

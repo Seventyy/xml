@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="600" height="500"  xmlns="http://www.w3.org/2000/svg">
+  <script type="text/ecmascript"> <![CDATA[
+    function oj(evt) {
+		var slo = svgDocument.getElementById("prost");
+		slo.setAttribute("style", "stroke:rgb(255,0,0); stroke-width:7");
+		slo.setAttribute("fill", "yellow");
+	}
+  ]]> </script>
+
+  <rect onclick="oj()" id="prost" x="102" y="33" width="156" height="77" fill="rgb(0,0,255)" style="stroke:rgb(0,0,0); stroke-width:1" />
+
+</svg>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+	<title>Motion Along a Complex Path Using mpath</title>
+	<path id="cubicCurve"
+		d="M50 125 C114.079 66.9625 174.204 217.555 219.687 125.806"
+		 style="stroke-linecap:butt;fill:none;stroke:rgb(0,0,255)"
+		transform="translate(50 125) scale(1.16667 1) translate(-50 -125) rotate(17.0649 125 125) translate(56.4587 146.04) scale(1.4244 1) translate(-56.4587 -146.04) translate(-14.2263 -10.5164)"
+		/>
+	<path d="M-10 -3 L10 -3 L0 -25 z" style="fill:rgb(255,255,0);stroke:rgb(255,0,0)"/>
+	<g
+		transform="translate(-28 -8) translate(5.33333 10.6667) translate(18.6667 -2.66667)"
+		>
+		<ellipse cx="75" cy="57" rx="17" ry="11" transform="matrix(1 0 0 1 -2 14)"
+			 style="fill:rgb(255,64,64);stroke:rgb(0,0,0);stroke-width:1"/>
+		<ellipse cx="75.5" cy="41" rx="11.5" ry="9"
+			transform="matrix(1 0 0 1 0 0) translate(-3 12)"
+			 style="fill:rgb(255,64,64);stroke:rgb(0,0,0);stroke-width:1"/>
+		<ellipse cx="75.5" cy="31" rx="7.5" ry="8"
+			transform="matrix(1 0 0 1 0 0) translate(-3 9)"
+			 style="fill:rgb(255,64,64);stroke:rgb(0,0,0);stroke-width:1"/>
+		<animateTransform attributeName="transform" begin="0s" dur="0.4s" fill="freeze"
+			calcMode="linear" from="0 0" to="21 6" type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="0s" dur="0.4s" fill="freeze"
+			calcMode="linear" from="0 0" to="21 6" type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="0.4s" dur="0.4s"
+			fill="freeze" calcMode="linear" from="0 0" to="44 26" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="0.8s" dur="0.4s"
+			fill="freeze" calcMode="linear" from="0 0" to="55 41" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="1.2s" dur="0.2s"
+			fill="freeze" calcMode="linear" from="0 0" to="19 9" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="1.4s" dur="0.1s"
+			fill="freeze" calcMode="linear" from="0 0" to="19 4" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="1.5s" dur="0.1s"
+			fill="freeze" calcMode="linear" from="0 0" to="21 -5" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="1.6s" dur="0.1s"
+			fill="freeze" calcMode="linear" from="0 0" to="24 -11.3333"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="1.7s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="3.2 0" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="2s" dur="0.3s" fill="freeze"
+			calcMode="linear" from="0 0" to="-28 11.2" type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="2.3s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="-23 4" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="2.6s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="-28 -12" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="2.9s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="33.3333 12" type="translate"
+			additive="sum"/>
+	</g>
+	<rect x="71" y="15" width="11" height="14"
+		transform="matrix(1 0 0 1 0 0) translate(-7 8) translate(5 0) translate(-6 0) translate(4 -1)"
+		
+		 style="fill:inherit;stroke:rgb(0,0,0);stroke-width:1">
+		<animateTransform attributeName="transform" begin="3.2s" dur="0.4s"
+			fill="freeze" calcMode="linear" from="0 0" to="57.3333 17.3333"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="3.6s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="54.6667 28" type="translate"
+			additive="sum"/>
+		<animateTransform attributeName="transform" begin="3.9s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="53.3333 29.3333"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="4.2s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="13.3333 9.33333"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="4.5s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="20 -2.66667"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="4.8s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="-20.6667 5.33333"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="5.1s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="-17.3333 -2"
+			type="translate" additive="sum"/>
+		<animateTransform attributeName="transform" begin="5.4s" dur="0.3s"
+			fill="freeze" calcMode="linear" from="0 0" to="16 4.66667" type="translate"
+			additive="sum"/>
+	</rect>
+	<line x1="67" y1="28" x2="63" y2="26" transform="matrix(1 0 0 1 0 0)"
+		 style="fill:none;stroke:rgb(0,0,0);stroke-width:2">
+		<animateTransform attributeName="transform" begin="5.7s" dur="0.2s"
+			fill="freeze" calcMode="linear" from="0 0" to="178 90" type="translate"
+			additive="sum"/>
+	</line>
+</svg>

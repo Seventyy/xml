@@ -1,0 +1,1 @@
+fop-2.3\fop\fop -xml płytoteka_pomocniczy.xml -xsl pomocniczy-pdf.xsl -pdf dokument.pdf

@@ -1,0 +1,1 @@
+fop-2.3\fop\fop -xml pomocniczy_agata.xml -xsl pomocniczy-svg.xsl -svg dokument.svg

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="550" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs> 
+    <path id="MyPath" d="M 50 50 C 100 100 300 0 400 100 C 500 200 600 300 700 200 C 800 100 900 100 900 100" /> 
+    </defs> 
+    	
+    <text style="fill:#ff0000" x="80" y="5cm" font-size="40">
+
+    <textPath xlink:href="#MyPath">
+    Tekst 
+    <tspan dx="40" dy="-10" font-weight="bold" fill="blue" >
+    sformatowany
+    </tspan>
+    <tspan dx="2em" dy="100">
+    znacznikiem
+    </tspan>
+    <tspan x="375 400 425 450 465 480" y="260 300 340 380 420 460" fill="green">
+    tspan 
+    </tspan>
+    </textPath>
+    </text>
+
+
+
+
+
+
+
+</svg>

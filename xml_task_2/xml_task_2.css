@@ -1,0 +1,27 @@
+steam {
+    color: #6aa3d1;
+    background: linear-gradient(25deg, #132936 60%, #2A475E 100%);
+    width: 100%;
+}
+
+name,
+origin,
+founding_year,
+employee_count,
+independent,
+phone,
+title,
+release_date,
+size,
+price,
+steam_reviews,
+review_count,
+genre,
+licence {
+    display:block;
+}
+
+title, name {
+    font-size: 25px;
+    font-weight: bold;
+}

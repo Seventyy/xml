@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT dokument (nagłówek, płyty_muzyczne, wykonawcy)>
+<!ELEMENT nagłówek (uczelnia, wydział, przedmiot, rok_akademicki, zadanie, autorzy)>
+<!ELEMENT uczelnia (#PCDATA)>
+<!ELEMENT wydział (#PCDATA)>
+<!ELEMENT przedmiot (#PCDATA)>
+<!ELEMENT rok_akademicki (#PCDATA)>
+<!ELEMENT zadanie (numer_zadania, temat_zadania, termin_oddania)>
+<!ELEMENT numer_zadania (#PCDATA)>
+<!ELEMENT temat_zadania (#PCDATA)>
+<!ELEMENT termin_oddania (#PCDATA)>
+<!ELEMENT autorzy (autor)+>
+<!ELEMENT autor (imię+, nazwisko, indeks, specjalność?)>
+<!ATTLIST autor
+    id_autora ID #REQUIRED
+    specjalność (SIBD | IOAD | GKIM | SKSM | TGSK | brak) "brak"
+    >
+<!ELEMENT imię (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT indeks (#PCDATA)>
+
+<!ELEMENT płyty_muzyczne (płyta)*>
+<!ELEMENT płyta (tytuł, rok_wydania, gatunek)>
+<!ATTLIST płyta 
+    id_płyty ID #REQUIRED
+    id_wykonawcy IDREF #IMPLIED
+    >
+<!ELEMENT tytuł (#PCDATA)>
+<!ELEMENT rok_wydania (#PCDATA)>
+<!ELEMENT gatunek (#PCDATA)>
+<!ELEMENT wykonawcy (wykonawca)*>
+<!ELEMENT wykonawca (#PCDATA)>
+<!ATTLIST wykonawca
+    id_wykonawcy ID #REQUIRED
+    >

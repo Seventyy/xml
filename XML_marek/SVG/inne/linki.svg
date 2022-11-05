@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="400" height="200"  xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns="http://www.w3.org/2000/svg">
+
+  <a xlink:href="http://www.onet.pl" target="_blank">
+    <ellipse cx="90" cy="80" rx="90" ry="60" fill="#3a6b78" />
+  </a>
+  <a xlink:href="cat.svg">
+    <text x="200" y="30" style="font-size: 12pt;"> KOT </text>
+  </a>
+
+</svg>

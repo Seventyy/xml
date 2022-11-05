@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./płytoteka.css" type="text/css"?>
+<dokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dokument.xsd"
+			xmlns:au="http://autor.example.com"
+			xmlns:zd="http://zadanie.example.com"
+			xmlns:pm="http://płyta.example.com"
+			xmlns:wk="http://wykonawca.example.com"
+			>
+    <nagłówek>
+        <uczelnia>Politechnika Łódzka</uczelnia>
+        <wydział>FTIMS</wydział>
+        <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
+        <rok_akademicki>2018/2019</rok_akademicki>
+        
+        <zd:zadanie numer="3">
+            <zd:temat>Transformacje z użyciem XSLT, cz.1 (XML, XHTML)</zd:temat>
+            <zd:termin_oddania>2019-05-10</zd:termin_oddania>
+        </zd:zadanie>
+        
+        <au:autorzy>
+            <au:autor specjalność="SIBD">
+                <au:imię>Dariusz</au:imię>
+                <au:imię>Zbigniew</au:imię>
+                <au:nazwisko>Małagowski</au:nazwisko>
+                <au:indeks>203935</au:indeks>
+            </au:autor>
+            <au:autor specjalność="SIBD">
+                <au:imię>Michał</au:imię>
+                <au:nazwisko>Lisowski</au:nazwisko>
+                <au:indeks>210255</au:indeks>
+            </au:autor>
+        </au:autorzy>
+    </nagłówek>
+
+    <pm:płyty_muzyczne>
+        <pm:płyta id_płyty="P1" id_wykonawcy="W1" ocena="6">
+            <pm:tytuł>Led Zeppelin I</pm:tytuł>
+            <pm:rok_wydania>1969</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="GBP">29.90</pm:cena>
+            <pm:okładka>img/covers/01_led_zeppelin_i.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P2" id_wykonawcy="W1" ocena="8">
+            <pm:tytuł>Presence</pm:tytuł>
+            <pm:rok_wydania>1976</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="PLN">39.90</pm:cena>
+            <pm:okładka>img/covers/01_led_zeppelin_presence.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P3" id_wykonawcy="W1" ocena="9">
+            <pm:tytuł>Celebration Day</pm:tytuł>
+            <pm:rok_wydania>2012</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="PLN">70.00</pm:cena>
+            <pm:okładka>img/covers/03_led_zeppelin_celebration.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P4" id_wykonawcy="W2" ocena="8">
+            <pm:tytuł>Sabbath Bloody Sabbath</pm:tytuł>
+            <pm:rok_wydania>1973</pm:rok_wydania>
+            <pm:gatunek>Heavy metal</pm:gatunek>
+            <pm:cena waluta="GBP">45.00</pm:cena>
+            <pm:okładka>img/covers/04_black_sabbath_sabbath.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P5" id_wykonawcy="W2" ocena="9">
+            <pm:tytuł>Born Again</pm:tytuł>
+            <pm:rok_wydania>1983</pm:rok_wydania>
+            <pm:gatunek>Heavy metal</pm:gatunek>
+            <pm:cena waluta="USD">25.60</pm:cena>
+            <pm:okładka>img/covers/05_black_sabbath_born.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P6" id_wykonawcy="W2" ocena="7">
+            <pm:tytuł>Sabotage</pm:tytuł>
+            <pm:rok_wydania>1975</pm:rok_wydania>
+            <pm:gatunek>Heavy metal</pm:gatunek>
+            <pm:cena waluta="USD">20.01</pm:cena>
+            <pm:okładka>img/covers/06_black_sabbath_sabotage.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P7" id_wykonawcy="W3" ocena="10">
+            <pm:tytuł>Agharta</pm:tytuł>
+            <pm:rok_wydania>1975</pm:rok_wydania>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:gatunek>Psychedelic</pm:gatunek>
+            <pm:cena waluta="PLN">60.20</pm:cena>
+            <pm:okładka>img/covers/07_davis_agharta.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P8" id_wykonawcy="W3" ocena="8">
+            <pm:tytuł>In a Silent Way</pm:tytuł>
+            <pm:rok_wydania>1969</pm:rok_wydania>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:cena waluta="EUR">15.90</pm:cena>
+            <pm:okładka>img/covers/08_davis_silent.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P9" id_wykonawcy="W3" ocena="7">
+            <pm:tytuł>Miles Smiles</pm:tytuł>
+            <pm:rok_wydania>1966</pm:rok_wydania>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:cena waluta="EUR">16.00</pm:cena>
+            <pm:okładka>img/covers/09_davis_smiles.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P10" id_wykonawcy="W4" ocena="10">
+            <pm:tytuł>Django's Guitar</pm:tytuł>
+            <pm:rok_wydania>1955</pm:rok_wydania>
+            <pm:gatunek>Gypsy jazz</pm:gatunek>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:cena waluta="GBP">20.00</pm:cena>
+            <pm:okładka>img/covers/10_django_guintar.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P11" id_wykonawcy="W5" ocena="9">
+            <pm:tytuł>Django Reinhardt and His Rhythm</pm:tytuł>
+            <pm:rok_wydania>1959</pm:rok_wydania>
+            <pm:gatunek>Gypsy jazz</pm:gatunek>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:cena waluta="AUD">24.90</pm:cena>
+            <pm:okładka>img/covers/11_django_rhytm.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P12" id_wykonawcy="W5" ocena="8">
+            <pm:tytuł>Krzysztof Klenczon i Trzy Korony</pm:tytuł>
+            <pm:rok_wydania>1972</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:gatunek>Bigbeat</pm:gatunek>
+            <pm:cena waluta="PLN">20.50</pm:cena>
+            <pm:okładka>img/covers/12_klenczon_korony.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P13" id_wykonawcy="W6" ocena="10">
+            <pm:tytuł>Kick Out the Jams</pm:tytuł>
+            <pm:rok_wydania>1969</pm:rok_wydania>
+            <pm:gatunek>Proto punk</pm:gatunek>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="AUD">28.90</pm:cena>
+            <pm:okładka>img/covers/13_mc5_kick.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P14" id_wykonawcy="W6" ocena="7">
+            <pm:tytuł>Back in the USA</pm:tytuł>
+            <pm:rok_wydania>1970</pm:rok_wydania>
+            <pm:gatunek>Proto punk</pm:gatunek>
+            <pm:gatunek>Rock&amp;Roll</pm:gatunek>
+            <pm:cena waluta="USD">28.90</pm:cena>
+            <pm:okładka>img/covers/14_mc5_back.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P15" id_wykonawcy="W6" ocena="6">
+            <pm:tytuł>High Time</pm:tytuł>
+            <pm:rok_wydania>1971</pm:rok_wydania>
+            <pm:gatunek>Proto punk</pm:gatunek>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="JPY">14.80</pm:cena>
+            <pm:okładka>img/covers/15_mc5_high_time.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P16" id_wykonawcy="W7" ocena="10">
+            <pm:tytuł>Live at Radio Żak</pm:tytuł>
+            <pm:rok_wydania>2017</pm:rok_wydania>
+            <pm:gatunek>Stoner rock</pm:gatunek>
+            <pm:gatunek>Noise</pm:gatunek>
+            <pm:cena waluta="PLN">9.90</pm:cena>
+            <pm:okładka>img/covers/16_pi_live.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P17" id_wykonawcy="W7" ocena="10">
+            <pm:tytuł>π</pm:tytuł>
+            <pm:rok_wydania>2016</pm:rok_wydania>
+            <pm:gatunek>Stoner rock</pm:gatunek>
+            <pm:gatunek>Psychedelic</pm:gatunek>
+            <pm:cena waluta="PLN">14.90</pm:cena>
+            <pm:okładka>img/covers/17_pi_pi.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P18" id_wykonawcy="W8" ocena="10">
+            <pm:tytuł>Dziękuję 1</pm:tytuł>
+            <pm:rok_wydania>2014</pm:rok_wydania>
+            <pm:gatunek>Improvised</pm:gatunek>
+            <pm:gatunek>Psychedelic</pm:gatunek>
+            <pm:gatunek>Noise</pm:gatunek>
+            <pm:gatunek>Space rock</pm:gatunek>
+            <pm:gatunek>Acid rock</pm:gatunek>
+            <pm:cena waluta="PLN">0.50</pm:cena>
+            <pm:okładka>img/covers/18_fatlak_dziękuję.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P19" id_wykonawcy="W1" ocena="8">
+            <pm:tytuł>Led Zeppelin II</pm:tytuł>
+            <pm:rok_wydania>1969</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="GBP">20.00</pm:cena>
+            <pm:okładka>img/covers/19_led_zeppelin_ii.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P20" id_wykonawcy="W1" ocena="9">
+            <pm:tytuł>Led Zeppelin IV</pm:tytuł>
+            <pm:rok_wydania>1971</pm:rok_wydania>
+            <pm:gatunek>Hard rock</pm:gatunek>
+            <pm:cena waluta="GBP">49.90</pm:cena>
+            <pm:okładka>img/covers/20_led_zeppelin_iv.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P21" id_wykonawcy="W2" ocena="9">
+            <pm:tytuł>Black Sabbath</pm:tytuł>
+            <pm:rok_wydania>1970</pm:rok_wydania>
+            <pm:gatunek>Heavy metal</pm:gatunek>
+            <pm:cena waluta="EUR">14.80</pm:cena>
+            <pm:okładka>img/covers/21_black_sabbath_black.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P22" id_wykonawcy="W2" ocena="7">
+            <pm:tytuł>Master of Reality</pm:tytuł>
+            <pm:rok_wydania>1971</pm:rok_wydania>
+            <pm:gatunek>Heavy metal</pm:gatunek>
+            <pm:cena waluta="CHF">12.20</pm:cena>
+            <pm:okładka>img/covers/22_ black_sabbath_master.jpg</pm:okładka>
+        </pm:płyta>
+        <pm:płyta id_płyty="P23" id_wykonawcy="W3" ocena="8">
+            <pm:tytuł>Big Fun</pm:tytuł>
+            <pm:rok_wydania>1974</pm:rok_wydania>
+            <pm:gatunek>Jazz</pm:gatunek>
+            <pm:cena waluta="PLN">40.80</pm:cena>
+            <pm:okładka>img/covers/23_davis_big_fun.jpg</pm:okładka>
+        </pm:płyta>
+    </pm:płyty_muzyczne>
+    
+    <wk:wykonawcy>
+        <wk:wykonawca id_wykonawcy="W1">
+            <wk:nazwa>Led Zeppelin</wk:nazwa>
+            <wk:rok_powstania>1968</wk:rok_powstania>
+            <wk:lider>Jimmy Page</wk:lider>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W2">
+            <wk:nazwa>Black Sabbath</wk:nazwa>
+            <wk:rok_powstania>1968</wk:rok_powstania>
+            <wk:lider>Tony Iommi</wk:lider>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W3">
+            <wk:nazwa>Miles Davis</wk:nazwa>
+            <wk:rok_urodzenia>1926</wk:rok_urodzenia>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W4">
+            <wk:nazwa>Django Reinhardt</wk:nazwa>
+            <wk:rok_urodzenia>1910</wk:rok_urodzenia>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W5">
+            <wk:nazwa>Trzy Korony</wk:nazwa>
+            <wk:rok_powstania>1970</wk:rok_powstania>
+            <wk:lider>Krzysztof Klenczon</wk:lider>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W6">
+            <wk:nazwa>MC5</wk:nazwa>
+            <wk:rok_powstania>1964</wk:rok_powstania>
+            <wk:lider>Wayne Kramer</wk:lider>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W7">
+            <wk:nazwa>Pi</wk:nazwa>
+            <wk:rok_powstania>2013</wk:rok_powstania>
+            <wk:lider>Szymon Włodkowski</wk:lider>
+        </wk:wykonawca>
+        <wk:wykonawca id_wykonawcy="W8">
+            <wk:nazwa>Fatlak</wk:nazwa>
+            <wk:rok_powstania>2014</wk:rok_powstania>
+            <wk:lider>Martyn Gill</wk:lider>
+            <wk:lider>Dariusz Małagowski</wk:lider>
+        </wk:wykonawca>
+    </wk:wykonawcy>
+</dokument>
