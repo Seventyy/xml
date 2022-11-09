@@ -4,13 +4,14 @@
 xsi:noNamespaceSchemaLocation="xml_task_2.xsd"
 xmlns:developers="http://developers.com"
 xmlns:games="http://games.com">
+
 	<developers>
 		<developers:developer developer_id="D1">
 			<name>Ninja Kiwi</name>            
 			<origin>New Zealand</origin>        
 			<founding_year>2006</founding_year>
 			<employee_count>70</employee_count>
-			<independent>false</independent>  
+			<independent>true</independent>  
 			<phone>+64 123 456 789</phone>           
 		</developers:developer>
 		<developers:developer developer_id="D2">
@@ -26,7 +27,7 @@ xmlns:games="http://games.com">
 			<origin>USA</origin>        
 			<founding_year>2009</founding_year>
 			<employee_count>20</employee_count>
-			<independent>false</independent>  
+			<independent>true</independent>  
 			<phone>+1 235 627 128</phone>           
 		</developers:developer>
 		<developers:developer developer_id="D4">
@@ -77,7 +78,7 @@ xmlns:games="http://games.com">
 			<steam_reviews>Very Positive</steam_reviews>     
 			<review_count>3623</review_count>                          
 			<genre>Twin-Stick Shooter</genre>                               
-			<licence type="proprietary"/>                              
+			<licence type="open source"/>                              
 		</games:game>
 		<games:game game_id="G5" developer_id="D1">
 			<title>Bloons Adventure Time TD</title>                                 
@@ -120,13 +121,13 @@ xmlns:games="http://games.com">
 			<licence type="proprietary"/>                              
 		</games:game>
         <games:game game_id="G9" developer_id="D2">
-			<title>GWENT: The Witcher Card games:game</title>                                 
+			<title>GWENT: The Witcher Card Game</title>                                 
 			<release_date>2020-05-19</release_date>                      
 			<size unit="GB">9.8</size>                                 
 			<price currency="PLN">0.0</price>                        
 			<steam_reviews>Very Positive</steam_reviews>     
 			<review_count>13235</review_count>                          
-			<genre>Card games:game</genre>                               
+			<genre>Card Game</genre>                               
 			<licence type="proprietary"/>
 		</games:game>
         <games:game game_id="G10" developer_id="D2">
@@ -240,4 +241,10 @@ xmlns:games="http://games.com">
 			<licence type="proprietary"/>
 		</games:game>
 	</games>
+
+	<creator>
+		<first_name>Jan</first_name>
+		<last_name>Partyczyński</last_name>
+		<student_id>242227</student_id>
+	</creator>
 </steam>

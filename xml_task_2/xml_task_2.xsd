@@ -20,6 +20,15 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <xs:element name="creator">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="first_name" type="xs:string" />
+                            <xs:element name="last_name" type="xs:string" />
+                            <xs:element name="student_id" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

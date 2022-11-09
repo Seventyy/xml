@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@1,300;1,700;1,900&display=swap');
+
+/* variables */
+
+:root {
+    --bg-main: #f3f3f3;
+    --bg-accent: rgb(141, 250, 223);
+    --bg-dark: #d4d0c6;
+    --text-dark: #202020;
+    --text-light: #f3f3f3;
+}
+
+/* default fonts */
+
+* {
+    font: 20px 'Open Sans', sans-serif;
+    color: var(--text-dark);
+}
+
+/* main body, headers and footers */
+
+catalog {
+    background-color: var(--bg-main);
+}
+
+catalog > header {
+    display: block;
+    padding: 200px;
+
+    text-align: center;
+    font: italic bold 70px 'Roboto', sans-serif;
+    letter-spacing: 6px;
+    
+    background-image: url("bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: -4.5vw;
+    background-repeat: no-repeat;
+    background-size: x 120%;
+}
+
+header > info {
+    font: italic 500 22px "Open Sans", sans-serif;
+    letter-spacing: 7px;
+    word-spacing: 7px;
+    
+    margin-top: 20px;
+    display: block;
+    background-color: var(--bg-accent);
+    padding: 20px;
+    min-width: 700px;
+    align-self: center;
+}
+
+footer {
+    display: block;
+    padding: 60px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+/* contents */
+
+songs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px;
+    padding-top: 50px;
+}
+
+song {
+    display: block;
+    outline: 3px solid var(--bg-dark);
+    border-radius: 10px;
+    width: 300px;
+}
+
+song > producer:before {
+    content: 'producer: ';
+}
+
+song > album:before {
+    content: 'album: ';
+}
+
+display_info > header {
+    padding: 10px;
+    display: block;
+    background-color: var(--bg-dark);
+}
+
+
+
+likes_yt:after, likes_sc:after {
+    content: url('thumbs_up.svg');
+}
+
+info_ribbon {
+    display: block;
+    padding: 100px;
+    text-align: center;
+}
+
+info_ribbon:after {
+    content: '~ Someone, somewhere';
+    font-style: italic;
+    display: block;
+    text-align: right;
+}

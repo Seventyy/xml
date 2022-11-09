@@ -1,27 +1,89 @@
 steam {
     color: #6aa3d1;
     background: linear-gradient(25deg, #132936 60%, #2A475E 100%);
-    width: 100%;
+    font-family: sans-serif;
 }
 
-name,
-origin,
-founding_year,
-employee_count,
-independent,
-phone,
-title,
-release_date,
-size,
-price,
-steam_reviews,
-review_count,
-genre,
-licence {
-    display:block;
+developers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid #6aa3d1;
 }
 
-title, name {
-    font-size: 25px;
+games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 200px;
+    padding-top: 50px;
+}
+
+game > title,
+developer > name{
+    font-size: x-large;
     font-weight: bold;
+}
+
+game > title,
+game > relese_date,
+game > size,
+game > price,
+game > steam_reviews,
+game > review_count,
+game > genre,
+developer > name,
+developer > origin,
+developer > founding_year,
+developer > employee_count,
+developer > independent,
+developer > phone {
+    display: block;
+}
+
+developer > origin::before{
+    content: 'Origin: '
+}
+developer > founding_year::before{
+    content: 'Founding year: '
+}
+developer > employee_count::before{
+    content: 'Employee count: '
+}
+developer > independent::before{
+    content: 'Independent: '
+}
+developer > phone::before{
+    content: 'Phone: '
+}
+
+game > release_date::before {
+    content: 'Release date: ';
+}
+game > size::before{
+    content: 'Download Size: '
+}
+game > price::before{
+    content: 'Price: '
+}
+game > steam_reviews::before{
+    content: 'Reviews: '
+}
+game > review_count::before{
+    content: 'Count: '
+}
+game > genre::before{
+    content: 'Genre: '
+}
+
+game > size::after{
+    content: attr(unit);
+}
+game > price::after{
+    content: attr(currency);
+}
+game > licence[type="open source"]::before{
+    content: 'Licence: ' attr(type);
 }
