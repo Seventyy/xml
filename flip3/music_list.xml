@@ -1,0 +1,317 @@
+<?xmlversion ="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="music_list_style.css" ?>
+
+<music_list
+ 	xsi:noNamespaceSchemaLocation="music_list.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:genre="http://genre.types.com"
+	xmlns:music="http://music.types.com"
+	xmlns:author="http://author.types.com"
+	>
+	
+	<creator>
+		<fName>Filip</fName>
+		<lName>Andrzejewski</lName>
+		<stID>242207</stID>
+	</creator>
+	
+	<genreList>
+		<genre:genre genreID="G01Electr.Sw">Electro_Swing</genre:genre>
+		<genre:genre genreID="G02Pop">Pop</genre:genre>	
+		<genre:genre genreID="G03Rock">Rock</genre:genre>							
+	</genreList>
+
+	<songList>
+
+		<!-- SongList entry template
+		<music:song ID="">											
+			<name></name>
+			<genre genreID=""/>									
+			<author authorID=""/>									
+			<wholeLength time="PT"/>				
+			<musicLength time="PT"/>				
+			<views></views>									
+			<subbmisionDate></subbmisionDate>				
+			<languagesUsed></languagesUsed>
+			<myList aded_to_list ="">							
+				<name></name>									
+			</myList>
+		</music:song>
+		-->
+
+		<music:song ID="S01">											
+			<name>Hit Me Like A Drum</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A01Prv.Stl"/>									
+			<wholeLength time="PT3M32S"/>				
+			<musicLength time="PT3M32S"/>				
+			<views>1100000</views>									
+			<subbmisionDate>2016-05-20</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">							
+				<name>Ambers</name>									
+			</myList>
+		</music:song>
+
+		<music:song ID="S02">											
+			<name>Chambermaid Swing</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A01Prv.Stl"/>									
+			<wholeLength time="PT5M47S"/>				
+			<musicLength time="PT5M47S"/>				
+			<views>19300000</views>									
+			<subbmisionDate>2015-12-29</subbmisionDate>				
+			<languagesUsed>No_vocal</languagesUsed>
+			<myList aded_to_list ="false">																
+			</myList>
+		</music:song>
+
+		<music:song ID="S03">											
+			<name>Jimmys Gang</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A01Prv.Stl"/>									
+			<wholeLength time="PT3M23S"/>				
+			<musicLength time="PT3M23S"/>				
+			<views>20160000</views>									
+			<subbmisionDate>2013-01-08</subbmisionDate>				
+			<languagesUsed>French English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Ambers</name>																
+			</myList>
+		</music:song>
+
+		<music:song ID="S04">											
+			<name>The Sun</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A01Prv.Stl"/>									
+			<wholeLength time="PT2M57S"/>				
+			<musicLength time="PT2M57S"/>				
+			<views>9700000</views>									
+			<subbmisionDate>2015-02-20</subbmisionDate>				
+			<languagesUsed>English Spanish</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Amethysts</name>																
+			</myList>
+		</music:song>
+
+		<music:song ID="S05">											
+			<name>Lone Digger</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A02Cvn.Plc"/>									
+			<wholeLength time="PT2M51S"/>				
+			<musicLength time="PT2M40S"/>				
+			<views>361000000</views>									
+			<subbmisionDate>2016-03-17</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Ambers</name>
+				<name>Diamonds</name>															
+			</myList>
+		</music:song>
+
+		<music:song ID="S06">											
+			<name>Mighty</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A02Cvn.Plc"/>									
+			<wholeLength time="PT2M51S"/>				
+			<musicLength time="PT2M40S"/>				
+			<views>12400000</views>									
+			<subbmisionDate>2015-10-11</subbmisionDate>				
+			<languagesUsed>No_vocal</languagesUsed>
+			<myList aded_to_list ="false">															
+			</myList>
+		</music:song>
+
+		<music:song ID="S07">					
+			<name>Miracle</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A02Cvn.Plc"/>									
+			<wholeLength time="PT3M39S"/>				
+			<musicLength time="PT3M34S"/>				
+			<views>21700000</views>									
+			<subbmisionDate>2019-04-04</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Ambers</name>															
+			</myList>
+		</music:song>
+
+		<music:song ID="S08">							
+			<name>Black Betty</name>
+			<genre genreID="G01Electr.Sw"/>									
+			<author authorID="A02Cvn.Plc"/>									
+			<wholeLength time="PT3M09S"/>				
+			<musicLength time="PT3M09S"/>				
+			<views>30200000</views>									
+			<subbmisionDate>2017-09-10</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Ambers</name>															
+			</myList>
+		</music:song>
+
+		<music:song ID="S09">											
+			<name>The Wolf</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A03Siames"/>									
+			<wholeLength time="PT3M12S"/>				
+			<musicLength time="PT3M01S"/>				
+			<views>162000000</views>									
+			<subbmisionDate>2017-01-16</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Amethysts</name>	
+				<name>Emeralds</name>															
+			</myList>
+		</music:song>
+
+		<music:song ID="S10">											
+			<name>Mr. Fear</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A03Siames"/>									
+			<wholeLength time="PT4M34S"/>				
+			<musicLength time="PT4M29S"/>				
+			<views>44300000</views>									
+			<subbmisionDate>2018-10-21</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Amethysts</name>																
+			</myList>
+		</music:song>
+
+		<music:song ID="S11">											
+			<name>Summer Nights</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A03Siames"/>									
+			<wholeLength time="PT3M54S"/>				
+			<musicLength time="PT3M47S"/>				
+			<views>20800000</views>									
+			<subbmisionDate>2019-07-28</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Amethysts</name>
+				<name>Diamonds</name>
+				<name>Emeralds</name>																
+			</myList>
+		</music:song>
+
+		<music:song ID="S12">											
+			<name>No Lullaby</name>
+			<genre genreID="G02Pop"/>									
+			<author authorID="A03Siames"/>									
+			<wholeLength time="PT3M24S"/>				
+			<musicLength time="PT3M07S"/>				
+			<views>3310000</views>									
+			<subbmisionDate>2019-02-13</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="false">																
+			</myList>
+		</music:song>
+
+		<music:song ID="S13">											
+			<name>Zitti e Buoni</name>
+			<genre genreID="G03Rock"/>									
+			<author authorID="A04Mnskin"/>									
+			<wholeLength time="PT3M18S"/>				
+			<musicLength time="PT3M12S"/>				
+			<views>152000000</views>									
+			<subbmisionDate>2021-02-20</subbmisionDate>				
+			<languagesUsed>Italian</languagesUsed>
+			<myList aded_to_list ="false">																
+			</myList>
+		</music:song>
+
+		<music:song ID="S14">											
+			<name>Vent'anni</name>
+			<genre genreID="G03Rock"/>									
+			<author authorID="A04Mnskin"/>									
+			<wholeLength time="PT3M18S"/>				
+			<musicLength time="PT3M12S"/>				
+			<views>41600000</views>									
+			<subbmisionDate>2020-06-12</subbmisionDate>				
+			<languagesUsed>Italian</languagesUsed>
+			<myList aded_to_list ="false">																
+			</myList>
+		</music:song>
+
+		<music:song ID="S15">											
+			<name>Beggin'</name>
+			<genre genreID="G03Rock"/>									
+			<author authorID="A04Mnskin"/>									
+			<wholeLength time="PT3M34S"/>				
+			<musicLength time="PT3M34S"/>				
+			<views>156000000</views>									
+			<subbmisionDate>2017-06-12</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Diamonds</name>															
+			</myList>
+		</music:song>
+
+		<music:song ID="S16">											
+			<name>I Wanna Be Your Slave</name>
+			<genre genreID="G03Rock"/>									
+			<author authorID="A04Mnskin"/>									
+			<wholeLength time="PT2M52S"/>				
+			<musicLength time="PT2M52S"/>				
+			<views>94100000</views>									
+			<subbmisionDate>2021-03-02</subbmisionDate>				
+			<languagesUsed>English</languagesUsed>
+			<myList aded_to_list ="true">
+				<name>Diamonds</name>															
+			</myList>
+		</music:song>
+
+	</songList>
+
+	<authorList>
+		
+		<!-- AuthorList entry template
+		<author:author authorID="">										
+			<name></name>								
+			<debut></debut>									
+			<rating></rating>									
+			<totalTracks></totalTracks>							
+			<scFollowers amount="" units="thousands"/>			
+			<ytFollowers amount="" units="thousands"/>
+		</author:author>
+	</authorList>
+		 -->
+		<author:author authorID="A01Prv.Stl">										
+			<name>Parov Stelar</name>								
+			<debut>1998</debut>									
+			<rating>72/100</rating>									
+			<totalTracks>299</totalTracks>							
+			<scFollowers amount="198" units="thousands"/>			
+			<ytFollowers amount="490" units="thousands"/>
+		</author:author>
+
+		<author:author authorID="A02Cvn.Plc">										
+			<name>Caravan Palace</name>								
+			<debut>2008</debut>									
+			<rating>80/100</rating>									
+			<totalTracks>81</totalTracks>							
+			<scFollowers amount="114" units="thousands"/>			
+			<ytFollowers amount="1.64" units="millions"/>
+		</author:author>
+
+		<author:author authorID="A03Siames">										
+			<name>SIAMÉS</name>								
+			<debut>2016</debut>									
+			<rating>74/100</rating>									
+			<totalTracks>42</totalTracks>							
+			<scFollowers amount="12" units="thousands"/>			
+			<ytFollowers amount="562" units="thousands"/>
+		</author:author>
+
+		<author:author authorID="A04Mnskin">										
+			<name>Måneskin</name>								
+			<debut>2016</debut>									
+			<rating>69/100</rating>									
+			<totalTracks>32</totalTracks>							
+			<scFollowers amount="21" units="thousands"/>			
+			<ytFollowers amount="4.12" units="millions"/>
+		</author:author>
+	</authorList>
+
+</music_list>
