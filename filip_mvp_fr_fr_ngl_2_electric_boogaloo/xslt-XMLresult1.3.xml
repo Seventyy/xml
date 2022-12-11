@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<music_list>
+   <genres>
+      <genre songs_of_genre="6">Electro_Swing</genre>
+      <genre songs_of_genre="6">Pop</genre>
+      <genre songs_of_genre="4">Rock</genre>
+   </genres>
+   <songList>
+      <song name="Beggin'"
+            views="156000000"
+            subbmisionDate="2017-06-12"
+            language="English">
+         <genre>Rock</genre>
+         <author>Måneskin</author>
+      </song>
+      <song name="Black Betty"
+            views="30200000"
+            subbmisionDate="2017-09-10"
+            language="English">
+         <genre>Electro_Swing</genre>
+         <author>Caravan Palace</author>
+      </song>
+      <song name="Chambermaid Swing"
+            views="19300000"
+            subbmisionDate="2015-12-29"
+            language="No_vocal">
+         <genre>Electro_Swing</genre>
+         <author>Parov Stelar</author>
+      </song>
+      <song name="Hit Me Like A Drum"
+            views="1100000"
+            subbmisionDate="2016-05-20"
+            language="English">
+         <genre>Electro_Swing</genre>
+         <author>Parov Stelar</author>
+      </song>
+      <song name="I Wanna Be Your Slave"
+            views="94100000"
+            subbmisionDate="2021-03-02"
+            language="English">
+         <genre>Rock</genre>
+         <author>Måneskin</author>
+      </song>
+      <song name="Jimmys Gang"
+            views="20160000"
+            subbmisionDate="2013-01-08"
+            language="French English">
+         <genre>Electro_Swing</genre>
+         <author>Parov Stelar</author>
+      </song>
+      <song name="Lone Digger"
+            views="361000000"
+            subbmisionDate="2016-03-17"
+            language="English">
+         <genre>Electro_Swing</genre>
+         <author>Caravan Palace</author>
+      </song>
+      <song name="Mighty"
+            views="12400000"
+            subbmisionDate="2015-10-11"
+            language="No_vocal">
+         <genre>Electro_Swing</genre>
+         <author>Caravan Palace</author>
+      </song>
+      <song name="Miracle"
+            views="21700000"
+            subbmisionDate="2019-04-04"
+            language="English">
+         <genre>Pop</genre>
+         <author>Caravan Palace</author>
+      </song>
+      <song name="Mr. Fear"
+            views="44300000"
+            subbmisionDate="2018-10-21"
+            language="English">
+         <genre>Pop</genre>
+         <author>SIAMÉS</author>
+      </song>
+      <song name="No Lullaby"
+            views="3310000"
+            subbmisionDate="2019-02-13"
+            language="English">
+         <genre>Pop</genre>
+         <author>SIAMÉS</author>
+      </song>
+      <song name="Summer Nights"
+            views="20800000"
+            subbmisionDate="2019-07-28"
+            language="English">
+         <genre>Pop</genre>
+         <author>SIAMÉS</author>
+      </song>
+      <song name="The Sun"
+            views="9700000"
+            subbmisionDate="2015-02-20"
+            language="English Spanish">
+         <genre>Pop</genre>
+         <author>Parov Stelar</author>
+      </song>
+      <song name="The Wolf"
+            views="162000000"
+            subbmisionDate="2017-01-16"
+            language="English">
+         <genre>Pop</genre>
+         <author>SIAMÉS</author>
+      </song>
+      <song name="Vent'anni"
+            views="41600000"
+            subbmisionDate="2020-06-12"
+            language="Italian">
+         <genre>Rock</genre>
+         <author>Måneskin</author>
+      </song>
+      <song name="Zitti e Buoni"
+            views="152000000"
+            subbmisionDate="2021-02-20"
+            language="Italian">
+         <genre>Rock</genre>
+         <author>Måneskin</author>
+      </song>
+   </songList>
+   <authorList>
+      <author debut="2008"
+              rating="80/100"
+              rating_numeric="80"
+              scFollowers="114000"
+              ytFollowers="1.64E6">
+         <name>Caravan Palace</name>
+      </author>
+      <author debut="2016"
+              rating="69/100"
+              rating_numeric="69"
+              scFollowers="21000"
+              ytFollowers="4.12E6">
+         <name>Måneskin</name>
+      </author>
+      <author debut="1998"
+              rating="72/100"
+              rating_numeric="72"
+              scFollowers="198000"
+              ytFollowers="490000">
+         <name>Parov Stelar</name>
+      </author>
+      <author debut="2016"
+              rating="74/100"
+              rating_numeric="74"
+              scFollowers="12000"
+              ytFollowers="562000">
+         <name>SIAMÉS</name>
+      </author>
+   </authorList>
+   <songStats whole_time_in_seconds="3375" whole_time_in_minutes="~ 56">
+      <songs_in_library>16</songs_in_library>
+   </songStats>
+   <authorStats avergae_rating="73">
+      <authors_in_library>4</authors_in_library>
+   </authorStats>
+</music_list>

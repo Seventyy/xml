@@ -38,15 +38,15 @@
     </xs:element>
     <xs:simpleType name="review_score" final="restriction">
         <xs:restriction base="xs:string">                            
-            <xs:enumeration value="Overhwelmingly Positive"/>
-            <xs:enumeration value="Very Positive"/>
-            <xs:enumeration value="Positive"/>
-            <xs:enumeration value="Mostly Positive"/>
-            <xs:enumeration value="Mixed"/>
-            <xs:enumeration value="Mostly Negative"/>
-            <xs:enumeration value="Negative"/>
-            <xs:enumeration value="Very Negative"/>
-            <xs:enumeration value="Overwhelmingly Negative"/>
+        <xs:enumeration value="Overhwelmingly Positive"/>
+        <xs:enumeration value="Very Positive"/>
+        <xs:enumeration value="Positive"/>
+        <xs:enumeration value="Mostly Positive"/>
+        <xs:enumeration value="Mixed"/>
+        <xs:enumeration value="Mostly Negative"/>
+        <xs:enumeration value="Negative"/>
+        <xs:enumeration value="Very Negative"/>
+        <xs:enumeration value="Overwhelmingly Negative"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

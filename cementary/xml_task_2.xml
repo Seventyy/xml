@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?xml-stylesheet type="text/css" href="xml_task_2.css"?>
-<steam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation="xml_task_2.xsd"
-xmlns:developers="http://developers.com"
-xmlns:games="http://games.com">
+
+<steam 
+	xsi:noNamespaceSchemaLocation="xml_task_2.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:developers="http://developers.com"
+	xmlns:games="http://games.com">
 
 	<developers>
 		<developers:developer developer_id="D1">

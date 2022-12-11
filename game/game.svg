@@ -1,0 +1,16 @@
+<svg 
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1280"
+    height="720">
+
+    
+        <rect id="enemy" 
+            width="200" 
+            height="300" 
+            x="100" y="200"
+            fill="blue"/>
+
+    <script xlink:href="game.js" />
+</svg>

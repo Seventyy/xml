@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://developers.com" xmlns:developers="http://developers.com">
+    <xs:element name="developer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="name"/>
+                <xs:element type="xs:string" name="origin"/>
+                <xs:element type="xs:short" name="founding_year"/>
+                <xs:element type="xs:short" name="employee_count"/>
+                <xs:element type="xs:boolean" name="independent"/>
+                <xs:element type="developers:phone_numer" name="phone"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="developer_id"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="phone_numer">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\+[0-9][0-9] [0-9][0-9][0-9] [0-9][0-9][0-9] [0-9][0-9][0-9]"/>
+            <xs:pattern value="\+[0-9] [0-9][0-9][0-9] [0-9][0-9][0-9] [0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

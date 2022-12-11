@@ -1,0 +1,39 @@
+This is a text file listing all Librarry music, authors and genres (ordered alphabetically): 
+ 
+Song List: 
+======================================================================================================= 
+Title                   Author           Genre           Date         Views       Languages
+-------------------------------------------------------------------------------------------------------  
+Beggin'                 Måneskin         Rock            2017-06-12   156000000   English
+Black Betty             Caravan Palace   Electro_Swing   2017-09-10   30200000    English
+Chambermaid Swing       Parov Stelar     Electro_Swing   2015-12-29   19300000    No_vocal
+Hit Me Like A Drum      Parov Stelar     Electro_Swing   2016-05-20   1100000     English
+I Wanna Be Your Slave   Måneskin         Rock            2021-03-02   94100000    English
+Jimmys Gang             Parov Stelar     Electro_Swing   2013-01-08   20160000    French English
+Lone Digger             Caravan Palace   Electro_Swing   2016-03-17   361000000   English
+Mighty                  Caravan Palace   Electro_Swing   2015-10-11   12400000    No_vocal
+Miracle                 Caravan Palace   Pop             2019-04-04   21700000    English
+Mr. Fear                SIAMÉS           Pop             2018-10-21   44300000    English
+No Lullaby              SIAMÉS           Pop             2019-02-13   3310000     English
+Summer Nights           SIAMÉS           Pop             2019-07-28   20800000    English
+The Sun                 Parov Stelar     Pop             2015-02-20   9700000     English Spanish
+The Wolf                SIAMÉS           Pop             2017-01-16   162000000   English
+Vent'anni               Måneskin         Rock            2020-06-12   41600000    Italian
+Zitti e Buoni           Måneskin         Rock            2021-02-20   152000000   Italian
+
+ 
+ Author List: 
+======================================================================================================= 
+Name             Debut   Rating   SCFollowers  YTFollowers
+-------------------------------------------------------------------------------------------------------  
+Caravan Palace   2008    80/100   114000       1.64E6
+Måneskin         2016    69/100   21000        4.12E6
+Parov Stelar     1998    72/100   198000       490000
+SIAMÉS           2016    74/100   12000        562000
+
+ 
+ Genre List: 
+======================================================================================================= 
+Electro_Swing   - 6 songs of this genre in the Librarry 
+Pop             - 6 songs of this genre in the Librarry 
+Rock            - 4 songs of this genre in the Librarry 

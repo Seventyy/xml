@@ -1,0 +1,506 @@
+<svg xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+     xmlns:exsl="http://exslt.org/common"
+     xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="1080">
+   <style>
+                .title{
+                    font: bold 26px sans-serif;
+                }
+
+                .highlight {
+                    font: bold 16px sans-serif;
+                }
+
+                .normal {
+                    font: 14px sans-serif
+                }
+            </style>
+   <text x="20" y="50" class="title">
+                Songs Popularity Diagrams Based on Viewes!
+            </text>
+   <text x="1150" y="1040" class="title">
+                Filip Andrzejewski, id: 242207
+            </text>
+   <text x="40" y="120">
+      <tspan class="highlight">Lone Digger</tspan>
+      <tspan>- Caravan Palace</tspan>
+   </text>
+   <rect x="320" y="105" height="20" width="190" fill="deepskyblue">
+      <animate attributeName="width" from="0" to="190" dur="4.9s"/>
+   </rect>
+   <text x="520" y="120" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.9s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.9s"/>361 mln
+                </text>
+   <text x="40" y="180">
+      <tspan class="highlight">The Wolf</tspan>
+      <tspan>- SIAMÉS</tspan>
+   </text>
+   <rect x="320"
+         y="165"
+         height="20"
+         width="127.27922061357854"
+         fill="palegreen">
+      <animate attributeName="width"
+               from="0"
+               to="127.27922061357854"
+               dur="4.8s"/>
+   </rect>
+   <text x="457.27922061357856" y="180" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.8s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.8s"/>162 mln
+                </text>
+   <text x="40" y="240">
+      <tspan class="highlight">Beggin'</tspan>
+      <tspan>- Måneskin</tspan>
+   </text>
+   <rect x="320"
+         y="225"
+         height="20"
+         width="124.89995996796797"
+         fill="tomato">
+      <animate attributeName="width"
+               from="0"
+               to="124.89995996796797"
+               dur="4.7s"/>
+   </rect>
+   <text x="454.89995996796796" y="240" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.7s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.7s"/>156 mln
+                </text>
+   <text x="40" y="300">
+      <tspan class="highlight">Zitti e Buoni</tspan>
+      <tspan>- Måneskin</tspan>
+   </text>
+   <rect x="320"
+         y="285"
+         height="20"
+         width="123.28828005937952"
+         fill="tomato">
+      <animate attributeName="width"
+               from="0"
+               to="123.28828005937952"
+               dur="4.6s"/>
+   </rect>
+   <text x="453.28828005937953" y="300" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.6s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.6s"/>152 mln
+                </text>
+   <text x="40" y="360">
+      <tspan class="highlight">I Wanna Be Your Slave</tspan>
+      <tspan>- Måneskin</tspan>
+   </text>
+   <rect x="320"
+         y="345"
+         height="20"
+         width="97.0051545022222"
+         fill="tomato">
+      <animate attributeName="width" from="0" to="97.0051545022222" dur="4.5s"/>
+   </rect>
+   <text x="427.0051545022222" y="360" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.5s"/>94.1 mln
+                </text>
+   <text x="40" y="420">
+      <tspan class="highlight">Mr. Fear</tspan>
+      <tspan>- SIAMÉS</tspan>
+   </text>
+   <rect x="320"
+         y="405"
+         height="20"
+         width="66.55824516917494"
+         fill="palegreen">
+      <animate attributeName="width"
+               from="0"
+               to="66.55824516917494"
+               dur="4.4s"/>
+   </rect>
+   <text x="396.55824516917494" y="420" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.4s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.4s"/>44.3 mln
+                </text>
+   <text x="40" y="480">
+      <tspan class="highlight">Vent'anni</tspan>
+      <tspan>- Måneskin</tspan>
+   </text>
+   <rect x="320"
+         y="465"
+         height="20"
+         width="64.4980619863884"
+         fill="tomato">
+      <animate attributeName="width" from="0" to="64.4980619863884" dur="4.3s"/>
+   </rect>
+   <text x="394.4980619863884" y="480" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.3s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.3s"/>41.6 mln
+                </text>
+   <text x="40" y="540">
+      <tspan class="highlight">Black Betty</tspan>
+      <tspan>- Caravan Palace</tspan>
+   </text>
+   <rect x="320"
+         y="525"
+         height="20"
+         width="54.95452665613634"
+         fill="deepskyblue">
+      <animate attributeName="width"
+               from="0"
+               to="54.95452665613634"
+               dur="4.2s"/>
+   </rect>
+   <text x="384.95452665613635" y="540" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.2s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.2s"/>30.2 mln
+                </text>
+   <text x="40" y="600">
+      <tspan class="highlight">Miracle</tspan>
+      <tspan>- Caravan Palace</tspan>
+   </text>
+   <rect x="320"
+         y="585"
+         height="20"
+         width="46.58325879540846"
+         fill="palegreen">
+      <animate attributeName="width"
+               from="0"
+               to="46.58325879540846"
+               dur="4.1s"/>
+   </rect>
+   <text x="376.5832587954085" y="600" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3.1s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3.1s"/>21.7 mln
+                </text>
+   <text x="40" y="660">
+      <tspan class="highlight">Summer Nights</tspan>
+      <tspan>- SIAMÉS</tspan>
+   </text>
+   <rect x="320"
+         y="645"
+         height="20"
+         width="45.607017003965524"
+         fill="palegreen">
+      <animate attributeName="width" from="0" to="45.607017003965524" dur="4s"/>
+   </rect>
+   <text x="375.60701700396555" y="660" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="3s"/>20.8 mln
+                </text>
+   <text x="40" y="720">
+      <tspan class="highlight">Jimmys Gang</tspan>
+      <tspan>- Parov Stelar</tspan>
+   </text>
+   <rect x="320"
+         y="705"
+         height="20"
+         width="44.8998886412873"
+         fill="deepskyblue">
+      <animate attributeName="width" from="0" to="44.8998886412873" dur="3.9s"/>
+   </rect>
+   <text x="374.8998886412873" y="720" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.9s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.9s"/>20.16 mln
+                </text>
+   <text x="40" y="780">
+      <tspan class="highlight">Chambermaid Swing</tspan>
+      <tspan>- Parov Stelar</tspan>
+   </text>
+   <rect x="320"
+         y="765"
+         height="20"
+         width="43.93176527297759"
+         fill="deepskyblue">
+      <animate attributeName="width"
+               from="0"
+               to="43.93176527297759"
+               dur="3.8s"/>
+   </rect>
+   <text x="373.9317652729776" y="780" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.8s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.8s"/>19.3 mln
+                </text>
+   <text x="40" y="840">
+      <tspan class="highlight">Mighty</tspan>
+      <tspan>- Caravan Palace</tspan>
+   </text>
+   <rect x="320"
+         y="825"
+         height="20"
+         width="35.21363372331802"
+         fill="deepskyblue">
+      <animate attributeName="width"
+               from="0"
+               to="35.21363372331802"
+               dur="3.7s"/>
+   </rect>
+   <text x="365.213633723318" y="840" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.7s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.7s"/>12.4 mln
+                </text>
+   <text x="40" y="900">
+      <tspan class="highlight">The Sun</tspan>
+      <tspan>- Parov Stelar</tspan>
+   </text>
+   <rect x="320"
+         y="885"
+         height="20"
+         width="31.144823004794876"
+         fill="palegreen">
+      <animate attributeName="width"
+               from="0"
+               to="31.144823004794876"
+               dur="3.6s"/>
+   </rect>
+   <text x="361.1448230047949" y="900" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.6s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.6s"/>9.7 mln
+                </text>
+   <text x="40" y="960">
+      <tspan class="highlight">No Lullaby</tspan>
+      <tspan>- SIAMÉS</tspan>
+   </text>
+   <rect x="320"
+         y="945"
+         height="20"
+         width="18.193405398660254"
+         fill="palegreen">
+      <animate attributeName="width"
+               from="0"
+               to="18.193405398660254"
+               dur="3.5s"/>
+   </rect>
+   <text x="348.1934053986603" y="960" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.5s"/>3.31 mln
+                </text>
+   <text x="40" y="1020">
+      <tspan class="highlight">Hit Me Like A Drum</tspan>
+      <tspan>- Parov Stelar</tspan>
+   </text>
+   <rect x="320"
+         y="1005"
+         height="20"
+         width="10.488088481701515"
+         fill="deepskyblue">
+      <animate attributeName="width"
+               from="0"
+               to="10.488088481701515"
+               dur="3.4s"/>
+   </rect>
+   <text x="340.48808848170154" y="1020" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="2.4s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="2.4s"/>1.1 mln
+                </text>
+   <circle r="160" cx="850" cy="200" fill="lightgrey"/>
+   <circle r="90"
+           cx="850"
+           cy="200"
+           fill-opacity="0"
+           stroke="deepskyblue"
+           stroke-width="160"
+           stroke-dasharray="218.33676 565.2"
+           transform="rotate(-90 850 200)">
+      <animate attributeName="stroke-dasharray"
+               from="0 565.2"
+               to="218.33676 565.2"
+               dur="5s"/>
+   </circle>
+   <circle r="90"
+           cx="850"
+           cy="200"
+           fill-opacity="0"
+           stroke="palegreen"
+           stroke-width="160"
+           stroke-dasharray="128.69604 565.2"
+           transform="rotate(49.067999999999984 850 200)">
+      <animate attributeName="stroke-dasharray"
+               from="0 565.2"
+               to="128.69604 565.2"
+               dur="5s"/>
+   </circle>
+   <circle r="90"
+           cx="850"
+           cy="200"
+           fill-opacity="0"
+           stroke="tomato"
+           stroke-width="160"
+           stroke-dasharray="218.11068000000003 565.2"
+           transform="rotate(131.04 850 200)">
+      <animate attributeName="stroke-dasharray"
+               from="0 565.2"
+               to="218.11068000000003 565.2"
+               dur="5s"/>
+   </circle>
+   <circle r="90" cx="850" cy="200" fill="white"/>
+   <rect x="1080" y="100" height="40" width="40" fill="deepskyblue"/>
+   <rect x="1080" y="170" height="40" width="40" fill="palegreen"/>
+   <rect x="1080" y="240" height="40" width="40" fill="tomato"/>
+   <text x="1130" y="120" class="highlight">Electro Swing - 38.62% of the viewes in Lib</text>
+   <text x="1130" y="190" class="highlight">Pop - 22.77% of the viewes in Lib</text>
+   <text x="1130" y="260" class="highlight">Rock - 38.59% of the viewes in Lib</text>
+   <rect x="650" y="770" height="10" width="400" fill="lightgrey"/>
+   <text x="700"
+         y="800"
+         class="highlight"
+         transform="rotate(70 700 800)">Caravan Palace</text>
+   <rect x="700"
+         y="790"
+         height="206.2280291328024"
+         width="16"
+         transform="rotate(180 710 780)"
+         fill="midnightblue">
+      <animate attributeName="height" from="0" to="0" dur="5s"/>
+      <animate attributeName="height"
+               from="0"
+               to="206.2280291328024"
+               begin="5s"
+               dur="2.5s"/>
+   </rect>
+   <text x="690" y="553.7719708671976" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="6.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="6.5s"/>425.3 mln
+                </text>
+   <text x="800"
+         y="800"
+         class="highlight"
+         transform="rotate(70 800 800)">Måneskin</text>
+   <rect x="800"
+         y="790"
+         height="210.6418761785035"
+         width="16"
+         transform="rotate(180 810 780)"
+         fill="midnightblue">
+      <animate attributeName="height" from="0" to="0" dur="5s"/>
+      <animate attributeName="height"
+               from="0"
+               to="210.6418761785035"
+               begin="5s"
+               dur="2.5s"/>
+   </rect>
+   <text x="790" y="549.3581238214965" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="6.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="6.5s"/>443.7 mln
+                </text>
+   <text x="900"
+         y="800"
+         class="highlight"
+         transform="rotate(70 900 800)">Parov Stelar</text>
+   <rect x="900"
+         y="790"
+         height="70.89428749906442"
+         width="16"
+         transform="rotate(180 910 780)"
+         fill="midnightblue">
+      <animate attributeName="height" from="0" to="0" dur="5s"/>
+      <animate attributeName="height"
+               from="0"
+               to="70.89428749906442"
+               begin="5s"
+               dur="2.5s"/>
+   </rect>
+   <text x="890" y="689.1057125009356" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="6.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="6.5s"/>50.26 mln
+                </text>
+   <text x="1000"
+         y="800"
+         class="highlight"
+         transform="rotate(70 1000 800)">SIAMÉS</text>
+   <rect x="1000"
+         y="790"
+         height="151.7926216915697"
+         width="16"
+         transform="rotate(180 1010 780)"
+         fill="midnightblue">
+      <animate attributeName="height" from="0" to="0" dur="5s"/>
+      <animate attributeName="height"
+               from="0"
+               to="151.7926216915697"
+               begin="5s"
+               dur="2.5s"/>
+   </rect>
+   <text x="990" y="608.2073783084303" class="normal" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="6.5s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.8s"
+               begin="6.5s"/>230.41 mln
+                </text>
+</svg>
