@@ -15,9 +15,9 @@
                     <xsl:variable name="dev_id" select="@developer_id" />
 
                     <xsl:element name="game">
-                        <xsl:element name="title">
+                        <xsl:attribute name="title">
                             <xsl:value-of name="title" select="title" />
-                        </xsl:element>
+                        </xsl:attribute>
                         <xsl:element name="developer">
                             <xsl:value-of select="../../developers/developers:developer/name[../@developer_id = $dev_id]" />
                         </xsl:element>
@@ -35,22 +35,22 @@
                 </xsl:for-each>
             </xsl:element>
 
-            <xsl:call-template name="statistics"/>
+            <xsl:call-template name="statistics" />
 
         </xsl:element>
     </xsl:template>
 
-    <xsl:template name="statistics"> 
+    <xsl:template name="statistics">
 
-        <xsl:variable name="games_amount" select="count(steam/games/games:game)"/>
+        <xsl:variable name="games_amount" select="count(steam/games/games:game)" />
         <xsl:element name="games_amount">
             <xsl:attribute name="average_price">
-            <xsl:value-of select="round(sum(steam/games/games:game/price) div $games_amount * 21) div 100"/>
-        </xsl:attribute>
-            <xsl:value-of select="$games_amount"/>
+                <xsl:value-of select="round(sum(steam/games/games:game/price) div $games_amount * 21) div 100" />
+            </xsl:attribute>
+            <xsl:value-of select="$games_amount" />
         </xsl:element>
 
-    
+
     </xsl:template>
 
 
