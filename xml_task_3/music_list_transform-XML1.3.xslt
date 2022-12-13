@@ -41,13 +41,14 @@
     </xsl:template>
 
     <xsl:template name="statistics">
-
-        <xsl:variable name="games_amount" select="count(steam/games/games:game)" />
-        <xsl:element name="games_amount">
-            <xsl:attribute name="average_price">
-                <xsl:value-of select="round(sum(steam/games/games:game/price) div $games_amount * 21) div 100" />
-            </xsl:attribute>
-            <xsl:value-of select="$games_amount" />
+        <xsl:element name="statistics">
+            <xsl:variable name="games_amount" select="count(steam/games/games:game)" />
+            <xsl:element name="games_amount">
+                <xsl:attribute name="average_price">
+                    <xsl:value-of select="round(sum(steam/games/games:game/price) div $games_amount * 21) div 100" />
+                </xsl:attribute>
+                <xsl:value-of select="$games_amount" />
+            </xsl:element>
         </xsl:element>
 
 
