@@ -1,19 +1,18 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output name="text"/>
     
-    <!-- Songs Longest columns: -->
+    <!-- games Longest columns: -->
     <xsl:param name="longest_title">
-        <xsl:for-each select="music_list/songList/song">
-            <xsl:sort select="string-length(@name)" data-type="number" order="ascending"/>
+        <xsl:for-each select="steam/games/game">
+            <xsl:sort select="string-length(@title)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(@name)+3"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:param>
-    
-    
+<!--     
     <xsl:param name="longest_author">
-        <xsl:for-each select="music_list/songList/song">
+        <xsl:for-each select="steam/games/game">
             <xsl:sort select="string-length(author)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(author)+3"/>
@@ -22,7 +21,7 @@
     </xsl:param>
     
     <xsl:param name="longest_genre">
-        <xsl:for-each select="music_list/songList/song">
+        <xsl:for-each select="steam/games/game">
             <xsl:sort select="string-length(genre)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(genre)+3"/>
@@ -31,18 +30,18 @@
     </xsl:param>
     
     <xsl:param name="longest_views">
-        <xsl:for-each select="music_list/songList/song">
+        <xsl:for-each select="steam/games/game">
             <xsl:sort select="string-length(@views)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(@views)+3"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:param>
-    
+     -->
     <!-- authors longes columns: -->
     
     <xsl:param name="longest_name">
-        <xsl:for-each select="music_list/authorList/author">
+        <xsl:for-each select="steam/authorList/author">
             <xsl:sort select="string-length(name)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(name)+3"/>
@@ -51,7 +50,7 @@
     </xsl:param>
     
     <xsl:param name="longest_SCFollowers">
-        <xsl:for-each select="music_list/authorList/author">
+        <xsl:for-each select="steam/authorList/author">
             <xsl:sort select="string-length(@scFollowers)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(@scFollowers)+7"/>
@@ -62,7 +61,7 @@
     <!-- longest genre name: -->
 
     <xsl:param name="longest_genre_name">
-        <xsl:for-each select="music_list/genres/genre">
+        <xsl:for-each select="steam/genres/genre">
             <xsl:sort select="string-length(.)" data-type="number" order="ascending"/>
             <xsl:if test="position()=last()">
                 <xsl:value-of select="string-length(.)+3"/>
@@ -72,9 +71,9 @@
     
     <xsl:template match="/">
         <xsl:value-of select="'This is a text file listing all Librarry music, authors and genres (ordered alphabetically): &#xA; &#xA;'"/>
-        <xsl:value-of select="'Song List: &#xA;'"/>
+        <xsl:value-of select="'game List: &#xA;'"/>
         <xsl:value-of select="'======================================================================================================= &#xA;'"/>
-        <xsl:call-template name="song_row">
+        <xsl:call-template name="game_row">
             <xsl:with-param name="Title" select="'Title'"/>
             <xsl:with-param name="Author" select="'Author'"/>
             <xsl:with-param name="Genre" select="'Genre'"/>
@@ -84,8 +83,8 @@
         </xsl:call-template>
         <xsl:value-of select="'-------------------------------------------------------------------------------------------------------  &#xA;'"/>
         
-        <xsl:for-each select="music_list/songList/song">
-            <xsl:call-template name="song_row">
+        <xsl:for-each select="steam/games/game">
+            <xsl:call-template name="game_row">
                 
                 <xsl:with-param name="Title" select="@name"/>
                 <xsl:with-param name="Author" select="author"/>
@@ -108,7 +107,7 @@
         </xsl:call-template>
         <xsl:value-of select="'-------------------------------------------------------------------------------------------------------  &#xA;'"/>
         
-        <xsl:for-each select="music_list/authorList/author">
+        <xsl:for-each select="steam/authorList/author">
             <xsl:call-template name="author_row">
                 <xsl:with-param name="Name" select="name"/>
                 <xsl:with-param name="Debut" select="@debut"/>
@@ -120,15 +119,15 @@
 
         <xsl:value-of select="'&#xA; &#xA; Genre List: &#xA;'"/>
         <xsl:value-of select="'======================================================================================================= &#xA;'"/>
-        <xsl:for-each select="music_list/genres/genre">
+        <xsl:for-each select="steam/genres/genre">
             <!-- max length of genre name: 40 characters -->
             <xsl:variable name="space_bank" select="'                                        '"/>
-            <xsl:value-of select="concat(., substring($space_bank, 1 , ($longest_genre_name - string-length(.))), '- ', @songs_of_genre, ' songs of this genre in the Librarry &#xA;')"/>
+            <xsl:value-of select="concat(., substring($space_bank, 1 , ($longest_genre_name - string-length(.))), '- ', @games_of_genre, ' games of this genre in the Librarry &#xA;')"/>
         </xsl:for-each>
         
     </xsl:template>
     
-    <xsl:template name="song_row">
+    <xsl:template name="game_row">
         
         <xsl:param name="Author"/>
         <xsl:param name="Title"/>
