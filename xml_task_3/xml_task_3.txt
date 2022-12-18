@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+Title                                 | Developer            | Price | Release    | Reviews
+----------------------------------------------------------------------------------------------------------- 
+Artifact                              | Valve                |  0.00 | 2018-11-28 | Mixed
+Bastion                               | Supergiant Games     | 11.00 | 2011-08-16 | Overhwelmingly Positive
+Bloons Adventure Time TD              | Ninja Kiwi           |  0.00 | 2019-07-16 | Very Positive
+Bloons Monkey City                    | Ninja Kiwi           |  0.00 | 2014-12-04 | Very Positive
+Bloons TD 6                           | Ninja Kiwi           |  7.00 | 2018-12-18 | Overhwelmingly Positive
+Bloons TD Battles 2                   | Ninja Kiwi           |  0.00 | 2020-11-09 | Mostly Positive
+Counter-Strike: Global Offensive      | Valve                |  0.00 | 2012-08-21 | Very Positive
+Cyberpunk 2077                        | CD Project           | 41.00 | 2020-12-10 | Mostly Positive
+Dota 2                                | Valve                |  0.00 | 2013-07-09 | Mostly Positive
+GWENT: The Witcher Card Game          | CD Project           |  0.00 | 2020-05-19 | Very Positive
+Hades                                 | Supergiant Games     | 18.00 | 2020-09-17 | Overhwelmingly Positive
+Portal 2                              | Valve                |  9.00 | 2011-04-19 | Overhwelmingly Positive
+Pyre                                  | Supergiant Games     | 15.00 | 2017-06-25 | Very Positive
+SAS: Zombie Assault 4                 | Ninja Kiwi           |  0.00 | 2017-08-16 | Very Positive
+Team Fortress 2                       | Valve                |  0.00 | 2007-10-10 | Very Positive
+The Witcher                           | CD Project           |  6.00 | 2008-09-16 | Very Positive
+The Witcher 2: Assassins of Kings     | CD Project           |  8.00 | 2011-05-17 | Very Positive
+The Witcher 3: Wild Hunt              | CD Project           | 20.00 | 2015-05-18 | Overhwelmingly Positive
+Thronebreaker: The Witcher Tales      | CD Project           | 16.00 | 2018-11-09 | Very Positive
+Transistor                            | Supergiant Games     | 15.00 | 2014-05-20 | Very Positive
+

@@ -28,7 +28,8 @@
                             <xsl:value-of name="release_date" select="release_date" />
                         </xsl:element>
                         <xsl:element name="price_in_euro">
-                            <xsl:value-of name="price" select="floor(price*0.21) + 1" />
+                            <xsl:value-of name="price" select="floor(price*(0.20+0.01))" />
+                            <xsl:value-of name="price" select="'.00'" />
                         </xsl:element>
 
                     </xsl:element>

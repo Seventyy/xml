@@ -1,0 +1,607 @@
+<svg
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="3000"
+    height="2000">
+
+    <style>
+    .small {
+      font: 90px sans-serif;
+      fill: white
+    }
+    .big {
+      font: bold 120px sans-serif;
+      fill: white
+    }
+    </style>
+
+        <rect id="board" width="1300" height="1800" 
+        fill="black"
+        x="100"
+        y="100"/>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="-200; 100"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="100; 400"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="400; 700"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="700; 1000"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="1000; 1300"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="1000; 1300"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="1300; 1600"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="1300" height="300"
+        x="100" y="100">
+            <g>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(100, 300)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(60, 100)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(240, 130)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(450, 240)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(600, 40)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(800, 140)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(900, 280)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1200, 50)"/>
+                <rect 
+                width="8" height="8" 
+                fill="white"
+                transform="translate(1250, 250)"/>
+                
+            </g>
+            <animate 
+            attributeName="y"
+            values="1600; 1900"
+            dur="3s"
+            repeatCount="indefinite"/>
+        </svg> 
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="enemy1"
+        width="100" height="100"
+        x="-3000" y="-3000"
+        fill-opacity="0">
+
+            <g transform="rotate(-45) translate(0, 15)" transform-origin="50% 50%"
+            fill-opacity="1">
+                <polygon 
+                points="0, 30 30, 70 30, 42 70, 42 70, 70 100, 30 75, 1 25, 1"
+                fill="#a401a4" 
+                stroke-width="2"
+                stroke="#f6b9f4"/>
+                
+                <ellipse 
+                rx="20" ry="10"
+                cx="50"
+                cy="22"
+                fill="#ff5757"
+                stroke-width="2"
+                stroke="#ffdede"/>
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="enemy2"
+        width="100" height="100"
+        x="-3000" y="-3000"
+        fill-opacity="0">
+        
+            <g transform="rotate(45) translate(0, 15)" transform-origin="50% 50%"
+            fill-opacity="1">
+                <polygon 
+                points="0, 30 30, 70 30, 42 70, 42 70, 70 100, 30 75, 1 25, 1"
+                fill="#a401a4" 
+                stroke-width="2"
+                stroke="#f6b9f4"/>
+                
+                <ellipse 
+                rx="20" ry="10"
+                cx="50"
+                cy="22"
+                fill="#ff5757"
+                stroke-width="2"
+                stroke="#ffdede"
+                />
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="enemy3"
+        width="100"
+        height="100"
+        x="-3000"
+        y="-3000"
+        fill-opacity="0">
+
+            <g transform="rotate(202.5) translate(0, 15)" transform-origin="50% 50%"
+            fill-opacity="1">
+                <polygon 
+                points="0, 30 30, 70 30, 42 70, 42 70, 70 100, 30 75, 1 25, 1"
+                fill="#a401a4" 
+                stroke-width="2"
+                stroke="#f6b9f4"/>
+                
+                <ellipse 
+                rx="20" ry="10"
+                cx="50"
+                cy="22"
+                fill="#ff5757"
+                stroke-width="2"
+                stroke="#ffdede"
+                />
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="enemy4"
+        width="430"
+        height="230"
+        x="-3000"
+        y="-3000"
+        fill-opacity="0">
+            <g transform="translate(15, 15)" fill-opacity="1">
+                <polygon 
+                points="0,80 0,180, 70,130 200,200 330,130, 400,180 400,80 300,0 100,0"
+                fill="#a401a4" 
+                stroke-width="3"
+                stroke="#f6b9f4"/>
+
+                <circle r="38"
+                cx="200" cy="52" 
+                fill="#ff5757"
+                stroke-width="3"
+                stroke="#ffdede"/>
+
+                <circle r="20"
+                cx="200" cy="135" 
+                fill="#ff5757"
+                stroke-width="2"
+                stroke="#ffdede"/>
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="player"
+        width="100"
+        height="65"
+        x="200"
+        y="100"
+        fill-opacity="0">
+            <g fill-opacity="1">
+                <rect 
+                    width="30" height="15" 
+                    x="8" 
+                    y="32"
+                    fill="#535b7a"
+                    />
+
+                <rect 
+                    width="30" height="15" 
+                    x="62" 
+                    y="32"
+                    fill="#535b7a"
+                    />
+                    
+                <polygon 
+                    points="0, 35 38, 35 50, 60 62, 35 100, 35 50, 0" 
+                    fill="#0146d0" 
+                    stroke-width="2"
+                    stroke="#6f88d5"/>
+
+                <polygon 
+                    points="26, 26 74, 26 50, 0"
+                    fill="#55d4ff"
+                    stroke-width="2" 
+                    stroke="white"/> 
+            </g>
+        </svg>
+        
+        <rect id="topB" width="3000" height="100" 
+        fill="#272644"/>
+
+        <rect id="leftB" width="100" height="2000" 
+        fill="#272644"/>
+
+        <rect id="bottomB" width="3000" height="1000" 
+        fill="#272644"
+        y="1900"/>
+
+        <rect id="rightB" width="1600" height="1800" 
+        fill="#272644"
+        x="1400"
+        y="100"/>
+
+        <text 
+        id="hpState"
+        class="big"
+        x="1500"
+        y="200">
+            Lives Left: 
+        </text>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        id="lives"
+        width="600"
+        height="150"
+        x="1500"
+        y="260">
+            <g fill="#00a2ff">
+                <rect width="100" height="150"/>
+                <rect width="100" height="150" 
+                transform="translate(200, 0)"/>
+                <rect width="100" height="150" 
+                transform="translate(400, 0)"/>
+            </g>
+        </svg>
+
+        <text  
+        id="pointBar"
+        class="small"
+        x="1500"
+        y="600">
+            Points: (based on time)
+        </text>
+
+        <text
+        id="points"
+        class="small"
+        x="1500"
+        y="700">
+            0
+        </text>
+
+
+    <script xlink:href="main_script.js" />
+</svg>

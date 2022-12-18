@@ -5,122 +5,124 @@
       <developer>Valve</developer>
       <steam_reviews>Mixed</steam_reviews>
       <release_date>2018-11-28</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Bastion">
       <developer>Supergiant Games</developer>
       <steam_reviews>Overhwelmingly Positive</steam_reviews>
       <release_date>2011-08-16</release_date>
-      <price_in_euro>12</price_in_euro>
+      <price_in_euro>11.00</price_in_euro>
     </game>
     <game title="Bloons Adventure Time TD">
       <developer>Ninja Kiwi</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2019-07-16</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Bloons Monkey City">
       <developer>Ninja Kiwi</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2014-12-04</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Bloons TD 6">
       <developer>Ninja Kiwi</developer>
       <steam_reviews>Overhwelmingly Positive</steam_reviews>
       <release_date>2018-12-18</release_date>
-      <price_in_euro>8</price_in_euro>
+      <price_in_euro>7.00</price_in_euro>
     </game>
     <game title="Bloons TD Battles 2">
       <developer>Ninja Kiwi</developer>
       <steam_reviews>Mostly Positive</steam_reviews>
       <release_date>2020-11-09</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Counter-Strike: Global Offensive">
       <developer>Valve</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2012-08-21</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Cyberpunk 2077">
       <developer>CD Project</developer>
       <steam_reviews>Mostly Positive</steam_reviews>
       <release_date>2020-12-10</release_date>
-      <price_in_euro>42</price_in_euro>
+      <price_in_euro>41.00</price_in_euro>
     </game>
     <game title="Dota 2">
       <developer>Valve</developer>
       <steam_reviews>Mostly Positive</steam_reviews>
       <release_date>2013-07-09</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="GWENT: The Witcher Card Game">
       <developer>CD Project</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2020-05-19</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Hades">
       <developer>Supergiant Games</developer>
       <steam_reviews>Overhwelmingly Positive</steam_reviews>
       <release_date>2020-09-17</release_date>
-      <price_in_euro>19</price_in_euro>
+      <price_in_euro>18.00</price_in_euro>
     </game>
     <game title="Portal 2">
       <developer>Valve</developer>
       <steam_reviews>Overhwelmingly Positive</steam_reviews>
       <release_date>2011-04-19</release_date>
-      <price_in_euro>10</price_in_euro>
+      <price_in_euro>9.00</price_in_euro>
     </game>
     <game title="Pyre">
       <developer>Supergiant Games</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2017-06-25</release_date>
-      <price_in_euro>16</price_in_euro>
+      <price_in_euro>15.00</price_in_euro>
     </game>
     <game title="SAS: Zombie Assault 4">
       <developer>Ninja Kiwi</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2017-08-16</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="Team Fortress 2">
       <developer>Valve</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2007-10-10</release_date>
-      <price_in_euro>1</price_in_euro>
+      <price_in_euro>0.00</price_in_euro>
     </game>
     <game title="The Witcher">
       <developer>CD Project</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2008-09-16</release_date>
-      <price_in_euro>7</price_in_euro>
+      <price_in_euro>6.00</price_in_euro>
     </game>
     <game title="The Witcher 2: Assassins of Kings">
       <developer>CD Project</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2011-05-17</release_date>
-      <price_in_euro>9</price_in_euro>
+      <price_in_euro>8.00</price_in_euro>
     </game>
     <game title="The Witcher 3: Wild Hunt">
       <developer>CD Project</developer>
       <steam_reviews>Overhwelmingly Positive</steam_reviews>
       <release_date>2015-05-18</release_date>
-      <price_in_euro>21</price_in_euro>
+      <price_in_euro>20.00</price_in_euro>
     </game>
     <game title="Thronebreaker: The Witcher Tales">
       <developer>CD Project</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2018-11-09</release_date>
-      <price_in_euro>17</price_in_euro>
+      <price_in_euro>16.00</price_in_euro>
     </game>
     <game title="Transistor">
       <developer>Supergiant Games</developer>
       <steam_reviews>Very Positive</steam_reviews>
       <release_date>2014-05-20</release_date>
-      <price_in_euro>16</price_in_euro>
+      <price_in_euro>15.00</price_in_euro>
     </game>
   </games>
-  <games_amount average_price="8.6">20</games_amount>
+  <statistics>
+    <games_amount average_price="8.6">20</games_amount>
+  </statistics>
 </steam>

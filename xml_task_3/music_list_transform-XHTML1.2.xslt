@@ -5,12 +5,11 @@
 
     <!-- this output method does not work -->
     <xsl:output method="xhtml" 
-                omit-xml-declaration="no" 
+                omit-xml-declaration="yes" 
                 indent="yes" 
                 encoding="UTF-8"
                 version="1.0"
                 doctype-public="-//W3C//DTD XHTML 1.1//EN" 
-                doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
                 />
     
     <xsl:template match="/">
