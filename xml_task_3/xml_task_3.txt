@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 
 Title                                 | Developer            | Price | Release    | Reviews
 ----------------------------------------------------------------------------------------------------------- 
@@ -22,4 +21,3 @@ The Witcher 2: Assassins of Kings     | CD Project           |  8.00 | 2011-05-1
 The Witcher 3: Wild Hunt              | CD Project           | 20.00 | 2015-05-18 | Overhwelmingly Positive
 Thronebreaker: The Witcher Tales      | CD Project           | 16.00 | 2018-11-09 | Very Positive
 Transistor                            | Supergiant Games     | 15.00 | 2014-05-20 | Very Positive
-

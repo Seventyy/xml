@@ -1,4 +1,5 @@
-<svg 
+<svg
+    id="root"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg"

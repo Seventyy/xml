@@ -13,7 +13,7 @@
     <xsl:param name="list_offset_x" select="40"/>
     <xsl:param name="list_offset_y" select="60"/>
     
-    <xsl:param name="graph_offset_x" select="300"/>
+    <xsl:param name="graph_offset_x" select="400"/>
 
     <xsl:param name="overhwelmingly_positive_color" select="'#0b744a'"/>
     <xsl:param name="very_positive_color" select="'#25b038'"/>
@@ -61,7 +61,7 @@
                 </text>
                 <xsl:variable name="calculate_width" select="price_in_euro * 10 + 10"/>
                 <rect 
-                    x="{$list_offset_x + $graph_offset_x}" 
+                    x="{$graph_offset_x}" 
                     y="{$list_offset_y + 60 * position() - 15}" 
                     height="20"
                     width="{$calculate_width}"
@@ -113,7 +113,7 @@
                         begin="{$calculate_width div 30}s"/>
                 </rect>
                 <text 
-                    x="{$list_offset_x + $graph_offset_x + $calculate_width + 10}" 
+                    x="{$graph_offset_x + $calculate_width + 10}" 
                     y="{$list_offset_y + 60*position()}" 
                     class="price" 
                     fill-opacity="1">
@@ -130,8 +130,8 @@
                         begin="{$calculate_width div 30}s"/>
                     <animate 
                         attributeName="x"
-                        from="{$list_offset_x + $graph_offset_x + $calculate_width + 10 + 10}" 
-                        to="{$list_offset_x + $graph_offset_x + $calculate_width + 10}" 
+                        from="{$graph_offset_x + $calculate_width + 10 + 10}" 
+                        to="{$graph_offset_x + $calculate_width + 10}" 
                         dur="0.5s"
                         begin="{$calculate_width div 30}s"/>
                         

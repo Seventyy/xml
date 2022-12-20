@@ -1,7 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output name="text"/>
     
-    <!-- games Longest columns: -->
     <xsl:param name="max_length_title">
         <xsl:for-each select="steam/games/game">
             <xsl:sort select="string-length(@title)" data-type="number" order="ascending"/>

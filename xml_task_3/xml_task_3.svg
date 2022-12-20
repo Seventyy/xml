@@ -18,6 +18,7 @@
                     font: 14px sans-serif;
                     fill: white;
                 }
+
             </style>
    <defs>
       <linearGradient id="backgroud" gradientTransform="rotate(-45)">
@@ -36,7 +37,7 @@
    <text x="40" y="120">
       <tspan class="entry">Cyberpunk 2077</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="105"
          height="20"
          width="420"
@@ -53,7 +54,7 @@
                begin="14s"/>
       <animate attributeName="y" from="114" to="105" dur="2s" begin="14s"/>
    </rect>
-   <text x="770" y="120" class="price" fill-opacity="1">
+   <text x="830" y="120" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="14s"/>
       <animate attributeName="fill-opacity"
                from="0"
@@ -61,15 +62,15 @@
                dur="0.5s"
                begin="14s"/>
       <animate attributeName="x"
-               from="780"
-               to="770"
+               from="840"
+               to="830"
                dur="0.5s"
                begin="14s"/>41.00 €
                 </text>
    <text x="40" y="180">
       <tspan class="entry">Bloons TD Battles 2</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="165"
          height="20"
          width="10"
@@ -96,7 +97,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="180" class="price" fill-opacity="1">
+   <text x="420" y="180" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -107,15 +108,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="240">
       <tspan class="entry">Hades</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="225"
          height="20"
          width="190"
@@ -139,7 +140,7 @@
                dur="2s"
                begin="6.333333333333333s"/>
    </rect>
-   <text x="540" y="240" class="price" fill-opacity="1">
+   <text x="600" y="240" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -150,15 +151,15 @@
                dur="0.5s"
                begin="6.333333333333333s"/>
       <animate attributeName="x"
-               from="550"
-               to="540"
+               from="610"
+               to="600"
                dur="0.5s"
                begin="6.333333333333333s"/>18.00 €
                 </text>
    <text x="40" y="300">
       <tspan class="entry">GWENT: The Witcher Card Game</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="285"
          height="20"
          width="10"
@@ -185,7 +186,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="300" class="price" fill-opacity="1">
+   <text x="420" y="300" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -196,15 +197,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="360">
       <tspan class="entry">Bloons Adventure Time TD</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="345"
          height="20"
          width="10"
@@ -231,7 +232,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="360" class="price" fill-opacity="1">
+   <text x="420" y="360" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -242,15 +243,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="420">
       <tspan class="entry">Bloons TD 6</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="405"
          height="20"
          width="80"
@@ -277,7 +278,7 @@
                dur="2s"
                begin="2.6666666666666665s"/>
    </rect>
-   <text x="430" y="420" class="price" fill-opacity="1">
+   <text x="490" y="420" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -288,15 +289,15 @@
                dur="0.5s"
                begin="2.6666666666666665s"/>
       <animate attributeName="x"
-               from="440"
-               to="430"
+               from="500"
+               to="490"
                dur="0.5s"
                begin="2.6666666666666665s"/>7.00 €
                 </text>
    <text x="40" y="480">
       <tspan class="entry">Artifact</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="465"
          height="20"
          width="10"
@@ -323,7 +324,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="480" class="price" fill-opacity="1">
+   <text x="420" y="480" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -334,15 +335,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="540">
       <tspan class="entry">Thronebreaker: The Witcher Tales</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="525"
          height="20"
          width="170"
@@ -366,7 +367,7 @@
                dur="2s"
                begin="5.666666666666667s"/>
    </rect>
-   <text x="520" y="540" class="price" fill-opacity="1">
+   <text x="580" y="540" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -377,15 +378,15 @@
                dur="0.5s"
                begin="5.666666666666667s"/>
       <animate attributeName="x"
-               from="530"
-               to="520"
+               from="590"
+               to="580"
                dur="0.5s"
                begin="5.666666666666667s"/>16.00 €
                 </text>
    <text x="40" y="600">
       <tspan class="entry">SAS: Zombie Assault 4</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="585"
          height="20"
          width="10"
@@ -412,7 +413,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="600" class="price" fill-opacity="1">
+   <text x="420" y="600" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -423,15 +424,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="660">
       <tspan class="entry">Pyre</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="645"
          height="20"
          width="160"
@@ -455,7 +456,7 @@
                dur="2s"
                begin="5.333333333333333s"/>
    </rect>
-   <text x="510" y="660" class="price" fill-opacity="1">
+   <text x="570" y="660" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -466,15 +467,15 @@
                dur="0.5s"
                begin="5.333333333333333s"/>
       <animate attributeName="x"
-               from="520"
-               to="510"
+               from="580"
+               to="570"
                dur="0.5s"
                begin="5.333333333333333s"/>15.00 €
                 </text>
    <text x="40" y="720">
       <tspan class="entry">The Witcher 3: Wild Hunt</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="705"
          height="20"
          width="210"
@@ -487,19 +488,19 @@
       <animate attributeName="height" from="2" to="20" dur="2s" begin="7s"/>
       <animate attributeName="y" from="714" to="705" dur="2s" begin="7s"/>
    </rect>
-   <text x="560" y="720" class="price" fill-opacity="1">
+   <text x="620" y="720" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="7s"/>
       <animate attributeName="fill-opacity"
                from="0"
                to="1"
                dur="0.5s"
                begin="7s"/>
-      <animate attributeName="x" from="570" to="560" dur="0.5s" begin="7s"/>20.00 €
+      <animate attributeName="x" from="630" to="620" dur="0.5s" begin="7s"/>20.00 €
                 </text>
    <text x="40" y="780">
       <tspan class="entry">Bloons Monkey City</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="765"
          height="20"
          width="10"
@@ -526,7 +527,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="780" class="price" fill-opacity="1">
+   <text x="420" y="780" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -537,15 +538,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="840">
       <tspan class="entry">Transistor</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="825"
          height="20"
          width="160"
@@ -569,7 +570,7 @@
                dur="2s"
                begin="5.333333333333333s"/>
    </rect>
-   <text x="510" y="840" class="price" fill-opacity="1">
+   <text x="570" y="840" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -580,15 +581,15 @@
                dur="0.5s"
                begin="5.333333333333333s"/>
       <animate attributeName="x"
-               from="520"
-               to="510"
+               from="580"
+               to="570"
                dur="0.5s"
                begin="5.333333333333333s"/>15.00 €
                 </text>
    <text x="40" y="900">
       <tspan class="entry">Dota 2</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="885"
          height="20"
          width="10"
@@ -615,7 +616,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="900" class="price" fill-opacity="1">
+   <text x="420" y="900" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -626,15 +627,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="960">
       <tspan class="entry">Counter-Strike: Global Offensive</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="945"
          height="20"
          width="10"
@@ -661,7 +662,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="960" class="price" fill-opacity="1">
+   <text x="420" y="960" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -672,15 +673,15 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="1020">
       <tspan class="entry">Bastion</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="1005"
          height="20"
          width="120"
@@ -693,19 +694,19 @@
       <animate attributeName="height" from="2" to="20" dur="2s" begin="4s"/>
       <animate attributeName="y" from="1014" to="1005" dur="2s" begin="4s"/>
    </rect>
-   <text x="470" y="1020" class="price" fill-opacity="1">
+   <text x="530" y="1020" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="4s"/>
       <animate attributeName="fill-opacity"
                from="0"
                to="1"
                dur="0.5s"
                begin="4s"/>
-      <animate attributeName="x" from="480" to="470" dur="0.5s" begin="4s"/>11.00 €
+      <animate attributeName="x" from="540" to="530" dur="0.5s" begin="4s"/>11.00 €
                 </text>
    <text x="40" y="1080">
       <tspan class="entry">The Witcher 2: Assassins of Kings</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="1065"
          height="20"
          width="90"
@@ -718,19 +719,19 @@
       <animate attributeName="height" from="2" to="20" dur="2s" begin="3s"/>
       <animate attributeName="y" from="1074" to="1065" dur="2s" begin="3s"/>
    </rect>
-   <text x="440" y="1080" class="price" fill-opacity="1">
+   <text x="500" y="1080" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="3s"/>
       <animate attributeName="fill-opacity"
                from="0"
                to="1"
                dur="0.5s"
                begin="3s"/>
-      <animate attributeName="x" from="450" to="440" dur="0.5s" begin="3s"/>8.00 €
+      <animate attributeName="x" from="510" to="500" dur="0.5s" begin="3s"/>8.00 €
                 </text>
    <text x="40" y="1140">
       <tspan class="entry">Portal 2</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="1125"
          height="20"
          width="100"
@@ -760,7 +761,7 @@
                dur="2s"
                begin="3.3333333333333335s"/>
    </rect>
-   <text x="450" y="1140" class="price" fill-opacity="1">
+   <text x="510" y="1140" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -771,15 +772,15 @@
                dur="0.5s"
                begin="3.3333333333333335s"/>
       <animate attributeName="x"
-               from="460"
-               to="450"
+               from="520"
+               to="510"
                dur="0.5s"
                begin="3.3333333333333335s"/>9.00 €
                 </text>
    <text x="40" y="1200">
       <tspan class="entry">The Witcher</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="1185"
          height="20"
          width="70"
@@ -809,7 +810,7 @@
                dur="2s"
                begin="2.3333333333333335s"/>
    </rect>
-   <text x="420" y="1200" class="price" fill-opacity="1">
+   <text x="480" y="1200" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -820,15 +821,15 @@
                dur="0.5s"
                begin="2.3333333333333335s"/>
       <animate attributeName="x"
-               from="430"
-               to="420"
+               from="490"
+               to="480"
                dur="0.5s"
                begin="2.3333333333333335s"/>6.00 €
                 </text>
    <text x="40" y="1260">
       <tspan class="entry">Team Fortress 2</tspan>
    </text>
-   <rect x="340"
+   <rect x="400"
          y="1245"
          height="20"
          width="10"
@@ -858,7 +859,7 @@
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="360" y="1260" class="price" fill-opacity="1">
+   <text x="420" y="1260" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -869,8 +870,8 @@
                dur="0.5s"
                begin="0.3333333333333333s"/>
       <animate attributeName="x"
-               from="370"
-               to="360"
+               from="430"
+               to="420"
                dur="0.5s"
                begin="0.3333333333333333s"/>0.00 €
                 </text>

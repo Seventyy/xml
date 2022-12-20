@@ -7,8 +7,8 @@ class Vector2 {
     }
 }
 
-const map_size = new Vector2(10, 5);
-const mine_ammount = 8;
+const map_size = new Vector2(11, 6);
+const mine_ammount = 10;
 
 const cell_size = 100;
 const cell_spacing = 8;
@@ -111,8 +111,7 @@ function spawn_covers() {
             cover.setAttributeNS(null, "x", x * (cell_size + cell_spacing) + board_offset.x);
             cover.setAttributeNS(null, "y", y * (cell_size + cell_spacing) + board_offset.y);
 
-            cover.addEventListener('click', (event)=>{
-                event.preventDefault();
+            cover.addEventListener('click', ()=>{
                 propagate(new Vector2(x, y));
             })
             cover.addEventListener('contextmenu', ()=>{
