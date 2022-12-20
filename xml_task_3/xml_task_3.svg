@@ -1,0 +1,877 @@
+<svg xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+     xmlns:exsl="http://exslt.org/common"
+     xmlns="http://www.w3.org/2000/svg"
+     width="1280"
+     height="1320">
+   <style>
+                .heading {
+                    font: bold 26px sans-serif;
+                    fill: white;
+                }
+
+                .entry {
+                    font: bold 16px sans-serif;
+                    fill: white;
+                }
+
+                .price {
+                    font: 14px sans-serif;
+                    fill: white;
+                }
+            </style>
+   <defs>
+      <linearGradient id="backgroud" gradientTransform="rotate(-45)">
+         <stop offset="0%" stop-color="#132936"/>
+         <stop offset="60%" stop-color="#2A475E"/>
+      </linearGradient>
+   </defs>
+   <rect x="0"
+         y="0"
+         width="1280"
+         height="1320"
+         fill="url('#backgroud')"/>
+   <text x="20" y="50" class="heading">
+                The Steam Library
+            </text>
+   <text x="40" y="120">
+      <tspan class="entry">Cyberpunk 2077</tspan>
+   </text>
+   <rect x="340"
+         y="105"
+         height="20"
+         width="420"
+         fill="#a0e526"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width" from="5" to="420" dur="14s"/>
+      <animate attributeName="height" from="2" to="2" dur="14s"/>
+      <animate attributeName="y" from="114" to="114" dur="14s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="14s"/>
+      <animate attributeName="y" from="114" to="105" dur="2s" begin="14s"/>
+   </rect>
+   <text x="770" y="120" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="14s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="14s"/>
+      <animate attributeName="x"
+               from="780"
+               to="770"
+               dur="0.5s"
+               begin="14s"/>41.00 €
+                </text>
+   <text x="40" y="180">
+      <tspan class="entry">Bloons TD Battles 2</tspan>
+   </text>
+   <rect x="340"
+         y="165"
+         height="20"
+         width="10"
+         fill="#a0e526"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="174" to="174" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="174"
+               to="165"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="180" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="240">
+      <tspan class="entry">Hades</tspan>
+   </text>
+   <rect x="340"
+         y="225"
+         height="20"
+         width="190"
+         fill="#0b744a"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="190"
+               dur="6.333333333333333s"/>
+      <animate attributeName="height" from="2" to="2" dur="6.333333333333333s"/>
+      <animate attributeName="y" from="234" to="234" dur="6.333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="6.333333333333333s"/>
+      <animate attributeName="y"
+               from="234"
+               to="225"
+               dur="2s"
+               begin="6.333333333333333s"/>
+   </rect>
+   <text x="540" y="240" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="6.333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="6.333333333333333s"/>
+      <animate attributeName="x"
+               from="550"
+               to="540"
+               dur="0.5s"
+               begin="6.333333333333333s"/>18.00 €
+                </text>
+   <text x="40" y="300">
+      <tspan class="entry">GWENT: The Witcher Card Game</tspan>
+   </text>
+   <rect x="340"
+         y="285"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="294" to="294" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="294"
+               to="285"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="300" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="360">
+      <tspan class="entry">Bloons Adventure Time TD</tspan>
+   </text>
+   <rect x="340"
+         y="345"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="354" to="354" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="354"
+               to="345"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="360" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="420">
+      <tspan class="entry">Bloons TD 6</tspan>
+   </text>
+   <rect x="340"
+         y="405"
+         height="20"
+         width="80"
+         fill="#0b744a"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="80"
+               dur="2.6666666666666665s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="2.6666666666666665s"/>
+      <animate attributeName="y" from="414" to="414" dur="2.6666666666666665s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="2.6666666666666665s"/>
+      <animate attributeName="y"
+               from="414"
+               to="405"
+               dur="2s"
+               begin="2.6666666666666665s"/>
+   </rect>
+   <text x="430" y="420" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="2.6666666666666665s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="2.6666666666666665s"/>
+      <animate attributeName="x"
+               from="440"
+               to="430"
+               dur="0.5s"
+               begin="2.6666666666666665s"/>7.00 €
+                </text>
+   <text x="40" y="480">
+      <tspan class="entry">Artifact</tspan>
+   </text>
+   <rect x="340"
+         y="465"
+         height="20"
+         width="10"
+         fill="#ffda27"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="474" to="474" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="474"
+               to="465"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="480" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="540">
+      <tspan class="entry">Thronebreaker: The Witcher Tales</tspan>
+   </text>
+   <rect x="340"
+         y="525"
+         height="20"
+         width="170"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="170"
+               dur="5.666666666666667s"/>
+      <animate attributeName="height" from="2" to="2" dur="5.666666666666667s"/>
+      <animate attributeName="y" from="534" to="534" dur="5.666666666666667s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="5.666666666666667s"/>
+      <animate attributeName="y"
+               from="534"
+               to="525"
+               dur="2s"
+               begin="5.666666666666667s"/>
+   </rect>
+   <text x="520" y="540" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="5.666666666666667s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="5.666666666666667s"/>
+      <animate attributeName="x"
+               from="530"
+               to="520"
+               dur="0.5s"
+               begin="5.666666666666667s"/>16.00 €
+                </text>
+   <text x="40" y="600">
+      <tspan class="entry">SAS: Zombie Assault 4</tspan>
+   </text>
+   <rect x="340"
+         y="585"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="594" to="594" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="594"
+               to="585"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="600" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="660">
+      <tspan class="entry">Pyre</tspan>
+   </text>
+   <rect x="340"
+         y="645"
+         height="20"
+         width="160"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="160"
+               dur="5.333333333333333s"/>
+      <animate attributeName="height" from="2" to="2" dur="5.333333333333333s"/>
+      <animate attributeName="y" from="654" to="654" dur="5.333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="5.333333333333333s"/>
+      <animate attributeName="y"
+               from="654"
+               to="645"
+               dur="2s"
+               begin="5.333333333333333s"/>
+   </rect>
+   <text x="510" y="660" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="5.333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="5.333333333333333s"/>
+      <animate attributeName="x"
+               from="520"
+               to="510"
+               dur="0.5s"
+               begin="5.333333333333333s"/>15.00 €
+                </text>
+   <text x="40" y="720">
+      <tspan class="entry">The Witcher 3: Wild Hunt</tspan>
+   </text>
+   <rect x="340"
+         y="705"
+         height="20"
+         width="210"
+         fill="#0b744a"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width" from="5" to="210" dur="7s"/>
+      <animate attributeName="height" from="2" to="2" dur="7s"/>
+      <animate attributeName="y" from="714" to="714" dur="7s"/>
+      <animate attributeName="height" from="2" to="20" dur="2s" begin="7s"/>
+      <animate attributeName="y" from="714" to="705" dur="2s" begin="7s"/>
+   </rect>
+   <text x="560" y="720" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="7s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="7s"/>
+      <animate attributeName="x" from="570" to="560" dur="0.5s" begin="7s"/>20.00 €
+                </text>
+   <text x="40" y="780">
+      <tspan class="entry">Bloons Monkey City</tspan>
+   </text>
+   <rect x="340"
+         y="765"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="774" to="774" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="774"
+               to="765"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="780" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="840">
+      <tspan class="entry">Transistor</tspan>
+   </text>
+   <rect x="340"
+         y="825"
+         height="20"
+         width="160"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="160"
+               dur="5.333333333333333s"/>
+      <animate attributeName="height" from="2" to="2" dur="5.333333333333333s"/>
+      <animate attributeName="y" from="834" to="834" dur="5.333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="5.333333333333333s"/>
+      <animate attributeName="y"
+               from="834"
+               to="825"
+               dur="2s"
+               begin="5.333333333333333s"/>
+   </rect>
+   <text x="510" y="840" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="5.333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="5.333333333333333s"/>
+      <animate attributeName="x"
+               from="520"
+               to="510"
+               dur="0.5s"
+               begin="5.333333333333333s"/>15.00 €
+                </text>
+   <text x="40" y="900">
+      <tspan class="entry">Dota 2</tspan>
+   </text>
+   <rect x="340"
+         y="885"
+         height="20"
+         width="10"
+         fill="#a0e526"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="894" to="894" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="894"
+               to="885"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="900" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="960">
+      <tspan class="entry">Counter-Strike: Global Offensive</tspan>
+   </text>
+   <rect x="340"
+         y="945"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y" from="954" to="954" dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="954"
+               to="945"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="960" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="1020">
+      <tspan class="entry">Bastion</tspan>
+   </text>
+   <rect x="340"
+         y="1005"
+         height="20"
+         width="120"
+         fill="#0b744a"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width" from="5" to="120" dur="4s"/>
+      <animate attributeName="height" from="2" to="2" dur="4s"/>
+      <animate attributeName="y" from="1014" to="1014" dur="4s"/>
+      <animate attributeName="height" from="2" to="20" dur="2s" begin="4s"/>
+      <animate attributeName="y" from="1014" to="1005" dur="2s" begin="4s"/>
+   </rect>
+   <text x="470" y="1020" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="4s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="4s"/>
+      <animate attributeName="x" from="480" to="470" dur="0.5s" begin="4s"/>11.00 €
+                </text>
+   <text x="40" y="1080">
+      <tspan class="entry">The Witcher 2: Assassins of Kings</tspan>
+   </text>
+   <rect x="340"
+         y="1065"
+         height="20"
+         width="90"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width" from="5" to="90" dur="3s"/>
+      <animate attributeName="height" from="2" to="2" dur="3s"/>
+      <animate attributeName="y" from="1074" to="1074" dur="3s"/>
+      <animate attributeName="height" from="2" to="20" dur="2s" begin="3s"/>
+      <animate attributeName="y" from="1074" to="1065" dur="2s" begin="3s"/>
+   </rect>
+   <text x="440" y="1080" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity" from="0" to="0" dur="3s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="3s"/>
+      <animate attributeName="x" from="450" to="440" dur="0.5s" begin="3s"/>8.00 €
+                </text>
+   <text x="40" y="1140">
+      <tspan class="entry">Portal 2</tspan>
+   </text>
+   <rect x="340"
+         y="1125"
+         height="20"
+         width="100"
+         fill="#0b744a"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="100"
+               dur="3.3333333333333335s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="3.3333333333333335s"/>
+      <animate attributeName="y"
+               from="1134"
+               to="1134"
+               dur="3.3333333333333335s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="3.3333333333333335s"/>
+      <animate attributeName="y"
+               from="1134"
+               to="1125"
+               dur="2s"
+               begin="3.3333333333333335s"/>
+   </rect>
+   <text x="450" y="1140" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="3.3333333333333335s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="3.3333333333333335s"/>
+      <animate attributeName="x"
+               from="460"
+               to="450"
+               dur="0.5s"
+               begin="3.3333333333333335s"/>9.00 €
+                </text>
+   <text x="40" y="1200">
+      <tspan class="entry">The Witcher</tspan>
+   </text>
+   <rect x="340"
+         y="1185"
+         height="20"
+         width="70"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="70"
+               dur="2.3333333333333335s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="2.3333333333333335s"/>
+      <animate attributeName="y"
+               from="1194"
+               to="1194"
+               dur="2.3333333333333335s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="2.3333333333333335s"/>
+      <animate attributeName="y"
+               from="1194"
+               to="1185"
+               dur="2s"
+               begin="2.3333333333333335s"/>
+   </rect>
+   <text x="420" y="1200" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="2.3333333333333335s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="2.3333333333333335s"/>
+      <animate attributeName="x"
+               from="430"
+               to="420"
+               dur="0.5s"
+               begin="2.3333333333333335s"/>6.00 €
+                </text>
+   <text x="40" y="1260">
+      <tspan class="entry">Team Fortress 2</tspan>
+   </text>
+   <rect x="340"
+         y="1245"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="1254"
+               to="1254"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="1254"
+               to="1245"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="360" y="1260" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="370"
+               to="360"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+</svg>
