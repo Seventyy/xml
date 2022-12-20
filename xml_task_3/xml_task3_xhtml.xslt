@@ -29,6 +29,7 @@
                     }
 
                     #bg {
+                        background-color: blue;
                         background-image: radial-gradient(ellipse at top right, #2A475E, #132936);
                     }
 

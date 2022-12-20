@@ -2,7 +2,7 @@
      xmlns:exsl="http://exslt.org/common"
      xmlns="http://www.w3.org/2000/svg"
      width="1280"
-     height="1320">
+     height="1380">
    <style>
                 .heading {
                     font: bold 26px sans-serif;
@@ -29,7 +29,7 @@
    <rect x="0"
          y="0"
          width="1280"
-         height="1320"
+         height="1380"
          fill="url('#backgroud')"/>
    <text x="20" y="50" class="heading">
                 The Steam Library
@@ -587,59 +587,56 @@
                begin="5.333333333333333s"/>15.00 €
                 </text>
    <text x="40" y="900">
-      <tspan class="entry">Dota 2</tspan>
+      <tspan class="entry">Transistor</tspan>
    </text>
    <rect x="400"
          y="885"
          height="20"
-         width="10"
-         fill="#a0e526"
+         width="149.9"
+         fill="black"
          stroke="white"
          stroke-width="2">
       <animate attributeName="width"
                from="5"
-               to="10"
-               dur="0.3333333333333333s"/>
-      <animate attributeName="height"
-               from="2"
-               to="2"
-               dur="0.3333333333333333s"/>
-      <animate attributeName="y" from="894" to="894" dur="0.3333333333333333s"/>
+               to="149.9"
+               dur="4.996666666666667s"/>
+      <animate attributeName="height" from="2" to="2" dur="4.996666666666667s"/>
+      <animate attributeName="y" from="894" to="894" dur="4.996666666666667s"/>
       <animate attributeName="height"
                from="2"
                to="20"
                dur="2s"
-               begin="0.3333333333333333s"/>
+               begin="4.996666666666667s"/>
       <animate attributeName="y"
                from="894"
                to="885"
                dur="2s"
-               begin="0.3333333333333333s"/>
+               begin="4.996666666666667s"/>
    </rect>
-   <text x="420" y="900" class="price" fill-opacity="1">
+   <text x="559.9" y="900" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
-               dur="0.3333333333333333s"/>
+               dur="4.996666666666667s"/>
       <animate attributeName="fill-opacity"
                from="0"
                to="1"
                dur="0.5s"
-               begin="0.3333333333333333s"/>
+               begin="4.996666666666667s"/>
       <animate attributeName="x"
-               from="430"
-               to="420"
+               from="569.9"
+               to="559.9"
                dur="0.5s"
-               begin="0.3333333333333333s"/>0.00 €
+               begin="4.996666666666667s"/>13.99 €
                 </text>
    <text x="40" y="960">
-      <tspan class="entry">Counter-Strike: Global Offensive</tspan>
+      <tspan class="entry">Dota 2</tspan>
    </text>
    <rect x="400"
          y="945"
          height="20"
          width="10"
-         fill="#25b038"
+         fill="#a0e526"
          stroke="white"
          stroke-width="2">
       <animate attributeName="width"
@@ -679,10 +676,59 @@
                begin="0.3333333333333333s"/>0.00 €
                 </text>
    <text x="40" y="1020">
-      <tspan class="entry">Bastion</tspan>
+      <tspan class="entry">Counter-Strike: Global Offensive</tspan>
    </text>
    <rect x="400"
          y="1005"
+         height="20"
+         width="10"
+         fill="#25b038"
+         stroke="white"
+         stroke-width="2">
+      <animate attributeName="width"
+               from="5"
+               to="10"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="2"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="1014"
+               to="1014"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="height"
+               from="2"
+               to="20"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="y"
+               from="1014"
+               to="1005"
+               dur="2s"
+               begin="0.3333333333333333s"/>
+   </rect>
+   <text x="420" y="1020" class="price" fill-opacity="1">
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="0"
+               dur="0.3333333333333333s"/>
+      <animate attributeName="fill-opacity"
+               from="0"
+               to="1"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>
+      <animate attributeName="x"
+               from="430"
+               to="420"
+               dur="0.5s"
+               begin="0.3333333333333333s"/>0.00 €
+                </text>
+   <text x="40" y="1080">
+      <tspan class="entry">Bastion</tspan>
+   </text>
+   <rect x="400"
+         y="1065"
          height="20"
          width="120"
          fill="#0b744a"
@@ -690,11 +736,11 @@
          stroke-width="2">
       <animate attributeName="width" from="5" to="120" dur="4s"/>
       <animate attributeName="height" from="2" to="2" dur="4s"/>
-      <animate attributeName="y" from="1014" to="1014" dur="4s"/>
+      <animate attributeName="y" from="1074" to="1074" dur="4s"/>
       <animate attributeName="height" from="2" to="20" dur="2s" begin="4s"/>
-      <animate attributeName="y" from="1014" to="1005" dur="2s" begin="4s"/>
+      <animate attributeName="y" from="1074" to="1065" dur="2s" begin="4s"/>
    </rect>
-   <text x="530" y="1020" class="price" fill-opacity="1">
+   <text x="530" y="1080" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="4s"/>
       <animate attributeName="fill-opacity"
                from="0"
@@ -703,11 +749,11 @@
                begin="4s"/>
       <animate attributeName="x" from="540" to="530" dur="0.5s" begin="4s"/>11.00 €
                 </text>
-   <text x="40" y="1080">
+   <text x="40" y="1140">
       <tspan class="entry">The Witcher 2: Assassins of Kings</tspan>
    </text>
    <rect x="400"
-         y="1065"
+         y="1125"
          height="20"
          width="90"
          fill="#25b038"
@@ -715,11 +761,11 @@
          stroke-width="2">
       <animate attributeName="width" from="5" to="90" dur="3s"/>
       <animate attributeName="height" from="2" to="2" dur="3s"/>
-      <animate attributeName="y" from="1074" to="1074" dur="3s"/>
+      <animate attributeName="y" from="1134" to="1134" dur="3s"/>
       <animate attributeName="height" from="2" to="20" dur="2s" begin="3s"/>
-      <animate attributeName="y" from="1074" to="1065" dur="2s" begin="3s"/>
+      <animate attributeName="y" from="1134" to="1125" dur="2s" begin="3s"/>
    </rect>
-   <text x="500" y="1080" class="price" fill-opacity="1">
+   <text x="500" y="1140" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity" from="0" to="0" dur="3s"/>
       <animate attributeName="fill-opacity"
                from="0"
@@ -728,11 +774,11 @@
                begin="3s"/>
       <animate attributeName="x" from="510" to="500" dur="0.5s" begin="3s"/>8.00 €
                 </text>
-   <text x="40" y="1140">
+   <text x="40" y="1200">
       <tspan class="entry">Portal 2</tspan>
    </text>
    <rect x="400"
-         y="1125"
+         y="1185"
          height="20"
          width="100"
          fill="#0b744a"
@@ -747,8 +793,8 @@
                to="2"
                dur="3.3333333333333335s"/>
       <animate attributeName="y"
-               from="1134"
-               to="1134"
+               from="1194"
+               to="1194"
                dur="3.3333333333333335s"/>
       <animate attributeName="height"
                from="2"
@@ -756,12 +802,12 @@
                dur="2s"
                begin="3.3333333333333335s"/>
       <animate attributeName="y"
-               from="1134"
-               to="1125"
+               from="1194"
+               to="1185"
                dur="2s"
                begin="3.3333333333333335s"/>
    </rect>
-   <text x="510" y="1140" class="price" fill-opacity="1">
+   <text x="510" y="1200" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -777,11 +823,11 @@
                dur="0.5s"
                begin="3.3333333333333335s"/>9.00 €
                 </text>
-   <text x="40" y="1200">
+   <text x="40" y="1260">
       <tspan class="entry">The Witcher</tspan>
    </text>
    <rect x="400"
-         y="1185"
+         y="1245"
          height="20"
          width="70"
          fill="#25b038"
@@ -796,8 +842,8 @@
                to="2"
                dur="2.3333333333333335s"/>
       <animate attributeName="y"
-               from="1194"
-               to="1194"
+               from="1254"
+               to="1254"
                dur="2.3333333333333335s"/>
       <animate attributeName="height"
                from="2"
@@ -805,12 +851,12 @@
                dur="2s"
                begin="2.3333333333333335s"/>
       <animate attributeName="y"
-               from="1194"
-               to="1185"
+               from="1254"
+               to="1245"
                dur="2s"
                begin="2.3333333333333335s"/>
    </rect>
-   <text x="480" y="1200" class="price" fill-opacity="1">
+   <text x="480" y="1260" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"
@@ -826,11 +872,11 @@
                dur="0.5s"
                begin="2.3333333333333335s"/>6.00 €
                 </text>
-   <text x="40" y="1260">
+   <text x="40" y="1320">
       <tspan class="entry">Team Fortress 2</tspan>
    </text>
    <rect x="400"
-         y="1245"
+         y="1305"
          height="20"
          width="10"
          fill="#25b038"
@@ -845,8 +891,8 @@
                to="2"
                dur="0.3333333333333333s"/>
       <animate attributeName="y"
-               from="1254"
-               to="1254"
+               from="1314"
+               to="1314"
                dur="0.3333333333333333s"/>
       <animate attributeName="height"
                from="2"
@@ -854,12 +900,12 @@
                dur="2s"
                begin="0.3333333333333333s"/>
       <animate attributeName="y"
-               from="1254"
-               to="1245"
+               from="1314"
+               to="1305"
                dur="2s"
                begin="0.3333333333333333s"/>
    </rect>
-   <text x="420" y="1260" class="price" fill-opacity="1">
+   <text x="420" y="1320" class="price" fill-opacity="1">
       <animate attributeName="fill-opacity"
                from="0"
                to="0"

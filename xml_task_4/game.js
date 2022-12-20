@@ -13,15 +13,16 @@ const mine_ammount = 10;
 const cell_size = 100;
 const cell_spacing = 8;
 const board_offset = new Vector2(50,50);
+const fall_hight = 10;
 const colors = [
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51", 
-    "#e76f51"
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
+    "#e76f51",
 ]
 
 // let cells = [];
@@ -29,6 +30,7 @@ const colors = [
 
 let map = [];
 let covers = [];
+let free_cell_count = map_size.x * map_size.y - mine_ammount;
 
 function init() {
     document.addEventListener('contextmenu', event => event.preventDefault());
@@ -113,6 +115,14 @@ function spawn_covers() {
 
             cover.addEventListener('click', ()=>{
                 propagate(new Vector2(x, y));
+                if (map[x][y] == -1){
+                    console.log("game over")
+                } else {
+                    console.log(free_cell_count)
+                    if (free_cell_count == 0) {
+                        console.log("win")
+                    }
+                }
             })
             cover.addEventListener('contextmenu', ()=>{
                 cover.appendChild(document.getElementById("flag").cloneNode(true));
@@ -128,6 +138,7 @@ function propagate(vec){
 
     document.getElementById("covers").removeChild(covers[vec.x][vec.y]);
     covers[vec.x][vec.y] = null;
+    free_cell_count--;
 
     if (map[vec.x][vec.y] == 0) {
         for (let i = -1; i <= 1; i++) {
@@ -142,10 +153,32 @@ function propagate(vec){
     }
 }
 
+function animate_covers() {
+    for (let y = 0; y < map_size.y; y++) {
+        for (let x = 0; x < map_size.x; x++) {
+            covers[x][y].childNodes[5].setAttributeNS(null, "from", y * (cell_size + cell_spacing) + board_offset.y - fall_hight);
+            covers[x][y].childNodes[5].setAttributeNS(null, "to", y * (cell_size + cell_spacing) + board_offset.y - fall_hight);
+            covers[x][y].childNodes[5].setAttributeNS(null, "dur", ((x+y) * 0.1 + 0.1 + "s"));
+            
+            covers[x][y].childNodes[7].setAttributeNS(null, "begin", (x+y) * 0.1 + "s");
+            covers[x][y].childNodes[7].setAttributeNS(null, "from", y * (cell_size + cell_spacing) + board_offset.y - fall_hight);
+            covers[x][y].childNodes[7].setAttributeNS(null, "to", y * (cell_size + cell_spacing) + board_offset.y);
+
+            covers[x][y].childNodes[9].setAttributeNS(null, "dur", (x+y) * 0.1 + 0.1 + "s");
+            covers[x][y].childNodes[11].setAttributeNS(null, "begin", (x+y) * 0.1 + "s");
+            
+            // covers[x][y].childNodes[3].childNodes[5].setAttributeNS(null, "dur", (x+y) * 0.1 + 0.1 + "s");
+            // covers[x][y].childNodes[3].childNodes[7].setAttributeNS(null, "begin", (x+y) * 0.1 + "s");
+        }
+    }
+}
+
 init();
 generate_map();
 spawn_geometry();
 spawn_covers();
+animate_covers();
+
 // console.table(map);
 
 
