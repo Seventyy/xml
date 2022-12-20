@@ -14,14 +14,14 @@ const cell_size = 100;
 const cell_spacing = 8;
 const board_offset = new Vector2(50,50);
 const colors = [
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8", 
-    "#C455A8"
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51", 
+    "#e76f51"
 ]
 
 // let cells = [];
