@@ -15,18 +15,15 @@ const cell_spacing = 8;
 const board_offset = new Vector2(50,50);
 const fall_hight = 10;
 const colors = [
+    "#e79451",
     "#e76f51",
-    "#e76f51",
-    "#e76f51",
-    "#e76f51",
-    "#e76f51",
-    "#e76f51",
-    "#e76f51",
-    "#e76f51",
+    "#e75160",
+    "#e75186",
+    "#e751ab",
+    "#d851e7",
+    "#8d51e7",
+    "#516fe7",
 ]
-
-// let cells = [];
-// let mines = [];
 
 let map = [];
 let covers = [];
@@ -89,17 +86,15 @@ function spawn_geometry() {
                 
                 document.getElementById("mines").appendChild(mine);
             }
-            else {
-                let cell = document.getElementById("cell").cloneNode(true);
+            let cell = document.getElementById("cell").cloneNode(true);
 
-                cell.setAttributeNS(null, "x", x * (cell_size + cell_spacing) + board_offset.x);
-                cell.setAttributeNS(null, "y", y * (cell_size + cell_spacing) + board_offset.y);
-                
-                cell.childNodes[3].textContent = (map[x][y] == 0 ? "" : map[x][y]);
-                cell.childNodes[3].setAttributeNS(null, "fill", colors[map[x][y]-1]);
+            cell.setAttributeNS(null, "x", x * (cell_size + cell_spacing) + board_offset.x);
+            cell.setAttributeNS(null, "y", y * (cell_size + cell_spacing) + board_offset.y);
+            
+            cell.childNodes[3].textContent = (map[x][y] <= 0 ? "" : map[x][y]);
+            cell.childNodes[3].setAttributeNS(null, "fill", colors[map[x][y]-1]);
 
-                document.getElementById("cells").appendChild(cell);
-            }
+            document.getElementById("cells").appendChild(cell);
         }
     }
 }
@@ -116,11 +111,19 @@ function spawn_covers() {
             cover.addEventListener('click', ()=>{
                 propagate(new Vector2(x, y));
                 if (map[x][y] == -1){
-                    console.log("game over")
+                let screen = document.getElementById("game_over_screen").cloneNode(true);
+                screen.addEventListener('click', ()=>{
+                    location.reload()
+                })
+                document.getElementById("end_screen").appendChild(screen);
                 } else {
                     console.log(free_cell_count)
                     if (free_cell_count == 0) {
-                        console.log("win")
+                        let screen = document.getElementById("win_screen").cloneNode(true);
+                        screen.addEventListener('click', ()=>{
+                            location.reload()
+                        })
+                        document.getElementById("end_screen").appendChild(screen);
                     }
                 }
             })
@@ -166,9 +169,6 @@ function animate_covers() {
 
             covers[x][y].childNodes[9].setAttributeNS(null, "dur", (x+y) * 0.1 + 0.1 + "s");
             covers[x][y].childNodes[11].setAttributeNS(null, "begin", (x+y) * 0.1 + "s");
-            
-            // covers[x][y].childNodes[3].childNodes[5].setAttributeNS(null, "dur", (x+y) * 0.1 + 0.1 + "s");
-            // covers[x][y].childNodes[3].childNodes[7].setAttributeNS(null, "begin", (x+y) * 0.1 + "s");
         }
     }
 }
@@ -178,130 +178,3 @@ generate_map();
 spawn_geometry();
 spawn_covers();
 animate_covers();
-
-// console.table(map);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var enemy = document.getElementById('enemy')
-// enemy.setAttribute('x', '200')
-
-// var element = document.getElementById('enemy');
-
-// element.addEventListener("mousemove",  move);
-
-// function start(e){
-//   console.log(e);
-// }
-
-// function move(e){
-//     element.setAttribute('x', e.clientX - 50);
-//     element.setAttribute('y', e.clientY - 50);
-//     console.log(e.clientX);
-//     console.log(e.clientY);
-//     console.log("śranie");
-// }
-
-// var test = document.getElementById('')
-
-
-
-
-// function reset() {
-//     for (let i = 0; i < mine_ammount; i++) {
-//         mines.push(document.getElementById('m' + i));
-//     }
-
-//     for (let x = 0; x < map_size.x; x++) {
-//         cells.push([]);
-//         for (let y = 0; y < map_size.y; y++) {
-//             cells[x].push(document.getElementById('c' + x + ',' + y));
-//         }
-//     }
-
-//     for (let y = 0; y < map_size.y; y++) {
-//         for (let x = 0; x < map_size.x; x++) {
-//             cells[x][y].setAttribute('x', x * (100 + padding));
-//             cells[x][y].setAttribute('y', y * (100 + padding));
-//             // console.log(cells[x][y])
-//         }
-//     }
-
-//     for (let y = 0; y < map_size.y; y++) {
-//         map.push([]);
-//         for (let x = 0; x < map_size.x; x++) {
-//             map[y].push(0);
-//         }
-//     }
-
-
-
-//     // for (let i = 0; i < mines.length; i++) {
-//     //     mines[i].setAttribute('x', 120 * i);
-//     // }
-// }
-
-
-
-
-
-
-
-// function test() {
-//     let test_cell = document.createElementNS(xmlns, "g");
-//     let test_rect = document.createElementNS(xmlns, "rect");
-//     let test_text = document.createElementNS(xmlns, "text");
-
-//     test_rect.setAttributeNS(null, "width", "100");
-//     test_rect.setAttributeNS(null, "height", "100");
-//     test_rect.setAttributeNS(null, "fill", "gray");
-    
-//     test_text.setAttributeNS(null, "x", "30");
-//     test_text.setAttributeNS(null, "y", "80");
-//     test_text.setAttributeNS(null, "font-size", "80");
-//     test_text.setAttributeNS(null, "font-family", "impact");
-
-//     test_text.textContent = 7;
-
-//     test_cell.appendChild(test_rect);
-//     test_cell.appendChild(test_text);
-//     document.getElementById("test_group").appendChild(test_cell);
-// }
-
-// function test2() {
-//     let test_cell = document.createElementNS(xmlns, "g");
-
-//     let test_mine = document.getElementById("mine");
-//     console.log(test_mine.childNodes);
-
-//     test_mine.setAttributeNS(null, "x", "30");
-//     test_mine.setAttributeNS(null, "y", "80");
-    
-//     document.getElementById("test_group").appendChild(test_mine);
-// }
-
-// test()
-// test2()
-
-// console.table(cells);
-// reset();
-// console.log(cells[1][2])
-// cells[1][3].childNodes[3].textContent = 5
-// console.log(cells[1][3].childNodes[3].textContent)
-// console.log(cells[1][2].lastElementChild.textContent)

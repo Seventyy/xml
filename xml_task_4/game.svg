@@ -8,10 +8,10 @@
 
     <defs>
         <svg id="flag">
-            <polygon points="40,25 75,35 40,45" fill="#f4a261" />
+            <polygon points="40,25 75,35 40,45" fill="#AA3939" />
             <polygon points="40,20 40,75 45,75 45,80 30,80 30,75 35,75 35,20 " fill="#313134" />
         </svg>
-        <svg id="mine" fill="#f4a261">
+        <svg id="mine" fill="#AA3939">
             <circle cx="40" cy="40" r="32" />
             <rect width="16" height="16" x="64" y="32" />
             <rect width="16" height="16" x="32" y="64" />
@@ -43,15 +43,34 @@
             <animate attributeName="fill-opacity" form="0" to="0"/>
             <animate attributeName="fill-opacity" form="0" to="1" dur="0.8s"/>
         </svg>
+        <svg id="win_screen">
+            <rect width="1280" height="760" fill="#000000" fill-opacity="0.6">
+                <animate attributeName="fill-opacity" form="0" to="0.6" dur="0.8s"/>
+            </rect>
+            <text x="506" y="380" font-size="80" font-family="impact" fill="#AA3939">YOU WIN
+                <animate attributeName="y" form="340" to="380" dur="1.2s"/>
+            </text>
+        </svg>
+        <svg id="game_over_screen">
+            <rect width="1280" height="760" fill="#000000" fill-opacity="0.6">
+                <animate attributeName="fill-opacity" form="0" to="0.6" dur="0.8s"/>
+            </rect>
+            <text x="464" y="380" font-size="80" font-family="impact" fill="#AA3939">GAME OVER
+                <animate attributeName="y" form="340" to="380" dur="1.2s"/>
+            </text>
+        </svg>
     </defs>
 
     <g id="background">
         <rect width="1280" height="760" fill="#264653"/> />
     </g>
 
-    <g id="mines"></g>
     <g id="cells"></g>
+    <g id="mines"></g>
     <g id="covers"></g>
+    <g id="end_screen"></g>
+
+    
 
     <script xlink:href="game.js" />
 </svg>
