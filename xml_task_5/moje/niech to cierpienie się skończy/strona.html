@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+	Choose file to load.<br>
+	<input class="form-control success" type="file" id="file_name" accept=".xml"> 
+	<button id="load_button" class="button button1" >Load</button>
+	<!-- <button id="update_button" class="button button2" >Update</button> -->
+	<!-- <button id="save_button" class="button button3" >Save</button> -->
+	<button id="test_button" class="button button4" >Test</button>
+	<h3>The file:</h3>
+	<table id="operating_file"></table>
+<hr>
+	<h3>Data modification</h3>
+	<button id="modify_button" class="button button1" >Modify entry</button>
+	<input id="modify_id" type ="number" min="0"> Choose game id number of a game to modify<br><br>
+
+	<div id="new_values">
+		<input id="new_game_id"> Enter new game id.<br>
+		<input id="new_developer_id"> Enter new dev id.<br>
+		<input id="new_title"> Enter new title .<br>
+		<input id="new_release_date" type="date"> Enter new release date.<br> 
+		<input id="new_size" type="number" min="0"> 
+		<select id="new_unit">
+			<option>MB</option>
+			<option>GB</option>
+		</select> Enter new size.<br>
+		<input id="new_price" type="number" min="0"> 
+		<select id="new_currency">
+			<option>PLN</option>
+			<option>USD</option>
+			<option>EUR</option>
+		</select> Enter new price.<br>
+		<select id="new_steam_reviews">
+			<option>Overhwelmingly Positive</option>
+			<option>Very Positive</option>
+			<option>Positive</option>
+			<option>Mostly Positive</option>
+			<option>Mixed</option>
+			<option>Mostly Negative</option>
+			<option>Negative</option>
+		</select> Enter new reviews.<br>
+		<input id="new_review_count" type="number" min="0"> Enter new review count.<br>
+		<input id="new_genre"> Enter new genre.<br>
+		<select id="new_licence"> 
+			<option>proprietary</option>
+			<option>open source</option>
+		</select> Enter new licence.<br>
+
+	</div>
+		
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<wypozyczalniaGier	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="wypGier xmlscheme.xsd" xmlns="wypGier">
+
+	<dataStworzenia data="2022-12-10"/>
+  
+	<gatunki>
+		<gatunek typ="ZRE">zrecznosciowe</gatunek><!--String-->
+		<gatunek typ="PRZ">przygodowe</gatunek><!--String-->
+		<gatunek typ="FAB">fabularne</gatunek><!--String-->
+		<gatunek typ="STR">strategiczne</gatunek><!--String-->
+		<gatunek typ="SUR">survival</gatunek><!--String-->
+		<gatunek typ="PLA">platformowe</gatunek><!--String-->
+		<gatunek typ="LOG">logiczne</gatunek><!--String-->
+		<gatunek typ="EDU">edukacyjne</gatunek><!--String-->
+	</gatunki>
+
+	<daneWypozyczalniGier>
+		<wlasciciel>Jan Kowalski</wlasciciel><!--String-->
+		<miasto>Lodz</miasto><!--String-->
+		<ulica>Nowa 13</ulica><!--String-->
+		<kodPocztowy>11-002</kodPocztowy><!--Kod pocztowy-->
+		<telefon>123-034-933</telefon><!--Telefon-->
+		<NIP>123 45 67 819</NIP><!--String-->
+	</daneWypozyczalniGier>
+	
+	<gry>
+		<gra ID="1" gatunek="FAB">
+			<tytul>Baldur's Gate II</tytul><!--String-->
+			<producent>Bio Ware</producent><!--String-->
+			<wydawca>Interplay Entertainment</wydawca><!--String-->
+			<dystrybutor>CD project</dystrybutor><!--String-->
+			<rokWydania>2000</rokWydania><!--Liczba-->
+			<cena waluta="PLN">24.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>16+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+	
+		
+		<gra ID="2" gatunek="PLA">
+			<tytul>Trine</tytul><!--String-->
+			<producent>Frozenbyte</producent><!--String-->
+			<wydawca>Nobilis</wydawca><!--String-->
+			<dystrybutor>CD project</dystrybutor><!--String-->
+			<rokWydania>2011</rokWydania><!--Liczba-->
+			<cena waluta="EURO">20.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+	
+		
+		<gra ID="3" gatunek="STR">
+			<tytul>Twierdza</tytul><!--String-->
+			<producent>Firefly Studios</producent><!--String-->
+			<wydawca>Take-Two Interactive</wydawca><!--String-->
+			<dystrybutor>Play-It</dystrybutor><!--String-->
+			<rokWydania>2001</rokWydania><!--Liczba-->
+			<cena waluta="PLN">34.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+	
+		<gra ID="4" gatunek="STR">
+			<tytul>Orcs Must Die!</tytul><!--String-->
+			<producent>Robot Entertainment</producent><!--String-->
+			<wydawca>Robot Entertainment</wydawca><!--String-->
+			<dystrybutor>Robot Entertainment</dystrybutor><!--String-->
+			<rokWydania>2011</rokWydania><!--Liczba-->
+			<cena waluta="PLN">54.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="5" gatunek="SUR">
+			<tytul>Ark: Survival Evolved</tytul><!--String-->
+			<producent>Studio Wildcard</producent><!--String-->
+			<wydawca>Studio Wildcard</wydawca><!--String-->
+			<dystrybutor>Studio Wildcard</dystrybutor><!--String-->
+			<rokWydania>2017</rokWydania><!--Liczba-->
+			<cena waluta="EURO">111.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>16+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		
+		<gra ID="6" gatunek="PRZ">
+			<tytul>Subnautica</tytul><!--String-->
+			<producent>Unknown Worlds Entertainment</producent><!--String-->
+			<wydawca>Unknown Worlds Entertainment</wydawca><!--String-->
+			<dystrybutor>Unknown Worlds Entertainment</dystrybutor><!--String-->
+			<rokWydania>2018</rokWydania><!--Liczba-->
+			<cena waluta="PLN">89.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="7" gatunek="LOG">
+			<tytul>Hearthstone</tytul><!--String-->
+			<producent>Blizzard Entertainment</producent><!--String-->
+			<wydawca>Blizzard Entertainment</wydawca><!--String-->
+			<dystrybutor>Blizzard Entertainment</dystrybutor><!--String-->
+			<rokWydania>2014</rokWydania><!--Liczba-->
+			<cena waluta="PLN">10.00 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Android</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="8" gatunek="EDU">
+			<tytul>Journeys</tytul><!--String-->
+			<producent>A new studio</producent><!--String-->
+			<wydawca>Microsoft</wydawca><!--String-->
+			<dystrybutor>Microsoft</dystrybutor><!--String-->
+			<rokWydania>2015</rokWydania><!--Liczba-->
+			<cena waluta="PLN">16.00 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Linux</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="9" gatunek="PLA">
+			<tytul>Ori and the blind forest</tytul><!--String-->
+			<producent>Moon Studios</producent><!--String-->
+			<wydawca>Microsoft</wydawca><!--String-->
+			<dystrybutor>Microsoft</dystrybutor><!--String-->
+			<rokWydania>2015</rokWydania><!--Liczba-->
+			<cena waluta="EURO">49.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="10" gatunek="FAB">
+			<tytul>Gothic</tytul><!--String-->
+			<producent>Piranha Bytes </producent><!--String-->
+			<wydawca>JoWooD Entertainment</wydawca><!--String-->
+			<dystrybutor>cdp.pl</dystrybutor><!--String-->
+			<rokWydania>2001</rokWydania><!--Liczba-->
+			<cena waluta="PLN">19.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="11" gatunek="PLA">
+			<tytul>Captain Claw</tytul><!--String-->
+			<producent>Monolith Productions</producent><!--String-->
+			<wydawca>Monolith Productions</wydawca><!--String-->
+			<dystrybutor>Monolith Productions</dystrybutor><!--String-->
+			<rokWydania>1997</rokWydania><!--Liczba-->
+			<cena waluta="PLN">9.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>Każdy</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="12" gatunek="LOG">
+			<tytul>Puzzle Quest: The Legend Returns</tytul><!--String-->
+			<producent>Infinity Plus 2 </producent><!--String-->
+			<wydawca>D3 Go!</wydawca><!--String-->
+			<dystrybutor>	D3 Go!</dystrybutor><!--String-->
+			<rokWydania>2019</rokWydania><!--Liczba-->
+			<cena waluta="PLN">99.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Nintendo Switch</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="13" gatunek="ZRE">
+			<tytul>Vampire Survivors</tytul><!--String-->
+			<producent>Luca Galante</producent><!--String-->
+			<wydawca>Luca Galante</wydawca><!--String-->
+			<dystrybutor>Luca Galante</dystrybutor><!--String-->
+			<rokWydania>2021</rokWydania><!--Liczba-->
+			<cena waluta="PLN">39.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="14" gatunek="STR">
+			<tytul>Warcraft 3</tytul><!--String-->
+			<producent>Blizzard Entertainment</producent><!--String-->
+			<wydawca>Blizzard Entertainment</wydawca><!--String-->
+			<dystrybutor>Blizzard Entertainment</dystrybutor><!--String-->
+			<rokWydania>2003</rokWydania><!--Liczba-->
+			<cena waluta="PLN">89.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="15" gatunek="FAB">
+			<tytul>Warcraft III: Refunded</tytul><!--String-->
+			<producent>Blizzard Entertainment</producent><!--String-->
+			<wydawca>Blizzard Entertainment</wydawca><!--String-->
+			<dystrybutor>Blizzard Entertainment</dystrybutor><!--String-->
+			<rokWydania>2020</rokWydania><!--Liczba-->
+			<cena waluta="PLN">99.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>12+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="16" gatunek="FAB">
+			<tytul>Rust</tytul><!--String-->
+			<producent>Facepunch Studios</producent><!--String-->
+			<wydawca>Facepunch Studios</wydawca><!--String-->
+			<dystrybutor>Steam</dystrybutor><!--String-->
+			<rokWydania>2013</rokWydania><!--Liczba-->
+			<cena waluta="PLN">69.99 </cena><!--Cena-->
+			<czyWypozyczona>TAK</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>16+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="17" gatunek="LOG">
+			<tytul>2048</tytul><!--String-->
+			<producent>Gabriele Cirulli</producent><!--String-->
+			<wydawca>Gabriele Cirulli </wydawca><!--String-->
+			<dystrybutor>Gabriele Cirulli </dystrybutor><!--String-->
+			<rokWydania>2014</rokWydania><!--Liczba-->
+			<cena waluta="PLN">0.0 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>Każdy</PEGI><!--String-->
+			<platforma>Android</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="18" gatunek="FAB">
+			<tytul>Stardew Valley</tytul><!--String-->
+			<producent>Piranha Bytes </producent><!--String-->
+			<wydawca>JoWooD Entertainment </wydawca><!--String-->
+			<dystrybutor>cdp.pl</dystrybutor><!--String-->
+			<rokWydania>2016</rokWydania><!--Liczba-->
+			<cena waluta="PLN">69.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>7+</PEGI><!--String-->
+			<platforma>Linux</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Angielski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="19" gatunek="PRZ">
+			<tytul>Elden Ring</tytul><!--String-->
+			<producent>FromSoftware</producent><!--String-->
+			<wydawca>Bandai Namco Entertainment</wydawca><!--String-->
+			<dystrybutor>Cenega S.A</dystrybutor><!--String-->
+			<rokWydania>2022</rokWydania><!--Liczba-->
+			<cena waluta="EURO">159.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>16+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+		
+		<gra ID="20" gatunek="ZRE">
+			<tytul>Assasin's Creed</tytul><!--String-->
+			<producent>Ubisoft</producent><!--String-->
+			<wydawca>Ubisoft</wydawca><!--String-->
+			<dystrybutor>Ubisoft</dystrybutor><!--String-->
+			<rokWydania>2007</rokWydania><!--Liczba-->
+			<cena waluta="PLN">109.99 </cena><!--Cena-->
+			<czyWypozyczona>NIE</czyWypozyczona><!--Wartość Logiczna-->
+			<PEGI>16+</PEGI><!--String-->
+			<platforma>Windows</platforma><!--Typ Wyliczeniowy-->
+			<jezyk>Polski</jezyk><!--String-->
+		</gra>
+	
+	</gry>
+
+	<autorDokumentu>
+		<imie>Sławomir</imie> <!--String-->
+		<nazwisko>Andrzejczak</nazwisko><!--String-->
+		<numerIndeksu>242349</numerIndeksu><!--Liczba-->
+		<grupaLaboratoryjna>3-1</grupaLaboratoryjna><!--Cyfra-->
+		<mail>242349@edu.p.lodz.pl</mail><!--String-->
+		<dataOstatniejAktualizacji>2021-10-21</dataOstatniejAktualizacji><!--Data-->
+	</autorDokumentu>
+
+</wypozyczalniaGier>

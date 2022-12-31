@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Nienawidze zadania 5 </title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+	WCZYTYWANIE DANYCH<br>
+	<input class="form-control success" type="file" id="nazwaPliku" accept=".xml"> Podaj nazwę pliku z którego wczytany zostanie XML.<br>
+	<button id="btnWczytaj" class="button button1" >Wczytaj Plik</button>
+	<button id="btnZapisz" class="button button2" >Zapisz Plik</button>
+	<button id="btnWczytajGatunki" class="button button3" >Wczytaj gatunki</button>
+	<p>Wczytana treść pliku:</p>
+	<table id="trescPliku" ></table>
+	<p>Aktualna treść pliku:</p>
+	<table id="aTrescPliku" ></table>
+<hr>
+	MODYFIKACJA DANYCH<br>
+	<button id="btnZaaktualizuj" class="button button1" >Zaaktualizuj dane</button><br>
+	<input id="iRekordGryUpdate" type ="number"> Podaj rekord gry, który ma być aktualnie zmieniany<br><br>
+
+	<input id="iId" type="number"> Podaj id, na którą zostanie zmieniony rekord gry. Nie może kolidować z innymi id.<br><br>
+
+	<button id="btnModyfikacjaGatunku" class="button button1" >Kliknij ten przycisk żeby zaaktualizować obecnie zaznaczony gatunek poniżej</button><br>
+	<input id="iZmienianyGatunek" type="text"> Podaj nazwę zmienianego gatunku gier.<br>
+	<input id="iZmienianyGatunekSkrót" type="text" minlength="3" maxlength="3"> Podaj nazwę skrótu zmienianego gatunku gier.<br>
+	<select id="iGatunek"></select>  Gatunek?<br><br>
+
+	<input id="iTytul"> Podaj nazwę tytułu, na który zostanie zmieniony rekord gry.<br>
+	<input id="iProducent"> Podaj nazwę producenta, na który zostanie zmieniony rekord gry.<br>
+	<input id="iWydawca"> Podaj nazwę wydawcy, na który zostanie zmieniony aktualnie rekord gry.<br>
+	<input id="iDystrybutor"> Podaj nazwę dystrybutora, na który zostanie zmieniony rekord gry.<br>
+	<input id="iRokWydania" type="number" min="1"> Podaj rok wydania, na który zostanie zmieniony rekord gry.<br>
+	<input id="iCena" type="number" min="0"> Podaj cenę, na którą zostanie zmieniony rekord gry.<br>
+	<select id="iCenaTyp">
+		<option>PLN</option>
+		<option>EURO</option>
+	</select>  Typ waluty?<br>
+	<p>Czy wypożyczona?</p>
+	<input type="checkbox" id="cbCzyWypozyczona" value="Tak">Tak<br>
+	<select id="iPEGI">
+		<option>Każdy</option>
+		<option>7+</option>
+		<option>12+</option>
+		<option>16+</option>
+	</select>  PEGI?<br><br>
+	<select id="iPlatforma">
+		<option>Windows</option>
+		<option>Linux</option>
+		<option>Android</option>
+		<option>Nintendo Switch</option>
+	</select>  Platforma?<br><br>
+	<input id="iJezyk"> Podaj język, na który zostanie zmieniony aktualnie rekord gry.<br>
+<hr>
+	DODAWANIE DANYCH<br>
+	<button id="btnDodajRekord" class="button button1" >Dodaj rekord</button><br>
+	<button id="btnDodajGatunek" class="button button1" >Dodaj gatunek</button><br>
+	<input id="iNowyGatunek" type="text"> Podaj nazwę nowego gatunku gier.<br>
+	<input id="iNowyGatunekSkrót" type="text" minlength="3" maxlength="3"> Podaj nazwę skrótu nowego gatunku gier.<br>
+	<button id="btnDodajPlatforme" class="button button1" >Dodaj platforme</button><br>
+	<input id="iNowaPlatforma" type="text"> Podaj nazwę nowej platformy.<br>
+	<button id="btnDodajPEGI" class="button button2" >Dodaj PEGI</button><br>
+	<input id="iNowePEGI" type="number" minlength="2" maxlength="2"> Podaj cyfrę oznaczającą minimalny wiek (PEGI).<br>
+<hr>
+	USUWANIE DANYCH<br>
+	<input id="iRekordGryUsun" type ="number"> Podaj rekord gry, który ma być usunięty<br>
+	<button id="btnUsun" class="button button1" >Usuń rekord</button><br>
+	<select id="sGatunekUsun"></select>  Wybierz usuwany gatunek, a potem potwierdź przyciskiem na dole<br><br>
+	<button id="btnUsuńGatunek" class="button button2" >Usuń gatunek</button><br>
+	<select id="iPlatformaUsun">
+		<option>Windows</option>
+		<option>Linux</option>
+		<option>Android</option>
+		<option>Nintendo Switch</option>
+	</select><br>
+	<button id="btnUsunPlatfroma" class="button button1" >Usuń Platformę</button><br>
+	<select id="iPEGIUsun">
+		<option>Każdy</option>
+		<option>7+</option>
+		<option>12+</option>
+		<option>16+</option>
+	</select><br>
+	<button id="btnUsunPEGI" class="button button1" >Usuń PEGI</button><br>
+<!--<hr>-->
+<!--	VALIDOWANIE DANYCH<br>-->
+<!--	<button id="btnValidate" class="button button1" >Waliduj obecnie zmodyfikowany plik XML.</button>-->
+
+
+
+	<script src="scripts.js"></script>
+</body>
+</html>

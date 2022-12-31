@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="wypGier"
+           attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:wypozyczalniaGier="wypGier">
+		   
+
+
+    <xs:element name="wypozyczalniaGier" type="wypozyczalniaGier:wypGierTyp"/>
+
+
+    <xs:complexType name="wypGierTyp">
+        <xs:sequence>
+            <xs:element name="dataStworzenia" type="wypozyczalniaGier:dataStworzeniaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="gatunki" type="wypozyczalniaGier:gatunkiTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="daneWypozyczalniGier" type="wypozyczalniaGier:daneWypozyczalniGierTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="gry" type="wypozyczalniaGier:gryType" minOccurs="1" maxOccurs="1">
+                <xs:key name="id">
+                    <xs:selector xpath="gatunki/*"/>
+                    <xs:field xpath="@rodzaj" />
+                </xs:key>
+                <xs:keyref name="id_odniesienie" refer="wypozyczalniaGier:id">
+                    <xs:selector xpath="gry/gra/*"/>
+                    <xs:field xpath="@rodzaj"/>
+                </xs:keyref>
+            </xs:element>
+            <xs:element name="autorDokumentu" type="wypozyczalniaGier:autorDokumentuTyp" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="dataStworzeniaTyp">
+            <xs:attribute name="data" type="xs:date" />
+    </xs:complexType>
+
+    <!--GATUNKI TYP-->
+    <xs:complexType name="gatunkiTyp">
+        <xs:sequence>
+            <xs:element name="gatunek" type="wypozyczalniaGier:gatunekTyp" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+        <!--GATUNEK TYP -->
+        <xs:complexType name="gatunekTyp">
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="typ" type="wypozyczalniaGier:typTyp"/> <!-- maslo maslane -->
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+
+
+    <xs:simpleType name="typTyp">           <!-- Typ dla atrybutu typ gatunków gier (3 literki)-->
+        <xs:restriction base="xs:string">
+            <xs:length value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- KO -->
+
+    <!--DANE WYPOZYCZALNI GIER TYP-->
+    <xs:complexType name="daneWypozyczalniGierTyp">
+        <xs:sequence>
+            <xs:element name="wlasciciel" type="wypozyczalniaGier:wlascicielTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="miasto" type="wypozyczalniaGier:miastoTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ulica" type="wypozyczalniaGier:ulicaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="kodPocztowy" type="wypozyczalniaGier:kodPocztowyTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="telefon" type="wypozyczalniaGier:telefonTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="NIP" type="wypozyczalniaGier:nipTyp" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!--TYPY DANYCH W WYPOZYCZALNI-->
+    <xs:simpleType name="wlascicielTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="miastoTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ulicaTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kodPocztowyTyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][0-9]-[0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="telefonTyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nipTyp">
+        <xs:restriction base="xs:string">
+            <xs:length value="13"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- KO -->
+
+    <!--GRY TYP -->
+    <xs:complexType name="gryType">
+        <xs:sequence>
+            <xs:element name="gra" type="wypozyczalniaGier:graTyp" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--KO -->
+
+    <!-- GRA TYP -->
+    <xs:complexType name="graTyp">
+        <xs:sequence>
+            <xs:element name="tytul" type="wypozyczalniaGier:tytulTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="producent" type="wypozyczalniaGier:producentTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="wydawca" type="wypozyczalniaGier:wydawcaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="dystrybutor" type="wypozyczalniaGier:dystrybutorTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="rokWydania" type="wypozyczalniaGier:rokWydaniaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="cena" type="wypozyczalniaGier:cenaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="czyWypozyczona" type="wypozyczalniaGier:czyWypozyczonaType" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="PEGI" type="wypozyczalniaGier:PEGITyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="platforma" type="wypozyczalniaGier:platformaTyp" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="jezyk" type="wypozyczalniaGier:jezykTyp" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="wypozyczalniaGier:grupaatrybutow"/>
+    </xs:complexType>
+
+    <!--- Grupa Typy atrybutów -->
+    <xs:attributeGroup name="grupaatrybutow">
+        <xs:attribute name="ID" type="wypozyczalniaGier:IDType" use="required"/>
+        <xs:attribute name="gatunek" type="wypozyczalniaGier:gatTyp" use="required"/>
+    </xs:attributeGroup>
+
+
+    <xs:simpleType name="IDType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="gatTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!--- Typy dla gry -->
+    <xs:simpleType name="tytulTyp">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="producentTyp">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="wydawcaTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dystrybutorTyp">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="rokWydaniaTyp">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxExclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="cenaTyp">
+        <xs:simpleContent>
+            <xs:extension base="xs:float">
+                <xs:attribute name="waluta" type="wypozyczalniaGier:walutaTyp" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="walutaTyp">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="PLN"/>
+            <xs:enumeration value="EURO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="czyWypozyczonaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="NIE|TAK" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PEGITyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9][1-9]?\+|Każdy" />
+            <xs:minLength value="0"/>
+            <xs:maxLength value="6"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="platformaTyp">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="Windows" />
+            <xs:enumeration value="Android" />
+            <xs:enumeration value="Linux" />
+            <xs:enumeration value="Nintendo Switch" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="jezykTyp">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+<!--KO-->
+
+<!-- AUTOR DOKUMENTU TYP -->
+<xs:complexType name="autorDokumentuTyp">
+    <xs:group ref="wypozyczalniaGier:grupatrybutowautora"/>
+</xs:complexType>
+
+<xs:group name="grupatrybutowautora">
+    <xs:sequence>
+        <xs:element name="imie" type="wypozyczalniaGier:imieTyp" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="nazwisko" type="wypozyczalniaGier:nazwiskoTyp" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="numerIndeksu" type="wypozyczalniaGier:numerIndeksuTyp" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="grupaLaboratoryjna" type="wypozyczalniaGier:grupaLaboratoryjnaTyp" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="mail" type="wypozyczalniaGier:mailTyp" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="dataOstatniejAktualizacji" type="xs:date" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+</xs:group>
+
+<xs:simpleType name="imieTyp">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="2"/>
+        <xs:maxLength value="15"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="nazwiskoTyp">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="3"/>
+        <xs:maxLength value="15"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="numerIndeksuTyp">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:pattern value="[0-9]{6}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mailTyp">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{6}@edu.p.lodz.pl|\d{6}@.p.lodz.pl" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="grupaLaboratoryjnaTyp">
+    <xs:union>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[0-6]-[0-6]"/>
+            </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+            <xs:restriction base="xs:token">
+                <xs:enumeration value="1-1"/>
+                <xs:enumeration value="1-2"/>
+                <xs:enumeration value="2-1"/>
+                <xs:enumeration value="2-2"/>
+                <xs:enumeration value="3-1"/>
+                <xs:enumeration value="3-2"/>
+                <xs:enumeration value="4-1"/>
+                <xs:enumeration value="4-2"/>
+                <xs:enumeration value="5-1"/>
+                <xs:enumeration value="5-2"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:union>
+</xs:simpleType>
+
+<!--KO-->
+
+</xs:schema>
