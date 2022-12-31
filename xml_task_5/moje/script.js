@@ -16,7 +16,7 @@ document.getElementById("modify_button").onclick = function () {
 
 document.getElementById("add_button").onclick = function () {
     add_entry();
-    load_new_data("G" + xml_doc.getElementsByTagName("games:game").length)
+    load_new_data(xml_doc.getElementsByTagName("games:game").length)
     update_table();
 }
 
@@ -27,12 +27,11 @@ document.getElementById("delete_button").onclick = function () {
 
 function add_entry(){
     let entry = xml_doc.getElementsByTagName("games:game")[0].cloneNode(true); 
-    if (document.getElementById("new_game_id"))
     xml_doc.getElementsByTagName("games")[0].appendChild(entry);
 }
 
 function delete_entry(){
-    let entry = get_game_by_id(document.getElementById("modify_id").value)
+    let entry = xml_doc.getElementsByTagName("games:game")[document.getElementById("modify_id").value - 1]
     entry.parentNode.removeChild(entry)
 }
 
@@ -116,7 +115,7 @@ function load_new_data(modify_id = document.getElementById("modify_id").value){
 
     for (let i = 0;; i++) {
 
-        const xml_element = get_editable_game_childen(get_game_by_id(modify_id))[i]
+        const xml_element = get_editable_game_childen(xml_doc.getElementsByTagName("games:game")[modify_id-1])[i]
         const new_element = get_new_velues_childen()[i]
 
         if(!new_element) break;
@@ -124,17 +123,5 @@ function load_new_data(modify_id = document.getElementById("modify_id").value){
         if(new_element.value) {
             xml_element.textContent = new_element.value
         }
-    }
-}
-
-function get_game_by_id(id){
-    let games = xml_doc.getElementsByTagName("games:game")
-    for (let i = 0; i < games.length; i++) {
-        console.log(id)
-        console.log(games[i].attributes[0].value)
-        if (games[i].attributes[0].value == id){
-            console.log("found")
-            return games[i];
-        } 
     }
 }
