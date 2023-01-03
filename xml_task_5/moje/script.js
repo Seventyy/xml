@@ -26,7 +26,19 @@ document.getElementById("delete_button").onclick = function () {
 }
 
 function add_entry(){
-    let entry = xml_doc.getElementsByTagName("games:game")[0].cloneNode(true); 
+    let games = xml_doc.getElementsByTagName("games:game")
+    let entry = games[0].cloneNode(true); 
+
+    for (let j = 1; ; j++) {
+        for (let i = 0; i < games.length; i++) {
+            if(game[i].attributes[0] != "G" + j){
+                continue;
+            } // WTF
+            entry.attributes[0]="G" + j;
+            break;
+        }
+    }
+    
     xml_doc.getElementsByTagName("games")[0].appendChild(entry);
 }
 
