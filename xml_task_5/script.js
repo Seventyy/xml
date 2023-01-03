@@ -1,12 +1,11 @@
-let xml_doc; // xml załadowany na stornie i wyświetalany, na nim prowarze wszlkie operacje
+let xml_doc;
 
 document.getElementById("load_button").onclick = function () {
     load_table();
-    update_table(); // tu wywala blad za pierwsyzm razem (może await pomoże (jak będize mi się chciało go dodać :P))
+    update_table();
 }
 
 document.getElementById("test_button").onclick = function () {
-    // for testin', does nothin'
 }
 
 document.getElementById("modify_button").onclick = function () {
@@ -30,11 +29,8 @@ function add_entry(){
     let entry = games[0].cloneNode(true); 
 
     for (let j = 1; ; j++) {
-        for (let i = 0; i < games.length; i++) {
-            if(game[i].attributes[0] != "G" + j){
-                continue;
-            } // WTF
-            entry.attributes[0]="G" + j;
+        if (is_id_aviable(j)){
+            entry.attributes[0] = "G" + j;
             break;
         }
     }
@@ -42,13 +38,20 @@ function add_entry(){
     xml_doc.getElementsByTagName("games")[0].appendChild(entry);
 }
 
+function is_id_aviable(id) {
+    for (let i = 0; i < games.length; i++) {
+        if(game[i].attributes[0] == "G" + id){
+            return false;
+        }
+    }
+    return true;
+}
+
 function delete_entry(){
     let entry = xml_doc.getElementsByTagName("games:game")[document.getElementById("modify_id").value - 1]
     entry.parentNode.removeChild(entry)
 }
 
-// ładuje dane z wybranego wcześniej pliku xml na stronę do zmiennej xml_doc
-// (nie wiem do końca co się tu w środku odwala, ale działa)
 function load_table() { 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', URL.createObjectURL(document.getElementById("file_name").files[0]), true);
@@ -60,13 +63,11 @@ function load_table() {
     xhr.send(null);
 }
 
-// ładuje dane ze zmiennej xml_doc do tabelki na stronie
 function update_table() {
-    let games = xml_doc.getElementsByTagName("games:game"); // array referencji do elementów gier
+    let games = xml_doc.getElementsByTagName("games:game");
 
     let table = ""
 
-    // nagówki kolumn
     table += "<tr>";
     for (let i = 0;; i++) {
         let xml_element = get_editable_game_childen(games[0])[i];
@@ -76,7 +77,6 @@ function update_table() {
     }
     table += "</tr>";
 
-    // zawarość komórek tabelki
     for (let game = 0; game < games.length; game++) { 
         table += "<tr>";
         for (let i = 0;; i++) {
@@ -90,7 +90,6 @@ function update_table() {
     document.getElementById("operating_file").innerHTML = table;
 }
 
-// zwraca array referencji do atrybutów argumentu, elementów będących jego dziećmi i atrybutów tych elementów 
 function get_editable_game_childen(game) {
     let stuff = [];
     stuff.push(game.attributes[0])
@@ -107,9 +106,6 @@ function get_editable_game_childen(game) {
     return stuff;
 }
 
-// zwraca array referencji do podelementów "new_values" w htmlu, które nie są tekstem ani <br>
-// (czyli inputy i selecty)
-// output pasuje koresomnduje jeden do jednego z get_editable_game_childen()
 function get_new_velues_childen(){
     let stuff = [];
     for (let i = 0; i < document.getElementById("new_values").childNodes.length; i++) {
@@ -121,7 +117,6 @@ function get_new_velues_childen(){
     return stuff;
 }
 
-// ładuje dane z sekcji "Data modification" do xml_doc, jeżeli coś zostało wpisane (to ostatnie nie działa dla selectów)
 function load_new_data(modify_id = document.getElementById("modify_id").value){ 
     if (!modify_id) return; 
 
