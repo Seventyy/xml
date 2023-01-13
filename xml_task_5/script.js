@@ -1,12 +1,12 @@
-let xml_doc;
+let xml_doc; // cały dokument xml na którym są robione wszystkie operacje
 
 document.getElementById("load_button").onclick = function () {
     load_table();
     update_table();
 }
 
-document.getElementById("test_button").onclick = function () {
-}
+// document.getElementById("test_button").onclick = function () {
+// }
 
 document.getElementById("modify_button").onclick = function () {
     load_new_data();
@@ -14,8 +14,8 @@ document.getElementById("modify_button").onclick = function () {
 }
 
 document.getElementById("add_button").onclick = function () {
-    add_entry();
-    load_new_data(xml_doc.getElementsByTagName("games:game").length)
+    add_entry(); // tutaj kopjuje pierwszą grę i dodaje ją do listy wszystkich
+    load_new_data(xml_doc.getElementsByTagName("games:game").length) // edytuje tą skopjowaną grę
     update_table();
 }
 
@@ -26,21 +26,21 @@ document.getElementById("delete_button").onclick = function () {
 
 function add_entry(){
     let games = xml_doc.getElementsByTagName("games:game")
-    let entry = games[0].cloneNode(true); 
-
+    let entry = games[0].cloneNode(true);
+    
+    xml_doc.getElementsByTagName("games")[0].appendChild(entry);
+    // znajdowanie pierwszego wolnego indeksu dla nowej gry
     for (let j = 1; ; j++) {
         if (is_id_aviable(j)){
-            entry.attributes[0] = "G" + j;
+            entry.attributes[0].value = "G" + j;
             break;
         }
     }
-    
-    xml_doc.getElementsByTagName("games")[0].appendChild(entry);
 }
 
 function is_id_aviable(id) {
-    for (let i = 0; i < games.length; i++) {
-        if(game[i].attributes[0] == "G" + id){
+    for (let i = 0; i < xml_doc.getElementsByTagName("games:game").length; i++) {
+        if(xml_doc.getElementsByTagName("games:game")[i].attributes[0].value == "G" + id){
             return false;
         }
     }
@@ -63,7 +63,7 @@ function load_table() {
     xhr.send(null);
 }
 
-function update_table() {
+function update_table() { // aktualizuje tabelkę w htmlu
     let games = xml_doc.getElementsByTagName("games:game");
 
     let table = ""
@@ -90,7 +90,8 @@ function update_table() {
     document.getElementById("operating_file").innerHTML = table;
 }
 
-function get_editable_game_childen(game) {
+// zwraca array referencji do wszytchich elementów atrybutów które da się zmienić w grze
+function get_editable_game_childen(game) {  
     let stuff = [];
     stuff.push(game.attributes[0])
     stuff.push(game.attributes[1])
@@ -106,6 +107,7 @@ function get_editable_game_childen(game) {
     return stuff;
 }
 
+// zwraca array referencji do inputów z htmla, koresponduje 1 do jednego z tym wyżej
 function get_new_velues_childen(){
     let stuff = [];
     for (let i = 0; i < document.getElementById("new_values").childNodes.length; i++) {
@@ -117,7 +119,10 @@ function get_new_velues_childen(){
     return stuff;
 }
 
+// ładuje dane z inputów do xmla
 function load_new_data(modify_id = document.getElementById("modify_id").value){ 
+    console.log(get_editable_game_childen(xml_doc.getElementsByTagName("games:game")[modify_id-1]))
+    console.log(get_new_velues_childen())
     if (!modify_id) return; 
 
     for (let i = 0;; i++) {

@@ -8,16 +8,16 @@
 <body>
 	Choose file to load.<br>
 	<input class="form-control success" type="file" id="file_name" accept=".xml"> 
-	<button id="load_button" class="button button1" >Load</button>
-	<button id="test_button" class="button button4" >Test</button>
+	<button id="load_button">Load</button>
+	<!-- <button id="test_button">Test</button> -->
 	<h3>The file:</h3>
 	<table id="operating_file"></table>
 <hr>
 	<h3>Data modification</h3>
-	<input id="modify_id"> Choose game id number of a game to work on<br>
-	<button id="modify_button" class="button button1" >Modify entry</button>
-	<button id="add_button" class="button button1" >Add entry</button>
-	<button id="delete_button" class="button button1" >Delete entry</button>
+	<input id="modify_id" type="number" min="0"> Choose game id number of a game to work on<br>
+	<button id="modify_button">Modify entry</button>
+	<button id="add_button">Add entry</button>
+	<button id="delete_button">Delete entry</button>
 	<br><br>
 
 	<div id="new_values">
