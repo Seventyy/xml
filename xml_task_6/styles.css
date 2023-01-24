@@ -2,7 +2,7 @@ body {
     color: #6aa3d1;
     background: linear-gradient(25deg, #132936 60%, #2A475E 100%);
     background-attachment: fixed; 
-    font-family: Calibri;
+    font-family: Tahoma;
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
 
 .image-container {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -20,12 +20,8 @@ h1 {
     width: 300px;
     height: 300px;
     margin: 10px;
-    overflow: hidden;
-
-    
     border: 5px solid #6aa3d1; 
-    padding: 10px; 
-    display: inline-block;
+    padding: 10px;
 }
   
 .image-card img {
@@ -34,10 +30,9 @@ h1 {
     object-fit: cover;
 }
   
-.image-info {
-    position: absolute;
+.image-info { 
+    position: absolute; 
     color: #6aa3d1;
     text-shadow: 2px 2px 1px #132936;
     bottom: 0;
-    left: 10;
 }
