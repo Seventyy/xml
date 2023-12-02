@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="XML_Task2_style.css" ?>
+<?xml-stylesheet type="text/xsl" href="XML_Task3_XSLT.xsl"?>
+
+<plantapp title="PLANTS">
+	<doc_header>
+		<doc_author_name>Wiktoria Sliwinska</doc_author_name>
+		<doc_author_id>242231</doc_author_id>
+		<doc_content>Database of some plants from Missouri Botanical Garden</doc_content>
+		<doc_lang>en</doc_lang>
+		<doc_last_mod>2022-11-15T14:00:00</doc_last_mod>
+	</doc_header>
+	
+	<doc_body>
+		<plants>
+			<plant id="hdj528jdb.00">
+				<info>
+					<name class="names">Maranta leuconeura</name>
+					<common_name class="names">Prayer plant</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Marantaceae</family>
+					<origin>Brazil</origin>
+					<photo location="maranta.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>30</maxheight>
+						<maxspread>30</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Rarely flowers indoors</bloom_time>
+					<bloom_description>White</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				<costs>
+					<cost plant_size="XS" currency="PLN" country="PL">
+							<plant_size size_unit="cm">6</plant_size>
+							<plant_price>18,99</plant_price>
+							<shipping_price>19,99</shipping_price>
+							<shipping_date>25.10.2022</shipping_date>
+							<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="S" currency="PLN" country="PL">
+							<plant_size size_unit="cm">8,5</plant_size>
+							<plant_price>24,99</plant_price>
+							<shipping_price>19,99</shipping_price>
+							<shipping_date>25.10.2022</shipping_date>
+							<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="M" currency="PLN" country="PL">
+							<plant_size size_unit="cm">12</plant_size>
+							<plant_price>29,99</plant_price>
+							<shipping_price>19,99</shipping_price>
+							<shipping_date>25.10.2022</shipping_date>
+							<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="4''" currency="USD" country="USA">
+						<plant_price>16,99</plant_price>
+						<shipping_price>9,99</shipping_price>
+						<shipping_date>26.10.2022</shipping_date>
+					</cost>
+					<cost plant_size="6''" currency="USD" country="USA">
+						<plant_price>25,99</plant_price>
+						<shipping_price>9,99</shipping_price>
+						<shipping_date>26.10.2022</shipping_date>
+					</cost>
+					<cost currency="EUR" country="FR">
+						<plant_price>12,00</plant_price>
+						<shipping_price>5,90</shipping_price>
+						<shipping_date>20.10.2022</shipping_date>
+						<package_size unit_package="cm">20x46x29</package_size>
+					</cost>
+				</costs>
+			</plant>
+				
+			<plant id="hgd233ied.01">
+				<info>
+					<name class="names">Monstera deliciosa</name>
+					<common_name class="names">Swiss cheese plant</common_name>
+					<type>Vine</type>
+					<family>Araceae</family>
+					<origin>Mexico</origin>
+					<origin>Central America</origin>
+					<photo location="monstera.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>21</maxheight>
+						<maxspread>3</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Rarely flowers indoors</bloom_time>
+					<bloom_description>Whitish-green spadix and white spathe</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				<costs>
+					<cost plant_size="XXS" currency="PLN" country="PL">
+						<plant_price>29,99</plant_price>
+						 
+						 
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="XS" currency="PLN" country="PL">
+						<plant_size size_unit="cm">6</plant_size>
+						<plant_price>29,99</plant_price>
+						 
+						 
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="M" currency="PLN" country="PL">
+						<plant_size size_unit="cm">12</plant_size>
+						<plant_price>29,99</plant_price>
+						 
+						 
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="L" currency="PLN" country="PL">
+						<plant_size size_unit="cm">14</plant_size>
+						<plant_price>29,99</plant_price>
+						 
+						 
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="XL" currency="PLN" country="PL">
+						<plant_size size_unit="cm">17</plant_size>
+						<plant_price>29,99</plant_price>
+						 
+						 
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+					<cost plant_size="XXL" currency="PLN" country="PL">
+						<plant_size size_unit="cm">19-21</plant_size>
+						<plant_price>29,99</plant_price>
+						<package_size unit_package="cm">8x38x64</package_size>
+					</cost>
+				</costs>
+			</plant>
+		
+			<plant id="jhg682udh.02">
+				<info>
+					<name class="names">Saintpaulia ionantha</name>
+					<common_name class="names">African violet</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Gesneriaceae</family>
+					<origin>Tanzania</origin>
+					<photo location="violet.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>23</maxheight>
+						<maxspread>23</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Flowers freely</bloom_time>
+					<bloom_description>Blue, pink, purple and white</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<sunlight>Full shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+			</plant>
+			
+			<plant id="lap365jfx.03">
+				<info>
+					<name class="names">Hoya carnosa</name>
+					<common_name class="names">Wax plant</common_name>
+					<type>Vine</type>
+					<family>Apocynaceae</family>
+					<origin>Eastern China</origin>
+					<origin>Japan</origin>
+					<origin>Penisular Malaysia</origin>
+					<origin>Taiwan</origin>
+					<origin>Vietnam</origin>
+					<photo location="hoya.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>122</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Seasonal bloomer</bloom_time>
+					<bloom_description>White</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+		
+			<plant id="jsl740bwl.04">
+				<info>
+					<name class="names">Chlorophytum comosum</name>
+					<common_name class="names">Spider plant</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Asparagaceae</family>
+					<photo location="spider.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>61</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Flowers freely</bloom_time>
+					<bloom_description>White</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<sunlight>Full shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+		
+			<plant id="osd030jhf.05">
+				<info>
+					<name class="names">Calathea lancifolia</name>
+					<common_name class="names">Rattlesnake plant</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Marantaceae</family>
+					<origin>Brazil</origin>
+					<photo location="rattlesnake.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>46</maxheight>
+						<maxspread>46</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Seasonal bloomer</bloom_time>
+					<bloom_description>Yellow</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<sunlight>Full shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+		
+			<plant id="bas947jfy.06">
+				<info>
+					<name class="names">Phalaenopsis</name>
+					<common_name class="names">Moth orchid</common_name>
+					<type>Orchid</type>
+					<family>Orchidaceae</family>
+					<photo location="orchid.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>91</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Seasonal bloomer</bloom_time>
+					<bloom_description>No blue or red</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<sunlight>Full shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+		
+			<plant id="gak273ovl.07">
+				<info>
+					<name class="names">Philodendron hederaceum</name>
+					<common_name class="names">Vilevine</common_name>
+					<type>Vine</type>
+					<family>Araceae</family>
+					<origin>Mexico</origin>
+					<origin>Caribbean</origin>
+					<origin>Central and South America</origin>
+					<photo location="philo.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>609</maxheight>
+						<maxspread>183</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Rarely flowers indoors</bloom_time>
+					<bloom_description>Greenish-white</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+		
+			<plant id="jdo840nwi.08">
+				<info>
+					<name class="names">Philodendron 'Pink Princess'</name>
+					<common_name class="names">Philodendron</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Araceae</family>
+					<photo location="pink.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>121</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Rarely flowers indoors</bloom_time>
+					<bloom_description>Purple-red spathe and white spadix</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="oks830dhp.09">
+				<info>
+					<name class="names">Philodendron bipinnatifidum</name>
+					<common_name class="names">Horsehead philodendron</common_name>
+					<type>Broadleaf evergreen</type>
+					<family>Araceae</family>
+					<origin>South America</origin>
+					<photo location="horse.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>5</maxheight>
+						<maxspread>5</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Seasonal bloomer</bloom_time>
+					<bloom_description>White</bloom_description>
+					<life_conditions>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="lll204nds.10">
+				<info>
+					<name class="names">Agave victoriae-reginae</name>
+					<common_name class="names">Century plant</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Asparagaceae</family>
+					<origin>Mexico</origin>
+					<photo location="agave.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>30</maxheight>
+						<maxspread>46</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>May to August</bloom_time>
+					<bloom_description>Yellow-green</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Dry</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="ldj068vak.11">
+				<info>
+					<name class="names">Lotus berthelotii</name>
+					<common_name class="names">Parrot's beak</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Fabaceae</family>
+					<origin>Canary Islands</origin>
+					<photo location="lotus.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>23</maxheight>
+						<maxspread>91</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>May to July</bloom_time>
+					<bloom_description>Red</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="pao930hdp.12">
+				<info>
+					<name class="names">Crinum americanum</name>
+					<common_name class="names">Florida swamp lily</common_name>
+					<type>Bulb</type>
+					<family>Amaryllidaceae</family>
+					<origin>Southern United States</origin>
+					<photo location="lotus.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>91</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>June to September</bloom_time>
+					<bloom_description>White (sometimes blushed pink)</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+						<water>Wet</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="ppp279hfh.13">
+				<info>
+					<name class="names">Albizia julibrissin 'Summer Chocolate'</name>
+					<common_name class="names">Mimosa</common_name>
+					<type>Tree</type>
+					<family>Fabaceae</family>
+					<origin>Southern United States</origin>
+					<photo location="lotus.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="3."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>12</maxheight>
+						<maxspread>15</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>June to July</bloom_time>
+					<bloom_description>Pink</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="psk396nvo.14">
+				<info>
+					<name class="names">Begonia rex-cultorum</name>
+					<common_name class="names">Rex begonia</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Begoniaceae</family>
+					<origin>Southern United States</origin>
+					<photo location="begonia.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="3."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>46</maxheight>
+						<maxspread>46</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>Flowers not showy</bloom_time>
+					<bloom_description>Flowers not showy</bloom_description>
+					<life_conditions>
+						<sunlight>Full shade</sunlight>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				
+			</plant>
+			<plant id="lao245fbn.15">
+				<info>
+					<name class="names">Buddleja x weyeriana 'Golden Glow'</name>
+					<common_name class="names">Butterfly bush</common_name>
+					<type>Deciduous shrub</type>
+					<family>Scrophulariaceae</family>
+					<photo location="butterfly.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="3."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>5</maxheight>
+						<maxspread>3</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>May to July</bloom_time>
+					<bloom_description>Yellow-orange</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+				</plant>
+			<plant id="lsk325kjh.16">
+				<info>
+					<name class="names">Sarracenia minor 'Okee Giant'</name>
+					<common_name class="names">Hooded pitcher plant</common_name>
+					<type>Herbaceous perennial</type>
+					<family>Sarraceniaceae</family>
+					<photo location="sarra.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="3."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>91</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>May to June</bloom_time>
+					<bloom_description>Yellow</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Wet</water>
+					</life_conditions>
+				</characteristic>
+				</plant>
+			<plant id="pej400msd.17">
+				<info>
+					<name class="names">Celosia argentea var. cristata (Cristata Group)</name>
+					<common_name class="names">Cockscomb</common_name>
+					<type>Annual</type>
+					<family>Amaranthaceae</family>
+					<photo location="celosia.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>91</maxheight>
+						<maxspread>46</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>June to September</bloom_time>
+					<bloom_description>Orange, red, purple, yellow or pink</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+			</plant>
+			<plant id="mdh492nnb.18">
+				<info>
+					<name class="names">Lagerstroemia indica 'Muskogee'</name>
+					<common_name class="names">Crape myrtle</common_name>
+					<type>Deciduous shrub</type>
+					<family>Lythraceae</family>
+					<photo location="indica.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="2."/>
+					<maxsize unit_maxsize="m">
+						<maxheight>4</maxheight>
+						<maxspread>4</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time> July to September</bloom_time>
+					<bloom_description>Lavender-pink</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<water>Medium</water>
+					</life_conditions>
+				</characteristic>
+			</plant>
+			<plant id="pal245bsj.19">
+				<info>
+					<name class="names">Panicum virgatum 'Squaw'</name>
+					<common_name class="names">Switch grass</common_name>
+					<type>Ornamental grass</type>
+					<family>Poaceae</family>
+					<photo location="panicum.png"/>
+				</info>
+				<characteristic>
+					<maintenance lvl_ref="1."/>
+					<maxsize unit_maxsize="cm">
+						<maxheight>122</maxheight>
+						<maxspread>61</maxspread>
+					</maxsize>
+					<is_blooming>1</is_blooming>
+					<bloom_time>July to February</bloom_time>
+					<bloom_description>Red</bloom_description>
+					<life_conditions>
+						<sunlight>Full sun</sunlight>
+						<sunlight>Part shade</sunlight>
+						<water>Medium</water>
+						<water>Wet</water>
+					</life_conditions>
+				</characteristic>
+			</plant>
+		</plants>
+		<maintenancelvls>
+			<maintenance lvl="1.">Low</maintenance>
+			<maintenance lvl="2.">Medium</maintenance>
+			<maintenance lvl="3.">High</maintenance>
+		</maintenancelvls>
+	</doc_body>	
+	
+	<doc_footer>
+			<source>http://www.missouribotanicalgarden.org</source>
+			<source>https://zielony-parapet.pl</source>
+			<source>https://bloomboxusa.com</source>
+			<source>https://lagreentouch.fr</source>
+	</doc_footer>
+</plantapp>
+
+
+
+<!--Knowledge: http://www.missouribotanicalgarden.org-->
+<!--Prices PLN: https://zielony-parapet.pl-->
+<!--Prices USD: https://bloomboxusa.com-->
+<!--Prices EUR: https://lagreentouch.fr-->

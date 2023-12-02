@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>XML - Task 5</title>
+	</head>
+	<body>
+		<h1>A website enabling access to data from an XML file</h1>
+        <h2>XML file name:</h2>
+        <input id="xml_file" type="file" accept=".xml"/><br>
+	    <button id="submit_1">Submit</button>
+
+        <h2>XML file content:</h2>
+        <table id="xml_file_table"></table>
+
+        <div id="new_data">
+            <h2>XML file data insertion, modification and deletion:</h2>
+            <h3>Plant ID</h3>
+                <input id="plant_id" type="text" pattern="[a-z]{3}\d{3}[a-z]{3}[.][01]\d"/>
+                <button id="insert_data">Insert</button>
+	            <button id="modify_data">Edit</button>
+	            <button id="delete_data">Delete</button>
+            <h3>Plant Name</h3>
+                <input id="plant_name">
+            <h3>Plant Common Name</h3>
+                <input id="plant_common_name">
+            <h3>Plant Type</h3>
+                <input id="plant_type">
+            <h3>Plant Family</h3>
+                <input id="plant_family">
+            <!-- <h3>Plant Origin</h3>
+                <input id="plant_origin"> -->
+            <h3>Plant Difficulty</h3>
+                <select id="plant_difficulty">
+                    <option>1.</option>
+                    <option>2.</option>
+                    <option>3.</option>
+                </select>
+            <h3>Plant Life Conditions</h3>
+                <select id="plant_sunlight">
+                    <option>Full sun</option>
+                    <option>Full shade</option>
+                    <option>Part shade</option>
+                </select><br>
+                <select id="plant_water">
+                    <option>Dry</option>
+                    <option>Medium</option>
+                    <option>Wet</option>
+                </select>
+        </div>
+
+        <script src="XML_Task5_script.js"></script>
+	</body>
+</html>
